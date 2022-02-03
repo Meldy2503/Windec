@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
+import Navbar from "./components/Navbar";
 
 
 const theme = {
@@ -25,7 +26,7 @@ function App() {
     <ThemeProvider theme={ theme }>
         <Fragment>
            <GlobalStyle/>
-           <h1>hello world</h1>
+           <Navbar />
         </Fragment>
     </ThemeProvider>
    
