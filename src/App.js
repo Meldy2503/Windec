@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { GlobalStyle } from "./styles/GlobalStyles";
+import { ThemeProvider } from "styled-components";
+
+
+const theme = {
+  colors: {
+    primary1 : "#282938",
+    primary2 : "#1C1E53",
+    primary3 : "#2405F2",
+    primary4 : "#EEF4FA",
+    secondary1 : "#FCD980",
+    tetiary1 : "#F4F6FC",
+  },
+
+  mediaQuery : {
+    mobile : '768px',
+    tablet : '960px',
+  } 
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={ theme }>
+        <Fragment>
+           <GlobalStyle/>
+           <h1>hello world</h1>
+        </Fragment>
+    </ThemeProvider>
+   
+    
   );
 }
 
