@@ -17,6 +17,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
 `;
 
@@ -24,6 +25,15 @@ export const Nav = styled.nav`
 export const NavTitle = styled.h3`
  letter-spacing: 1rem;
  text-shadow: .1rem .2rem .3rem #000;
+
+ @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+  display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(30%, 50%)
+    
+    }
 `;
 
 
@@ -31,12 +41,22 @@ export const Ul = styled.ul`
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+      position: absolute;
+      top: 6.2rem;
+      left: -13%;
+      width: 126%;
+    
+    }
+
+
 
   li {
     list-style: none;
     padding: 1.4em 1.5em;
-
-   
   }
 
   li a {
@@ -52,9 +72,21 @@ export const Ul = styled.ul`
 `;
 
 export const MenuIcon = styled.div`
-  display: flex;
-  align-items: center;
+  font-size: 2.5rem;
+  display: none;
 
+  &:hover {
+      color: ${({theme}) => theme.colors.secondary1};
+    }
+
+    @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(30%, 50%)
+    }
+    
 `;
 
 

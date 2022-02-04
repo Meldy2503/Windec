@@ -14,8 +14,10 @@ function Navbar() {
 
   return (
   <NavContainer>
-     <Nav>
-      <NavTitle>Windec</NavTitle>
+     <NavTitle>Windec</NavTitle>
+
+   <Nav>
+     
 
       <MenuIcon onClick={handleClick}>
          { onClick ? <AiOutlineClose /> : <FaBars /> }
