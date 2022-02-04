@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
+import { BrowserRouter  as Router } from "react-router-dom";
 
 
 const theme = {
@@ -23,12 +24,14 @@ const theme = {
 
 function App() {
   return (
+    <Router>
     <ThemeProvider theme={ theme }>
         <Fragment>
            <GlobalStyle/>
            <Navbar />
         </Fragment>
     </ThemeProvider>
+    </Router>
    
     
   );
