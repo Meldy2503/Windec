@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.a`
 border-radius: 2em;
-cursor: pointer;
-padding: .6em 2em;
-background-color: ${({theme}) => theme.colors.primary2};
-color: ${({theme}) => theme.colors.tetiary1};
-border: 2px solid ${({theme}) => theme.colors.tetiary1}; 
 font-size: 1.6rem;
-margin-right: 5em;
+border: ${({border}) => border || "none"}; 
+padding: ${({padding}) => padding || ".7em 3em"};
+background-color: ${({bgc}) => bgc || "#FCD980"};
+color: ${({color}) => color || "#1B1C2B"};
 
 
     &:hover {
-      border: 2px solid ${({theme}) => theme.colors.secondary1};
+      border: ${({bh}) => bh || "none"};
+      background-color: ${({bgh}) => bgh || "#FDE4A6"};
+      
     }
 
 
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+      /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
            border: none;
            background-color: transparent;
            
@@ -28,5 +28,5 @@ margin-right: 5em;
        }
 
     }
-    
+     */
 `;

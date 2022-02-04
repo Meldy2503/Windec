@@ -11,24 +11,22 @@ function Navbar() {
    
   const [onIconClick, setOnIconClick] = React.useState(false);
   const handleClick = () => setOnIconClick(!onIconClick);
+  const closeMenuLink = () => setOnIconClick(true);
 
   return (
   <NavContainer>
      
 
    <Nav>
+
    <NavTitle>Windec</NavTitle>
 
-      <MenuIcon onClick={handleClick}>
-         { onIconClick ? <AiOutlineClose /> : <FaBars /> }
-      </MenuIcon>
-
-        <ul className={onIconClick ? 'openMenu' : 'closeMenu' } onClick={handleClick}>
+        <ul className={onIconClick ? 'openMenu' : 'closeMenu' }>
           <li>
-            <Link to="/">Home</Link>
+            <Link onClick={closeMenuLink} to="/">Home</Link> 
           </li>
           <li>
-            <Link to="/">About us</Link>
+            <Link onClick={closeMenuLink} to="/">About us</Link>
           </li>
           <li>
             <Link to="/">Features</Link>
@@ -37,9 +35,20 @@ function Navbar() {
             <Link to="/">Pricing</Link>
           </li>
           <div>
-          <Button>Contact us</Button>
+          <Button bgc="#1C1E53"
+                  color="#fff"
+                  border="2px solid #F4F6FC33"
+                  bgh="#1C1E53"
+                  bh="2px solid #FFF"
+          >
+            Contact us</Button>
           </div>
         </ul>
+
+        <MenuIcon onClick={handleClick}>
+         { onIconClick ? <AiOutlineClose /> : <FaBars /> }
+      </MenuIcon>
+
         </Nav> 
         
   </NavContainer>

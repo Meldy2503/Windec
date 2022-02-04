@@ -4,13 +4,14 @@ export const NavContainer = styled.div`
   width: 100%;
   background-color: ${({theme}) => theme.colors.primary2};
   position: fixed;
-  height: 6.3rem;
+  height: 7.1rem;
   box-shadow: .1rem .5rem .4rem ${({theme}) => theme.colors.tetiary1};
   
 `;
 
 export const Nav = styled.nav`
-  width: 80%;
+  max-width: 120rem;
+  width: 90%;
   background-color: transparent; 
   margin: 0 auto; 
   color: #fff;
@@ -18,7 +19,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background-color: green;
+
 
   .openMenu {
     display: none;
@@ -28,16 +29,18 @@ export const Nav = styled.nav`
       flex-direction: column;
       background-color: ${({theme}) => theme.colors.primary2};
       position: absolute;
-      top: 6.2rem;
-      left: -5rem;
+      top: 7rem;
+      right: -10%;
+      width: 50%;
+      
       
     }
   }
 
     .closeMenu {
       display: flex;
-      background-color: red;
       align-items: center;
+      justify-content: flex-end;
       
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
@@ -46,6 +49,7 @@ export const Nav = styled.nav`
       position: absolute;
       top: 6.2rem;
       left: -100%;
+    
       
     
     }
@@ -61,10 +65,13 @@ export const Nav = styled.nav`
     color: ${({theme}) => theme.colors.tetiary1};
 
     &:hover {
-      border-bottom: 2px solid ${({theme}) => theme.colors.secondary1};
+      border-bottom: 2px solid ${({theme}) => theme.colors.tetiary1};
       padding-bottom: .2em;
+    }
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+
+        text-align: right;
 
         &:hover {
            border: none;
@@ -79,15 +86,16 @@ export const Nav = styled.nav`
 
 
 export const NavTitle = styled.h3`
- letter-spacing: 1rem;
+ letter-spacing: .7rem;
  text-shadow: .1rem .2rem .3rem #000;
+ font-size: 2.5rem;
 
  @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
   display: block;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(30%, 50%)
+      transform: translate(22%, 50%);
     
     }
 `;
@@ -95,20 +103,22 @@ export const NavTitle = styled.h3`
  
 
 export const MenuIcon = styled.div`
-  font-size: 2.5rem;
-  display: none;
 
-  &:hover {
-      color: ${({theme}) => theme.colors.secondary1};
-    }
+  display: none;
 
     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
       display: block;
+      font-size: 2.5rem;
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(30%, 50%)
+      transform: translate(-120%, 60%);
+
+      &:hover {
+      color: ${({theme}) => theme.colors.secondary1};
     }
+    }
+  
     
 `;
 
