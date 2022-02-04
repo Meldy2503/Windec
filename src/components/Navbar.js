@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, Nav, NavTitle, MenuIcon, Ul } from "../styles/NavbarStyled";
+import { NavContainer, Nav, NavTitle, MenuIcon } from "../styles/NavbarStyled";
 import { Button } from "../styles/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -9,21 +9,21 @@ import { AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
    
-  const [onClick, setOnClick] = React.useState(false);
-  const handleClick = () => setOnClick(!onClick);
+  const [onIconClick, setOnIconClick] = React.useState(false);
+  const handleClick = () => setOnIconClick(!onIconClick);
 
   return (
   <NavContainer>
-     <NavTitle>Windec</NavTitle>
-
-   <Nav>
      
 
+   <Nav>
+   <NavTitle>Windec</NavTitle>
+
       <MenuIcon onClick={handleClick}>
-         { onClick ? <AiOutlineClose /> : <FaBars /> }
+         { onIconClick ? <AiOutlineClose /> : <FaBars /> }
       </MenuIcon>
 
-        <Ul>
+        <ul className={onIconClick ? 'openMenu' : 'closeMenu' } onClick={handleClick}>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -39,7 +39,7 @@ function Navbar() {
           <div>
           <Button>Contact us</Button>
           </div>
-        </Ul>
+        </ul>
         </Nav> 
         
   </NavContainer>
