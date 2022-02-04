@@ -1,13 +1,25 @@
 import React from 'react';
-import { NavContainer, NavTitle, Ul } from "../styles/NavbarStyled";
+import { NavContainer, Nav, NavTitle, MenuIcon, Ul } from "../styles/NavbarStyled";
 import { Button } from "../styles/ButtonStyled";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+
+
 
 function Navbar() {
+   
+  const [onClick, setOnClick] = React.useState(false);
+  const handleClick = () => setOnClick(!onClick);
+
   return (
-  
   <NavContainer>
+     <Nav>
       <NavTitle>Windec</NavTitle>
+
+      <MenuIcon onClick={handleClick}>
+         { onClick ? <AiOutlineClose /> : <FaBars /> }
+      </MenuIcon>
 
         <Ul>
           <li>
@@ -26,7 +38,7 @@ function Navbar() {
           <Button>Contact us</Button>
           </div>
         </Ul>
-
+        </Nav> 
         
   </NavContainer>
   )
