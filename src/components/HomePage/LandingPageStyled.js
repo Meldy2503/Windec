@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
    background-color: ${({theme}) => theme.colors.primary2};
    color: #fff;
-   width: 100%;
+   
    
 
 `;
@@ -16,17 +16,20 @@ export const ContentContainer = styled.div`
    justify-content: space-between;
    margin: 0 auto;
    
+   
 `;
 export const LeftContent = styled.div`
   display: flex;
   flex-direction: column; 
+  margin-top: 21.5rem;
+  margin-bottom: 12rem;
 
   h2 {
      width: 58.2rem;
      font-weight: 500;
      font-size: 5.4rem;
      line-height: 1.3;
-     margin-top: 21.5rem;
+     
   }
   p {
      width: 52rem;
@@ -41,7 +44,6 @@ export const LeftContent = styled.div`
      align-items: center;
      flex-direction: row;
      margin-top: 3.5rem;
-     margin-bottom: 12rem;
      font-weight: 500;
      
 
@@ -66,5 +68,8 @@ export const LeftContent = styled.div`
 
 `;
 export const RightContent = styled.div`
+margin-top: 21.5rem;
 
+  margin-bottom: 12rem;
+  
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 import { MainContainer, ContentContainer, LeftContent, RightContent  } from "./LandingPageStyled";
 import { Button } from "../styles/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
+import img1 from "../images/img1.svg";
+
 
 
 function LandingPage() {
@@ -24,7 +26,7 @@ function LandingPage() {
               </span>
           </LeftContent>
           <RightContent>
-
+                <img src={img1} alt="img1" />
           </RightContent>
       </ContentContainer>
   </MainContainer>

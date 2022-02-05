@@ -19,6 +19,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  margin-top: .5em;
 
 
   .openMenu {
