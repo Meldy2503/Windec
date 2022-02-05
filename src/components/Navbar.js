@@ -8,10 +8,12 @@ import { AiOutlineClose } from "react-icons/ai";
 
 
 function Navbar() {
+
+  
    
   const [onIconClick, setOnIconClick] = React.useState(false);
   const handleClick = () => setOnIconClick(!onIconClick);
-  const closeMenuLink = () => setOnIconClick(true);
+  const closeMenuLink = () => setOnIconClick(false);
 
   return (
   <NavContainer>
@@ -29,19 +31,21 @@ function Navbar() {
             <Link onClick={closeMenuLink} to="/">About us</Link>
           </li>
           <li>
-            <Link to="/">Features</Link>
+            <Link onClick={closeMenuLink} to="/">Features</Link>
           </li>
           <li>
-            <Link to="/">Pricing</Link>
+            <Link onClick={closeMenuLink} to="/">Pricing</Link>
           </li>
           <div>
-          <Button bgc="#1C1E53"
-                  color="#fff"
-                  border="2px solid #F4F6FC33"
-                  bgh="#1C1E53"
-                  bh="2px solid #FFF"
-          >
-            Contact us</Button>
+          <Button
+          border= "2px solid #F4F6FC33"
+          bgc= "#1C1E53"
+          color= "#fff" 
+          bgh= "#1C1E53"
+          bh= " 2px solid #fff"
+          margin= "0 1.5em"
+          onClick={closeMenuLink}
+          >Contact us</Button>
           </div>
         </ul>
 

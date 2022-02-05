@@ -23,6 +23,7 @@ export const Nav = styled.nav`
 
   .openMenu {
     display: none;
+  
 
     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
       display: flex;
@@ -31,8 +32,9 @@ export const Nav = styled.nav`
       position: absolute;
       top: 7rem;
       right: -10%;
-      width: 50%;
-      
+      width: 60%;
+      height: 100vh;
+     
       
     }
   }
@@ -40,7 +42,9 @@ export const Nav = styled.nav`
     .closeMenu {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: space-between;
+      
+      
       
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
@@ -63,6 +67,7 @@ export const Nav = styled.nav`
   li a {
     text-decoration: none;
     color: ${({theme}) => theme.colors.tetiary1};
+    
 
     &:hover {
       border-bottom: 2px solid ${({theme}) => theme.colors.tetiary1};
@@ -71,11 +76,14 @@ export const Nav = styled.nav`
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
 
-        text-align: right;
+        text-align: left;
+        border-bottom: 1px solid ${({theme}) => theme.colors.tetiary1};
+        display: block;
+        margin-bottom: .5em;
 
         &:hover {
-           border: none;
            color: ${({theme}) => theme.colors.secondary1};
+          
 
        }
       
