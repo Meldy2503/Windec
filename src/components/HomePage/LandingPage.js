@@ -6,9 +6,13 @@ function LandingPage() {
   <MainContainer>
       <ContentContainer>
           <LeftContent>
-              <h1>
+              <h2>
                  Building stellar websites for early startups 
-              </h1>
+              </h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia blanditiis adipisicing elit.
+
+              </p>
           </LeftContent>
           <RightContent>
 
