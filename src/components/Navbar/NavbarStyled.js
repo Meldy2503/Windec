@@ -5,7 +5,7 @@ export const NavContainer = styled.div`
   background-color: ${({theme}) => theme.colors.primary2};
   position: fixed;
   height: 7.1rem;
-  box-shadow: .1rem .5rem .4rem ${({theme}) => theme.colors.tetiary1};
+  
   
 `;
 

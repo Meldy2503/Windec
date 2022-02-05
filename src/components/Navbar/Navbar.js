@@ -9,8 +9,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
 
-  
-   
   const [onIconClick, setOnIconClick] = React.useState(false);
   const handleClick = () => setOnIconClick(!onIconClick);
   const closeMenuLink = () => setOnIconClick(false);
