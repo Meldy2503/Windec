@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, Nav, NavTitle, MenuIcon } from "../styles/NavbarStyled";
+import { NavContainer, Nav, NavTitle, MenuIcon } from "../Navbar/NavbarStyled";
 import { Button } from "../styles/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
