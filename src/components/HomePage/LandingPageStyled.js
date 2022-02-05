@@ -32,8 +32,36 @@ export const LeftContent = styled.div`
      width: 52rem;
      font-weight: 400;
      line-height: 1.6;
-     margin-top: 3rem;
+     margin-top: 2.5rem;
      opacity: 0.7;
+  }
+
+  span {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     margin-top: 3.5rem;
+     margin-bottom: 12rem;
+     font-weight: 500;
+     
+
+
+     li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding-left: 2.5em;
+     }
+
+     li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        padding-right: .6em;
+        
+     }
+
+
   }
 
 `;
