@@ -1,6 +1,7 @@
 import React from 'react';
-import { MainContainer, ContentContainer, LeftContent, RightContent  } from "./LandingPageStyled";
-import { Button } from "../../styles/ButtonStyled";
+import { LeftContent, RightContent } from "./LandingPageStyled";
+import { MainContainer, ContentContainer } from "../../reusableComponents/Container";
+import { Button } from "../../reusableComponents/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
 import img1 from "../../images/img1.svg";
 
@@ -8,7 +9,7 @@ import img1 from "../../images/img1.svg";
 
 function LandingPage() {
   return (
-  <MainContainer>
+  <MainContainer bgco= "#1C1E53">
       <ContentContainer>
           <LeftContent>
               <h1>

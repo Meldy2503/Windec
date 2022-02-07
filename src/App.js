@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { GlobalStyle } from "./components/styles/GlobalStyles";
+import { GlobalStyle } from "./components/reusableComponents/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter  as Router } from "react-router-dom";

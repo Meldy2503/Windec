@@ -1,24 +1,5 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
-   background-color: ${({theme}) => theme.colors.primary2};
-   color: #fff;  
-   width: 100%;
-`;
-
-export const ContentContainer = styled.div`
-   max-width: 120rem;
-   width: 90%;
-   display: flex;
-   justify-content: space-between;
-   margin: 0 auto;  
-   padding-top: 19rem;
-   padding-bottom: 12rem;
-
-   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      padding-top: 14rem;
-  }
-`;
 
 export const LeftContent = styled.div`
   display: flex;
@@ -31,6 +12,7 @@ export const LeftContent = styled.div`
 
   h1 {
      line-height: 1.5; 
+     color: #fff;
   }
 
   p {

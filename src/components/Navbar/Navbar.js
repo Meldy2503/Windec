@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavContainer, Nav, NavTitle, MenuIcon, Div } from "../Navbar/NavbarStyled";
-import { Button } from "../styles/ButtonStyled";
+import { Button } from "../reusableComponents/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
