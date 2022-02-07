@@ -4,6 +4,8 @@ import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter  as Router } from "react-router-dom";
 import LandingPage from "./components/HomePage/LandingPage/LandingPage";
+import Section1 from "./components/HomePage/Section_1/Section1";
+
 
 
 const theme = {
@@ -36,6 +38,7 @@ function App() {
            <GlobalStyle/>
            <Navbar />
            <LandingPage />
+           <Section1 />
         </Fragment>
     </ThemeProvider>
     </Router>
