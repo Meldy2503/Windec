@@ -61,7 +61,7 @@ export const RightContent = styled.div`
 
       h3 {
         margin-bottom: 1rem;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         font-weight: 500;
       }
 

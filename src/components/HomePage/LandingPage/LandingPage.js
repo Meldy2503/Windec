@@ -10,7 +10,7 @@ import img1 from "../../images/img1.svg";
 function LandingPage() {
   return (
   <MainContainer bgco= "#1C1E53">
-      <ContentContainer>
+      <ContentContainer pd= "19rem">
           <LeftContent>
               <h1>
                  Building stellar websites for early startups 

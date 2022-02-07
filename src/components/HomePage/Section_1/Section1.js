@@ -29,19 +29,11 @@ function Section1() {
               <div><p>{list.no}</p></div>
               <h3>{list.title}</h3>
               <p>{list.text}</p>
-           </span> 
-
-)
-}
-)}
-
-
-</RightContent>  
-
-
-      </ContentContainer>
-      
-  </MainContainer>
+           </span> )
+         })}
+      </RightContent>  
+  </ContentContainer>
+</MainContainer>
   );
 }
 
