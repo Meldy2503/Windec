@@ -12,14 +12,16 @@ const theme = {
     primary2 : "#1C1E53",
     primary3 : "#2405F2",
     primary4 : "#EEF4FA",
-    primary5 : "#535460",
+    primary5 : "#F4F6FC",
     secondary1 : "#FCD980",
     secondary2 : "#FDE4A6",
-    tetiary1 : "#F4F6FC",
+    tertiary1 : "#535460",
+    tertiary2 : "#d0d0d0"
 
   },
 
   mediaQuery : {
+    smobile : '401px',
     mobile : '768px',
     tablet : '960px',
   } 

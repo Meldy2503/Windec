@@ -30,8 +30,6 @@ function LandingPage() {
           </RightContent>
       </ContentContainer>
   </MainContainer>
-  
-  
   )
 }
 

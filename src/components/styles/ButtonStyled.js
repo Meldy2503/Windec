@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 
 export const Button = styled.a`
-border-radius: 2rem;
+border-radius: 3rem;
 font-size: 1.6rem;
 border: ${({border}) => border || "none"}; 
-padding: ${({padding}) => padding || "1rem 3.3rem"};
+padding: ${({padding}) => padding || "1.4rem 3.3rem"};
 background-color: ${({bgc}) => bgc || "#FCD980"};
 color: ${({color}) => color || "#1B1C2B"};
 margin: ${({margin}) => margin || "none"};
@@ -17,19 +17,21 @@ margin: ${({margin}) => margin || "none"};
       
     }
 
-     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-          
-          padding: .8em 2.3em;
-          margin-bottom: 1em;
-          justify-content: center;
-          border: none;
-          margin-top: .5em;
+  
 
-          &:hover {
-          border: none;
-          color: 
-      
-     } */
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+          
+          padding: ${({padding}) => padding || "1.3rem 2.9rem"};
+           
+          } 
+
+          @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+          
+          padding: ${({padding}) => padding || "1rem 2.9rem"};
+           
+          } 
+
+     
 
            
            

@@ -36,7 +36,8 @@ function Navbar() {
                        bgc= "#1C1E53"
                        color= "#fff" 
                        bgh= "#1C1E53"
-                       bh= " 2px solid #fff"
+                       bh= "2px solid #F4F6FC"
+                       padding= "1rem 2.9rem"
                        onClick={closeMenuLink}
                     >Contact us</Button>
                 </Div>

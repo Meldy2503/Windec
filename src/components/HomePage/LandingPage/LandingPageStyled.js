@@ -16,7 +16,7 @@ export const ContentContainer = styled.div`
    padding-bottom: 12rem;
 
    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      padding-top: 15rem;
+      padding-top: 14rem;
   }
 `;
 
@@ -38,7 +38,7 @@ export const LeftContent = styled.div`
      font-weight: 400;
      line-height: 1.7;
      margin-top: 2.5rem;
-     opacity: 0.7;
+     color: ${({theme}) => theme.colors.tertiary2};
   }
 
   span {
@@ -48,8 +48,9 @@ export const LeftContent = styled.div`
      margin-top: 3.5rem;
      font-weight: 500;
 
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-     flex-wrap: wrap;
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.smobile}) {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
      li {
@@ -57,18 +58,18 @@ export const LeftContent = styled.div`
         align-items: center;
         list-style: none;
         padding-left: 2.5rem;
-
-        @media screen and (max-width: 396px) {
+       
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.smobile}) {
         margin-top: 2.3rem;
-      }
-     }
+        align-items: center;
+       
+     }}
 
      li a {
         text-decoration: none;
         color: #fff;
         font-weight: 400;
         padding-right: .6rem;  
-         
      }}
 `;
 

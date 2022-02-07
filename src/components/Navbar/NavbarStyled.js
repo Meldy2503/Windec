@@ -25,12 +25,13 @@ export const Nav = styled.nav`
     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       display: flex;
       flex-direction: column;
-      background-color: ${({theme}) => theme.colors.primary2};
+      background-color: #000033;
       position: absolute;
       top: 7rem;
       right: -10%;
       width: 60%;
       height: 100vh;
+      z-index: 1000;
     }
   }
 
@@ -59,10 +60,10 @@ export const Nav = styled.nav`
 
   li a {
     text-decoration: none;
-    color: ${({theme}) => theme.colors.tetiary1};
+    color: ${({theme}) => theme.colors.primary5};
   
     &:hover {
-      border-bottom: 2px solid ${({theme}) => theme.colors.tetiary1};
+      border-bottom: 2px solid ${({theme}) => theme.colors.primary5};
       padding-bottom: .2rem;
     }
 
