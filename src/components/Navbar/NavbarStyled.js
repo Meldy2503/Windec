@@ -5,8 +5,6 @@ export const NavContainer = styled.div`
   background-color: ${({theme}) => theme.colors.primary2};
   position: fixed;
   height: 7.1rem;
-  
-  
 `;
 
 export const Nav = styled.nav`
@@ -19,14 +17,12 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: .5em;
-
+  margin-top: .5rem;
 
   .openMenu {
     display: none;
   
-
-    @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       display: flex;
       flex-direction: column;
       background-color: ${({theme}) => theme.colors.primary2};
@@ -35,8 +31,6 @@ export const Nav = styled.nav`
       right: -10%;
       width: 60%;
       height: 100vh;
-     
-      
     }
   }
 
@@ -44,91 +38,79 @@ export const Nav = styled.nav`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
-      
-      
 
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       display: flex;
       flex-direction: column;
       position: absolute;
       top: 6.2rem;
       left: -100%;
-    
-      
-    
     }
   }
 
   li {
     list-style: none;
-    padding: 1.4em 1.5em;
+    margin: 1.4rem 1.3rem;
+
+    @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+      margin: 1.4rem 1rem;
+    }
   }
 
   li a {
     text-decoration: none;
     color: ${({theme}) => theme.colors.tetiary1};
-    
-
+  
     &:hover {
       border-bottom: 2px solid ${({theme}) => theme.colors.tetiary1};
-      padding-bottom: .2em;
+      padding-bottom: .2rem;
     }
-      
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
 
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         text-align: left;
         border-bottom: 1px solid ${({theme}) => theme.colors.tetiary1};
         display: block;
-        margin-bottom: .5em;
+        margin-bottom: .5rem;
 
         &:hover {
            color: ${({theme}) => theme.colors.secondary1};
-          
-
        }
-      
-    }
+     }
   }
-
 `;
-
+export const Div = styled.div`
+  margin-left: 1rem;
+`
 
 export const NavTitle = styled.h3`
- letter-spacing: .7rem;
- text-shadow: .1rem .2rem .3rem #000;
- font-size: 2.5rem;
+     letter-spacing: .7rem;
+     text-shadow: .1rem .2rem .3rem #000;
+     font-size: 2.5rem;
 
- @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-  display: block;
+ @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(22%, 50%);
-    
+      transform: translate(1%, 50%);
     }
 `;
- 
- 
 
 export const MenuIcon = styled.div`
+   display: none;
 
-  display: none;
-
-    @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       display: block;
       font-size: 2.5rem;
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(-120%, 60%);
+      transform: translate(-1%, 45%);
 
       &:hover {
       color: ${({theme}) => theme.colors.secondary1};
-    }
-    }
-  
-    
+       }
+    } 
 `;
 
 

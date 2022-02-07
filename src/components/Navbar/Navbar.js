@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, Nav, NavTitle, MenuIcon } from "../Navbar/NavbarStyled";
+import { NavContainer, Nav, NavTitle, MenuIcon, Div } from "../Navbar/NavbarStyled";
 import { Button } from "../styles/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -15,46 +15,41 @@ function Navbar() {
 
   return (
   <NavContainer>
-     
-
-   <Nav>
-
-   <NavTitle>Windec</NavTitle>
-
-        <ul className={onIconClick ? 'openMenu' : 'closeMenu' }>
-          <li>
-            <Link onClick={closeMenuLink} to="/">Home</Link> 
-          </li>
-          <li>
-            <Link onClick={closeMenuLink} to="/">About us</Link>
-          </li>
-          <li>
-            <Link onClick={closeMenuLink} to="/">Features</Link>
-          </li>
-          <li>
-            <Link onClick={closeMenuLink} to="/">Pricing</Link>
-          </li>
-          <div>
-          <Button
-          border= "2px solid #F4F6FC33"
-          bgc= "#1C1E53"
-          color= "#fff" 
-          bgh= "#1C1E53"
-          bh= " 2px solid #fff"
-          margin= "0 1.5em"
-          onClick={closeMenuLink}
-          >Contact us</Button>
-          </div>
-        </ul>
+      <Nav>
+           <NavTitle>Windec</NavTitle>
+           <ul className={onIconClick ? 'openMenu' : 'closeMenu' }>
+                <li>
+                    <Link onClick={closeMenuLink} to="/">Home</Link> 
+                </li>
+                <li>
+                    <Link onClick={closeMenuLink} to="/">About us</Link>
+                </li>
+                <li>
+                    <Link onClick={closeMenuLink} to="/">Features</Link>
+                </li>
+                <li>
+                    <Link onClick={closeMenuLink} to="/">Pricing</Link>
+                </li>
+                <Div>
+                    <Button
+                       border= "2px solid #F4F6FC33"
+                       bgc= "#1C1E53"
+                       color= "#fff" 
+                       bgh= "#1C1E53"
+                       bh= " 2px solid #fff"
+                       onClick={closeMenuLink}
+                    >Contact us</Button>
+                </Div>
+            </ul>
 
         <MenuIcon onClick={handleClick}>
-         { onIconClick ? <AiOutlineClose /> : <FaBars /> }
-      </MenuIcon>
+            { onIconClick ? <AiOutlineClose /> : <FaBars /> }
+        </MenuIcon>
+    </Nav> 
+</NavContainer>
+  )}
 
-        </Nav> 
-        
-  </NavContainer>
-  )
-}
+
+  
 
 export default Navbar;
