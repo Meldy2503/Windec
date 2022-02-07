@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter  as Router } from "react-router-dom";
 import LandingPage from "./components/HomePage/LandingPage/LandingPage";
 import Section1 from "./components/HomePage/Section_1/Section1";
+import Section2 from "./components/HomePage/Section_2/Section2";
 
 
 
@@ -40,6 +41,7 @@ function App() {
            <Navbar />
            <LandingPage />
            <Section1 />
+           <Section2 />
         </Fragment>
     </ThemeProvider>
     </Router>

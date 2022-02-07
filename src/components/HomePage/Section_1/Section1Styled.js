@@ -24,6 +24,7 @@ export const LeftContent = styled.div`
      li a {
          text-decoration: none;
          margin-right: 1.5rem;
+  
      }
 
 `;
@@ -47,16 +48,16 @@ export const RightContent = styled.div`
         height: 5rem; 
         background-color: ${({theme}) => theme.colors.primary6};
         margin-bottom: 1rem;
-        border-radius: 1rem;
-        border: none;
-        position: relative;
+        clip-path: inset(5% 0% 15% 0% round 5rem);
+        /* border-radius: 1rem;
+        position: relative; */
 
         p {
             color: ${({theme}) => theme.colors.tertiary2};
-            position: absolute;
+            /* position: absolute;
             bottom: 1.3rem;
             left: 1.5rem; 
-        }
+        } */
       }
 
       h3 {
