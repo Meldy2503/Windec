@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
    background-color: ${({bgco}) => bgco || "#F4F6FC"};
-   color: ${({co}) => co || "#d0d0d0"}; 
+   color: ${({co}) => co || "#282938"}; 
    width: 100%;
 `;
 

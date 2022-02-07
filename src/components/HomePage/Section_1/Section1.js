@@ -18,24 +18,24 @@ function Section1() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus blanditiis elit.
               </p>
               <li>
-                      <a href="#">View Pricing</a>
+                      <a href="#">Get in touch with us</a>
                       <CgArrowLongRight />
               </li>
       </LeftContent> 
-
+      <RightContent>
         {data.map((list) => {
           return (
-            <RightContent key={list.id}>
+            <span key={list.id}>
               <div>{list.no}</div>
               <h3>{list.title}</h3>
               <p>{list.text}</p>
+           </span> 
 
-           </RightContent>   
+)
+}
+)}
 
-          )
-        }
-        )}
-
+</RightContent>  
 
 
       </ContentContainer>
