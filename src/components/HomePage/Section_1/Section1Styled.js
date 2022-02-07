@@ -30,17 +30,43 @@ export const LeftContent = styled.div`
 
 export const RightContent = styled.div`
      display: flex;
-     flex-direction: column; 
+     flex-direction: row;
+     flex-wrap: wrap;
      width: 60%;
+     justify-content: space-between;
+     row-gap: 4rem;
 
    span {
-      width: 47%;
-      height: 45%; 
+      width: 50%;
+      height: 50%; 
+      
+      
 
       div {
         width: 5rem;
         height: 5rem; 
-        background-color: ${({theme}) => theme.colors.primary3};
+        background-color: ${({theme}) => theme.colors.primary6};
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        border: none;
+        position: relative;
+
+        p {
+            color: ${({theme}) => theme.colors.tertiary2};
+            position: absolute;
+            bottom: 1.3rem;
+            left: 1.5rem; 
+        }
+      }
+
+      h3 {
+        margin-bottom: 1rem;
+        font-size: 2.8rem;
+        font-weight: 500;
+      }
+
+      p {
+        line-height: 1.8;
       }
    }
 

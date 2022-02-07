@@ -15,6 +15,7 @@ const theme = {
     primary3 : "#2405F2",
     primary4 : "#EEF4FA",
     primary5 : "#F4F6FC",
+    primary6 : "#5239FA",
     secondary1 : "#FCD980",
     secondary2 : "#FDE4A6",
     tertiary1 : "#535460",

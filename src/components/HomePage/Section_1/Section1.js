@@ -2,7 +2,7 @@ import React from 'react';
 import { MainContainer, ContentContainer } from "../../reusableComponents/Container";
 import { CgArrowLongRight } from "react-icons/cg";
 import { LeftContent, RightContent } from "./Section1Styled"
-import data from "./secData"
+import data from "./secData";
 
 
 
@@ -26,7 +26,7 @@ function Section1() {
         {data.map((list) => {
           return (
             <span key={list.id}>
-              <div>{list.no}</div>
+              <div><p>{list.no}</p></div>
               <h3>{list.title}</h3>
               <p>{list.text}</p>
            </span> 
@@ -34,6 +34,7 @@ function Section1() {
 )
 }
 )}
+
 
 </RightContent>  
 
