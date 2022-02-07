@@ -4,16 +4,20 @@ export const Span = styled.span`
      display: flex;
      justify-content: space-between;
      align-items: center;
-     width: 100%;
+     width: 90%;
+     max-width: 120rem;
+     margin: 0 auto;
+     padding-top: 10rem;
 
      h2 {
         margin-bottom: 2rem;
         font-size: 3.3rem;
+       
      }
      li {
          display: flex;
          align-items: center;
-         margin-top: -1.2rem;
+         margin-top: -1.5rem;
         
      }
 
@@ -25,5 +29,10 @@ export const Span = styled.span`
 `;
 
 export const ImageContainer = styled.div`
-     
+     /* display: flex;
+     width: 85%;
+     max-width: 120rem;
+     margin: 0 auto;
+     justify-content: space-between;
+      */
 `;

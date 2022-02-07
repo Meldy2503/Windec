@@ -11,7 +11,6 @@ import img4 from "../../images/img4.svg";
 function Setion2() {
   return (
     <MainContainer bgco= "#FFF">
-      <ContentContainer> 
         <Span>
               <h2>View our projets</h2>
               <li>
@@ -19,15 +18,13 @@ function Setion2() {
                       <CgArrowLongRight />
               </li> 
         </Span>
-        <ImageContainer>
+        <ContentContainer>
           <img src={img2} alt="img2" />
           <span>
           <img src={img3} alt="img3" />
           <img src={img4} alt="img4" />
           </span>
-        </ImageContainer>
-
-      </ContentContainer>
+        </ContentContainer>
     </MainContainer>
   );
 }
