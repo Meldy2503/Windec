@@ -1,7 +1,8 @@
 import React from 'react';
 import { MainContainer, ContentContainer } from "../../reusableComponents/Container";
 import { CgArrowLongRight } from "react-icons/cg";
-import { LeftContent } from "./Section1Styled"
+import { LeftContent, RightContent } from "./Section1Styled"
+import data from "./secData"
 
 
 
@@ -20,7 +21,22 @@ function Section1() {
                       <a href="#">View Pricing</a>
                       <CgArrowLongRight />
               </li>
-      </LeftContent>     
+      </LeftContent> 
+
+        {data.map((list) => {
+          return (
+            <RightContent key={list.id}>
+              <div>{list.no}</div>
+              <h3>{list.title}</h3>
+              <p>{list.text}</p>
+
+           </RightContent>   
+
+          )
+        }
+        )}
+
+
 
       </ContentContainer>
       
