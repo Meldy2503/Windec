@@ -7,7 +7,8 @@ export const LeftContent = styled.div`
   width: 45%;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-     width: 90%;  
+     width: 90%; 
+     
   }
 
   h1 {

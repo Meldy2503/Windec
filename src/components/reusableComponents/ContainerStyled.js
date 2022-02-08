@@ -9,15 +9,11 @@ export const MainContainer = styled.div`
 export const ContentContainer = styled.div`
    max-width: 120rem;
    width: 90%;
-   display: flex;
+   display: ${({display}) => display || "flex"};
    flex-direction: ${({flexd}) => flexd || "none"};
    justify-content: space-between;
    margin: 0 auto;  
    padding-top: ${({pt}) => pt || "10rem"};
    padding-bottom: ${({pb}) => pb || "10rem"};
   
-
-   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      padding-top: ${({pt}) => pt || "10rem"};
-    }
  `;

@@ -1,9 +1,31 @@
 import styled from "styled-components";
 
+export const Contents = styled.div`
+max-width: 120rem;
+width: 90%;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;  
+padding: 10rem 0;
+
+@media screen and (max-width: 550px)  {
+  display: block; 
+  padding: 6rem 0 10rem 0;  
+} 
+`;
+
 export const LeftContent = styled.div`
      display: flex;
      flex-direction: column; 
      width: 30%;
+
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         width: 40%;
+      } 
+
+      @media screen and (max-width: 550px)  {
+        width: 100%;
+     } 
 
      h2 {
         margin-bottom: 2rem;
@@ -12,23 +34,33 @@ export const LeftContent = styled.div`
 
      p {
         margin-bottom: 2rem;
-        line-height: 2;
+        line-height: 1.8;
+
+        @media screen and (max-width: 550px)  {
+             margin-top: -.7rem;
+        }  
      }
 
      li {
          display: flex;
          align-items: center;
          color: ${({theme}) => theme.colors.primary3}; 
-     }
+
+          @media screen and (max-width: 550px)  {
+             margin-bottom: 4rem;
+        } 
+     } 
 
      li a {
          text-decoration: none;
          margin-right: 1.5rem;
          align-items: center;
          color: ${({theme}) => theme.colors.primary3}; 
-  
-     }
 
+         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+          margin-right: .5rem;
+      } 
+     }
 `;
 
 export const RightContent = styled.div`
@@ -39,15 +71,28 @@ export const RightContent = styled.div`
      justify-content: space-between;
      row-gap: 4rem;
 
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         width: 50%;
+      } 
+
+      @media screen and (max-width: 550px) {
+        width: 100%;
+     } 
+
    span {
-      width: 50%;
-      height: 50%; 
+      width: 45%;
+      height: 45%; 
+
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         width: 98%;
+         height: 15%;   
+      } 
      
         .square1 {
             width: 5rem;
             height: 5rem; 
             background-color: ${({theme}) => theme.colors.primary3};
-            margin-bottom: 2rem;
+            margin-bottom: 1.7rem;
             border-radius: 1.1rem 1.1rem 1.1rem 1.5rem;
             position: relative;
 
@@ -58,7 +103,7 @@ export const RightContent = styled.div`
             border-radius: 0 0 0 1.1rem;
             position: absolute;
             left: 0;
-          bottom: 0rem;
+            bottom: 0rem;
 
           .square2 {
             width: 4.1rem;
@@ -79,7 +124,6 @@ export const RightContent = styled.div`
         p {
             color: #fff;
       }
-    
     }}}}
 
       h3 {
@@ -92,7 +136,4 @@ export const RightContent = styled.div`
         line-height: 1.8;
       }
    }
-
-   
-
 `;
