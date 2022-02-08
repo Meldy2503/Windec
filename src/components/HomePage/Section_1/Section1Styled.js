@@ -24,6 +24,8 @@ export const LeftContent = styled.div`
      li a {
          text-decoration: none;
          margin-right: 1.5rem;
+         align-items: center;
+         color: ${({theme}) => theme.colors.primary3}; 
   
      }
 
@@ -40,25 +42,45 @@ export const RightContent = styled.div`
    span {
       width: 50%;
       height: 50%; 
-      
-      
+     
+        .square1 {
+            width: 5rem;
+            height: 5rem; 
+            background-color: ${({theme}) => theme.colors.primary3};
+            margin-bottom: 2rem;
+            border-radius: 1.1rem 1.1rem 1.1rem 1.5rem;
+            position: relative;
 
-      div {
-        width: 5rem;
-        height: 5rem; 
-        background-color: ${({theme}) => theme.colors.primary6};
-        margin-bottom: 1rem;
-        clip-path: inset(5% 0% 15% 0% round 5rem);
-        /* border-radius: 1rem;
-        position: relative; */
+        .square3 {
+            width: 2.9rem;
+            height: 3rem; 
+            background-color: ${({theme}) => theme.colors.secondary1};
+            border-radius: 0 0 0 1.1rem;
+            position: absolute;
+            left: 0;
+          bottom: 0rem;
 
+          .square2 {
+            width: 4.1rem;
+            height: 4.2rem;
+            background-color: ${({theme}) => theme.colors.primary6}; 
+            border-radius: 0 1.1rem 0 1.3rem;
+            position: absolute;
+            top: -2rem;
+            right: -2rem;
+
+         .square4 {
+            width: 2.5rem;
+            height: 2rem;
+            position: absolute;
+            top: 1rem;
+            left: .6rem;
+            
         p {
-            color: ${({theme}) => theme.colors.tertiary2};
-            /* position: absolute;
-            bottom: 1.3rem;
-            left: 1.5rem; 
-        } */
+            color: #fff;
       }
+    
+    }}}}
 
       h3 {
         margin-bottom: 1rem;

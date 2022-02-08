@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Span = styled.span`
+export const Title = styled.span`
      display: flex;
      justify-content: space-between;
      align-items: center;

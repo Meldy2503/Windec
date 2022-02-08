@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, Nav, NavTitle, MenuIcon, Div } from "./NavbarStyled";
+import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./NavbarStyled";
 import { Button } from "../reusableComponents/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
   <NavContainer>
-      <Nav>
+      <Links>
            <NavTitle>Windec</NavTitle>
            <ul className={onIconClick ? 'openMenu' : 'closeMenu' }>
                 <li>
@@ -30,7 +30,7 @@ function Navbar() {
                 <li>
                     <Link onClick={closeMenuLink} to="/">Pricing</Link>
                 </li>
-                <Div>
+                <ContactUs>
                     <Button
                        border= "2px solid #F4F6FC33"
                        bgc= "#1C1E53"
@@ -40,13 +40,13 @@ function Navbar() {
                        padding= "1rem 2.9rem"
                        onClick={closeMenuLink}
                     >Contact us</Button>
-                </Div>
+                </ContactUs>
             </ul>
 
         <MenuIcon onClick={handleClick}>
             { onIconClick ? <AiOutlineClose /> : <FaBars /> }
         </MenuIcon>
-    </Nav> 
+    </Links> 
 </NavContainer>
   )}
 

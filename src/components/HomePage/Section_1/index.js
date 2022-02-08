@@ -9,7 +9,7 @@ import data from "./secData";
 function Section1() {
   return (
   <MainContainer>
-      <ContentContainer pt= "12rem">
+      <ContentContainer>
       <LeftContent >
               <h2>
                  How we work
@@ -26,7 +26,15 @@ function Section1() {
         {data.map((list) => {
           return (
             <span key={list.id}>
-              <div><p>{list.no}</p></div>
+              <div className="square1">
+                <div className="square3">
+                  <div className="square2">
+                    <div className="square4">
+                        <p>{list.no}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <h3>{list.title}</h3>
               <p>{list.text}</p>
            </span> )

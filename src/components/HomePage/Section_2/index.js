@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
-import { Span, LeftContent, RightContent } from "./Section2Style";
+import { Title, LeftContent, RightContent } from "./Section2Style";
 import img2 from "../../images/img2.svg";
 import img3 from "../../images/img3.svg";
 import img4 from "../../images/img4.svg";
@@ -11,13 +11,13 @@ import img4 from "../../images/img4.svg";
 function Setion2() {
   return (
     <MainContainer bgco= "#FFF">
-        <Span>
-              <h2>View our projets</h2>
+        <Title>
+              <h2>View our projects</h2>
               <li>
                   <a href="#">View more</a>
                   <CgArrowLongRight />
               </li> 
-        </Span>
+        </Title>
         <ContentContainer pt= "2.5rem">
          <LeftContent>
           <img src={img2} alt="img2" />

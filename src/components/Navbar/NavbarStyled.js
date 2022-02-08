@@ -8,7 +8,7 @@ export const NavContainer = styled.div`
   z-index: 1500;
 `;
 
-export const Nav = styled.nav`
+export const Links = styled.nav`
   max-width: 120rem;
   width: 90%;
   background-color: transparent; 
@@ -81,7 +81,7 @@ export const Nav = styled.nav`
      }
   }
 `;
-export const Div = styled.div`
+export const ContactUs = styled.div`
   margin-left: 1rem;
 `
 
