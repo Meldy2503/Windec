@@ -20,13 +20,35 @@ function Setion2() {
         </Span>
         <ContentContainer pt= "2.5rem">
          <LeftContent>
-          <span>
           <img src={img2} alt="img2" />
+          <span>
+              <div> 
+                  <h3>
+                     Workhub Office Webflow Webflow Design
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet conselit. Minus blanditiis elit.
+                  </p>
+                  <li>
+                     <a href="#">View project</a>
+                     <CgArrowLongRight />
+                  </li>
+                </div>
           </span>
           </LeftContent>
 
           <RightContent>
           <img src={img3} alt="img3" />
+          <span> <div>
+                  <h3>
+                     Unisaas Website Design
+                  </h3>
+                  <li>
+                     <a href="#">View portifolio</a>
+                     <CgArrowLongRight />
+                  </li>
+              </div>
+              </span>
           <img src={img4} alt="img4" />
           </RightContent>
           </ContentContainer>
