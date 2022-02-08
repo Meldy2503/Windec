@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainContainer, ContentContainer } from "../../reusableComponents/Container";
+import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
 import { LeftContent, RightContent } from "./Section1Styled"
 import data from "./secData";

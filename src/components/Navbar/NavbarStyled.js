@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
   background-color: ${({theme}) => theme.colors.primary2};
   position: fixed;
   height: 7.1rem;
+  z-index: 1500;
 `;
 
 export const Nav = styled.nav`
@@ -18,6 +19,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   position: relative;
   margin-top: .5rem;
+  z-index: 2000;
 
   .openMenu {
     display: none;

@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 import { GlobalStyle } from "./components/reusableComponents/GlobalStyles";
 import { ThemeProvider } from "styled-components";
-import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter  as Router } from "react-router-dom";
-import LandingPage from "./components/HomePage/LandingPage/LandingPage";
-import Section1 from "./components/HomePage/Section_1/Section1";
-import Section2 from "./components/HomePage/Section_2/Section2";
+import Navbar from "./components/Navbar/index";
+import LandingPage from "./components/HomePage/LandingPage/index";
+import Section1 from "./components/HomePage/Section_1/index";
+import Section2 from "./components/HomePage/Section_2/index";
 
 
 

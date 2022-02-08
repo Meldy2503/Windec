@@ -28,11 +28,39 @@ export const Span = styled.span`
      }
 `;
 
-export const ImageContainer = styled.div`
-     /* display: flex;
-     width: 85%;
-     max-width: 120rem;
-     margin: 0 auto;
-     justify-content: space-between;
-      */
+export const LeftContent = styled.div`
+     width: 65.5%;
+     
+      span {
+          
+      }
+     img {
+         max-width: 100%;   
+    }
 `;
+
+export const RightContent = styled.div`
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    
+    img {
+        max-width: 100%;
+    }
+`; 
+    
+    /* `;
+ export const Img1 = styled.img`
+
+    
+ `;  
+    
+     
+export const Img2 = styled.img`
+      max-width: 100%; */
+     
+
+     
+
