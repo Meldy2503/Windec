@@ -2,6 +2,7 @@ import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { Title, Container, Contents } from "../Section_3/Section3Style";
 import icon1 from "../../images/Icon1.svg";
+import data from "./Data"
 
 function Section3() {
   return (
@@ -12,13 +13,17 @@ function Section3() {
               </Title> 
 
              <Container>
-                  <Contents>
-                     <div>
-                         <img src={icon1} alt="" />
-                         <h6>Uses Client First</h6>
-                         <p>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. </p> 
-                     </div>
-                  </Contents>
+                     {data.map((items) => {
+                         return (
+                    <Contents>
+                        <div key={items.id}>
+                            <img src={items.icon} alt="icon" />
+                            <h6>{items.title}</h6>
+                            <p>{items.text}</p> 
+                        </div>
+                    </Contents>
+                         )
+                     })} 
              </Container>
 
         </MainContainer>
