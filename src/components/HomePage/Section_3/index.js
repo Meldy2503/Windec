@@ -1,7 +1,6 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { Title, Container, Contents } from "../Section_3/Section3Style";
-import icon1 from "../../images/Icon1.svg";
 import data from "./Data"
 
 function Section3() {
@@ -25,7 +24,6 @@ function Section3() {
                          )
                      })} 
              </Container>
-
         </MainContainer>
   );
 }

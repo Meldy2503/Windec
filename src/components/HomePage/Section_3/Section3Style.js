@@ -44,11 +44,11 @@ export const Container = styled.div`
       row-gap: 2rem;
       }  
 `;
+
 export const Contents = styled.div`
      width: 32%;
      background-color: #fff;
      box-shadow: .1rem .2rem .3rem #eee;
-     /* margin-top: -7rem; */
    
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
          width: 48.5%;
@@ -56,20 +56,16 @@ export const Contents = styled.div`
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
          width: 90%;
-         margin: 0 auto;
-         /* margin-top: -7rem; */
-         
+         margin: 0 auto; 
       } 
    
-   div { 
-     width: 83%;
-     margin: 0 auto;
-     padding: 6rem 0 5rem 0;
+     div { 
+        width: 83%;
+        margin: 0 auto;
+        padding: 6rem 0 5rem 0;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         width: 75%;
-         
-         
+         width: 75%; 
       } 
    
      h6 {
@@ -78,19 +74,14 @@ export const Contents = styled.div`
       font-weight: 600;  
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem;
-         
-         
+         font-size: 2rem; 
       } 
    }
    
    p {
       line-height: 1.8;
-      font-size: 1.45rem;
-      
+      font-size: 1.45rem; 
      }
-
-
    }
 `;
 

@@ -8,7 +8,7 @@ justify-content: space-between;
 margin: 0 auto;  
 padding: 10rem 0;
 
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
   display: block; 
   padding: 6rem 0 10rem 0;  
 } 
@@ -20,12 +20,8 @@ export const LeftContent = styled.div`
      width: 30%;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         width: 40%;
+         width: 70%;
       } 
-
-      @media screen and (max-width: 550px)  {
-        width: 100%;
-     } 
 
      h2 {
         margin-bottom: 2rem;
@@ -36,7 +32,7 @@ export const LeftContent = styled.div`
         margin-bottom: 2rem;
         line-height: 1.8;
 
-        @media screen and (max-width: 550px)  {
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
              margin-top: -.7rem;
         }  
      }
@@ -46,7 +42,7 @@ export const LeftContent = styled.div`
          align-items: center;
          color: ${({theme}) => theme.colors.primary3}; 
 
-          @media screen and (max-width: 550px)  {
+         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
              margin-bottom: 4rem;
         } 
      } 
@@ -72,20 +68,15 @@ export const RightContent = styled.div`
      row-gap: 4rem;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         width: 50%;
+         width: 100%;
       } 
-
-      @media screen and (max-width: 550px) {
-        width: 100%;
-     } 
 
    span {
       width: 45%;
       height: 45%; 
 
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         width: 98%;
-         height: 15%;   
+       @media screen and (max-width: 500px) {
+         width: 90%;
       } 
      
         .square1 {
@@ -127,9 +118,13 @@ export const RightContent = styled.div`
     }}}}
 
       h3 {
-        margin-bottom: 1rem;
+        margin: .5rem 0;
         font-size: 2.5rem;
         font-weight: 500;
+
+        @media screen and (max-width: 500px) {
+         font-size: 2.3rem;
+  
       }
 
       p {
