@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/index";
 import LandingPage from "./components/HomePage/LandingPage/index";
 import Section1 from "./components/HomePage/Section_1/index";
 import Section2 from "./components/HomePage/Section_2/index";
+import Section3 from "./components/HomePage/Section_3/index";
 
 
 
@@ -42,6 +43,7 @@ function App() {
            <LandingPage />
            <Section1 />
            <Section2 />
+           <Section3 />
         </Fragment>
     </ThemeProvider>
     </Router>
