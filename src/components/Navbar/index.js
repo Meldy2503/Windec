@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./NavbarStyled";
+import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./Styled";
 import { Button } from "../reusableComponents/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 
 
-function Navbar() {
+function NavBar() {
 
   const [onIconClick, setOnIconClick] = React.useState(false);
   const handleClick = () => setOnIconClick(!onIconClick);
@@ -53,4 +53,4 @@ function Navbar() {
 
   
 
-export default Navbar;
+export default NavBar;

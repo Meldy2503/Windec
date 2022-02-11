@@ -1,14 +1,14 @@
 import React from 'react';
-import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
+import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
-import { Title, LeftContent, RightContent } from "./Section2Style";
+import { Title, Container, LeftContent, RightContent } from "./Styled";
 import img2 from "../../images/img2.svg";
 import img3 from "../../images/img3.svg";
 import img4 from "../../images/img4.svg";
 
 
 
-function Setion2() {
+function ViewOurProjects() {
   return (
     <MainContainer bgco= "#FFF">
         <Title>
@@ -18,7 +18,7 @@ function Setion2() {
                   <CgArrowLongRight />
               </li> 
         </Title>
-        <ContentContainer pt= "2.5rem">
+        <Container>
          <LeftContent>
           <img src={img2} alt="img2" />
           <span>
@@ -51,9 +51,9 @@ function Setion2() {
               </span>
           <img src={img4} alt="img4" />
           </RightContent>
-          </ContentContainer>
+          </Container>
     </MainContainer>
   );
 }
 
-export default Setion2;
+export default ViewOurProjects;

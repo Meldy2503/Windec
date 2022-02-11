@@ -2,11 +2,12 @@ import { Fragment } from "react";
 import { GlobalStyle } from "./components/reusableComponents/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter  as Router } from "react-router-dom";
-import Navbar from "./components/Navbar/index";
-import LandingPage from "./components/HomePage/LandingPage/index";
-import Section1 from "./components/HomePage/Section_1/index";
-import Section2 from "./components/HomePage/Section_2/index";
-import Section3 from "./components/HomePage/Section_3/index";
+import NavBar from "./components/navBar/index";
+import LandingPage from "./components/homePage/landingPage/index";
+import HowWeWork from "./components/homePage/howWeWork/index";
+import ViewOurProjects from "./components/homePage/viewOurProjects/index";
+import Features from "./components/homePage/features/index";
+import Reviews from "./components/homePage/reviews";
 
 
 
@@ -39,11 +40,12 @@ function App() {
     <ThemeProvider theme={ theme }>
         <Fragment>
            <GlobalStyle/>
-           <Navbar />
+           < NavBar />
            <LandingPage />
-           <Section1 />
-           <Section2 />
-           <Section3 />
+           <HowWeWork />
+           <ViewOurProjects />
+           <Features />
+           <Reviews />
         </Fragment>
     </ThemeProvider>
     </Router>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
-import { Contents, LeftContent, RightContent } from "./Section1Styled"
-import data from "./secData";
+import { Contents, LeftContent, RightContent } from "./Styled"
+import data from "./Data";
 
 
 
-function Section1() {
+function HowWeWork() {
   return (
   <MainContainer>
       <Contents>
@@ -45,4 +45,4 @@ function Section1() {
   );
 }
 
-export default Section1;
+export default HowWeWork;

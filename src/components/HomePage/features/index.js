@@ -1,9 +1,9 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
-import { Title, Container, Contents } from "../Section_3/Section3Style";
+import { Title, Container, Contents } from "./Styled";
 import data from "./Data"
 
-function Section3() {
+function Features() {
   return (
         <MainContainer>
               <Title>
@@ -28,7 +28,7 @@ function Section3() {
   );
 }
 
-export default Section3;
+export default Features;
 
 
 

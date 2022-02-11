@@ -17,8 +17,6 @@ margin: ${({margin}) => margin || "none"};
       
     }
 
-  
-
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
           
           padding: ${({padding}) => padding || "1.3rem 2.9rem"};
@@ -26,8 +24,8 @@ margin: ${({margin}) => margin || "none"};
           } 
 
           @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-          
-          padding: ${({padding}) => padding || "1rem 2.9rem"};
+          padding: ${({padding}) => padding || "1rem 2.6rem"};
+        
            
           } 
 
