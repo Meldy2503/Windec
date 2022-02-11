@@ -8,6 +8,7 @@ import HowWeWork from "./components/homePage/howWeWork/index";
 import ViewOurProjects from "./components/homePage/viewOurProjects/index";
 import Features from "./components/homePage/features/index";
 import Reviews from "./components/homePage/reviews";
+import FAQ from "./components/homePage/FAQ";
 
 
 
@@ -46,6 +47,7 @@ function App() {
            <ViewOurProjects />
            <Features />
            <Reviews />
+           <FAQ />
         </Fragment>
     </ThemeProvider>
     </Router>
