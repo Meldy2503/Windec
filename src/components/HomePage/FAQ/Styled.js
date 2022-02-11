@@ -21,14 +21,39 @@ export const LeftContent = styled.div`
 export const RightContent = styled.div`
       width: 60%;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 3rem;
 
-      h5 {
-        font-size: 2.4rem;
-        font-weight: 500;
-        line-height: 1.4;
-      }
+     span  {
+        display: flex; 
+        width: 80%; 
 
+        h5 {
+            color: ${({theme}) => theme.colors.primary3}; 
+            font-size: 1.7rem; 
+            font-weight: 500;
+            margin-top: .3rem;
+        }
+
+        div {
+            padding-left: 7%;
+        }
+
+        h6 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: .7rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }}
 `;
+
+export const Icon = styled.div`
+   font-size: 2rem;
+`;
+
+
 
