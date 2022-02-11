@@ -13,9 +13,7 @@ function Reviews() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
                 </LeftContent>
                 <RightContent>
-                    <div>
                     <h5>"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h5>
-                    </div>
 
                     <Customers>
                         <img src={img5} alt="img5" />
