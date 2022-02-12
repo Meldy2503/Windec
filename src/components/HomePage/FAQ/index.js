@@ -1,6 +1,7 @@
 import React from 'react';
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
-import { LeftContent, RightContent, Icon } from '../FAQ/Styled';
+import { LeftContent, RightContent, Texts } from '../FAQ/Styled';
+import data from "./Data"
 
 
 
@@ -13,23 +14,24 @@ function FAQ() {
                     <a href="#">Contact us for more info</a>
                 </LeftContent>
                 <RightContent>
-                    <span>
-                        <h5>01</h5>
-                        <div>
-                            <h6>How much time does it take?</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-
-                    </span>
-
-                    <Icon>+</Icon>
-
-                    
+                    {data.map((item) => {
+                        return (
+                      <Texts key={item.id}>    
+                         <span>
+                            <h5>{item.no}</h5>
+                            <div>
+                                <h6>{item.question}</h6>
+                                <p>{item.answer}</p>
+                            </div>
+                         </span>
+                         <h4>+</h4>
+                      </Texts>
+                       )})}
                 </RightContent>
             </ContentContainer>
         </MainContainer>
+        
         )
-     
-}
+     }
 
 export default FAQ;

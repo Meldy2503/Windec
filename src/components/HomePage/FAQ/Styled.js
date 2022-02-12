@@ -20,15 +20,19 @@ export const LeftContent = styled.div`
 
 export const RightContent = styled.div`
       width: 60%;
+      margin-top: -2rem;
+      `;  
+
+export const Texts = styled.div`
       display: flex;
       justify-content: space-between;
       border-bottom: 2px solid #eee;
-      padding-bottom: 3rem;
-
-     span  {
-        display: flex; 
-        width: 80%; 
-
+      padding: 2rem 0 3rem 0;
+      
+      span  {
+          display: flex; 
+          width: 80%; 
+      
         h5 {
             color: ${({theme}) => theme.colors.primary3}; 
             font-size: 1.7rem; 
@@ -39,21 +43,28 @@ export const RightContent = styled.div`
         div {
             padding-left: 7%;
         }
-
+        
         h6 {
             font-size: 2rem;
             font-weight: 500;
             margin-bottom: .7rem;
         }
+        
 
         p {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
+            line-height: 1.7;
         }}
+
+        h4 {
+            font-size: 2rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+           
 `;
 
-export const Icon = styled.div`
-   font-size: 2rem;
-`;
+
 
 
 
