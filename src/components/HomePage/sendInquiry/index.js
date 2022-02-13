@@ -29,20 +29,19 @@ function SendInquiry() {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                   <form action="#">
                      <input type="text"
-                    placeholder='Your Name' /> 
+                      placeholder='Your Name' /> 
                     <input type="email"
-                    placeholder='Email' /> 
+                      placeholder='Email' /> 
                     <input type="text"
-                    placeholder='Paste your Web design URL' /> 
-                    <Button>Send an Inquiry</Button>
+                      placeholder='Paste your Web design URL' />     
+                    <Button margin= "2.5rem 0"
+                    >Send an Inquiry</Button>
                   </form>
                   <li>
                       <a href="#">Get in touch with us</a>
                       <CgArrowLongRight />
                   </li>
-
-              </div>
-            
+              </div> 
           </RightContent>
       </ContentContainer>
   </MainContainer>
