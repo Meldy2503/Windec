@@ -1,9 +1,27 @@
 import styled from "styled-components";
 
+export const Contents = styled.div`
+     max-width: 120rem;
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding-bottom: 10rem;
+
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      flex-direction: column;
+      }  
+`;
+
 export const LeftContent = styled.div`
        width: 30%;
        display: flex;
        flex-direction: column;
+
+       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+        width: 100%;
+      }  
 
        h3 {
            font-size: 2.8rem;
@@ -15,14 +33,22 @@ export const LeftContent = styled.div`
        a {
            color: ${({theme}) => theme.colors.primary3};
            text-decoration: none;
-       }
+           
+       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+          margin-top: -1rem;
+          margin-bottom: 5rem;
+      }}
 `;
 
 export const RightContent = styled.div`
       width: 60%;
       margin-top: -2rem;
-      `;  
 
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+        width: 100%;
+      }  
+      `; 
+      
 export const Texts = styled.div`
       display: flex;
       justify-content: space-between;
@@ -32,6 +58,10 @@ export const Texts = styled.div`
       span  {
           display: flex; 
           width: 80%; 
+
+          @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+           width: 85%;
+      }  
       
         h5 {
             color: ${({theme}) => theme.colors.primary3}; 
@@ -60,8 +90,7 @@ export const Texts = styled.div`
             font-size: 2rem;
             font-weight: 500;
             cursor: pointer;
-        }
-           
+        }        
 `;
 
 

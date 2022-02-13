@@ -1,6 +1,6 @@
 import React from 'react';
-import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
-import { LeftContent, RightContent, Texts } from '../FAQ/Styled';
+import { MainContainer } from "../../reusableComponents/ContainerStyled";
+import { Contents, LeftContent, RightContent, Texts } from '../FAQ/Styled';
 import data from "./Data"
 
 
@@ -14,7 +14,7 @@ function FAQ() {
 
     return (
         <MainContainer bgco= "#FFF">
-            <ContentContainer pt= "8rem">
+            <Contents>
                 <LeftContent>
                     <h3>Frequently asked questions</h3>
                     <a href="#">Contact us for more info</a>
@@ -34,7 +34,7 @@ function FAQ() {
                       </Texts>
                        )})}
                 </RightContent>
-            </ContentContainer>
+            </Contents>
         </MainContainer>
         
         )
