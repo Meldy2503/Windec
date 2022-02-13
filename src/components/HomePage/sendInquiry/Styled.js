@@ -35,6 +35,7 @@ export const LeftContent = styled.div`
 
 export const RightContent = styled.div`
   width: 50%;
+  background-color: ${({theme}) => theme.colors.primary2};
 
   
 `;
