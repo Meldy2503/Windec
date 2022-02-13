@@ -36,6 +36,18 @@ export const LeftContent = styled.div`
 export const RightContent = styled.div`
   width: 50%;
   background-color: ${({theme}) => theme.colors.primary2};
+  display: flex;
+  flex-direction: column;
+
+  div {
+    width: 75%;
+    margin: 0 auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }}
+
 
   
 `;
