@@ -36,7 +36,7 @@ export const LeftContent = styled.div`
            
        @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
           margin-top: -1rem;
-          margin-bottom: 5rem;
+          margin-bottom: 4rem;
       }}
 `;
 

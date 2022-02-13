@@ -3,7 +3,6 @@ import { LeftContent, RightContent } from "./Styled";
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
 import { Button } from "../../reusableComponents/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
-// import img6 from "../../images/img6.svg";
 
 
 
