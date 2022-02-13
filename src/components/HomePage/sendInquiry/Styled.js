@@ -13,36 +13,24 @@ export const LeftContent = styled.div`
   background-repeat: no-repeat;
   background-position: center;
          
-
-
-
-  
-
-  /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-     width: 90%;  
-  } */
-  /* div {
+    div {
          position: absolute;
-         top
-         background-color: rgba(28, 30, 83, 0.5);
-         height: 100%;
-         width: 100%; */
+         top: 10rem;
+         left: 7rem;
+         width: 70%; 
          
   h1 {
-   /* position: absolute; */
-     font-size: 3.3rem;
+     font-size: 4rem;
      line-height: 1.5; 
      color: #fff;
   }
 
   p {
-     /* position: absolute; */
-     width: 85%;
      font-weight: 400;
      line-height: 1.7;
      margin-top: 2.5rem;
      color: #fff;
-  }
+  }}
 `;
 
 export const RightContent = styled.div`
