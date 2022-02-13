@@ -64,6 +64,7 @@ export const Links = styled.nav`
   li a {
     text-decoration: none;
     color: ${({theme}) => theme.colors.primary5};
+
   
     &:hover {
       border-bottom: 2px solid ${({theme}) => theme.colors.primary5};
@@ -76,6 +77,16 @@ export const Links = styled.nav`
         display: block;
         margin-bottom: .5rem;
 
+        /* li a:last-child {
+          padding-bottom: 4rem;
+        } */
+
+        /* .button {
+          border: none;
+          background-color: red;
+          
+        } */
+
         &:hover {
            color: ${({theme}) => theme.colors.secondary1};
        }
@@ -84,7 +95,7 @@ export const Links = styled.nav`
 `;
 export const ContactUs = styled.div`
   margin-left: 1rem;
-`
+`;
 
 export const NavTitle = styled.h3`
      letter-spacing: .7rem;

@@ -30,7 +30,10 @@ function NavBar() {
                 <li>
                     <Link onClick={closeMenuLink} to="/">Pricing</Link>
                 </li>
-                <ContactUs>
+                <li>
+                    <Link onClick={closeMenuLink} to="/">Contact us</Link>
+                </li>
+                {/* <ContactUs>
                     <Button
                        border= "2px solid #F4F6FC33"
                        bgc= "#1C1E53"
@@ -40,7 +43,7 @@ function NavBar() {
                        padding= "1rem 2.9rem"
                        onClick={closeMenuLink}
                     >Contact us</Button>
-                </ContactUs>
+                </ContactUs> */}
             </ul>
 
         <MenuIcon onClick={handleClick}>

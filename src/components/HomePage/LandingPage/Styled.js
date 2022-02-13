@@ -12,8 +12,14 @@ export const LeftContent = styled.div`
   }
 
   h1 {
+     font-size: 4rem;
      line-height: 1.5; 
      color: #fff;
+
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+      font-size: 3rem;
+     
+  }
   }
 
   p {

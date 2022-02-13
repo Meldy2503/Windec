@@ -4,6 +4,7 @@ export const MainContainer = styled.div`
    background-color: ${({bgco}) => bgco || "#F4F6FC"};
    color: ${({co}) => co || "#282938"}; 
    width: 100%;
+   
 `;
 
 export const ContentContainer = styled.div`
@@ -15,5 +16,6 @@ export const ContentContainer = styled.div`
    margin: 0 auto;  
    padding-top: ${({pt}) => pt || "10rem"};
    padding-bottom: ${({pb}) => pb || "10rem"};
+   
   
  `;
