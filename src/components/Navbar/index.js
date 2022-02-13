@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./Styled";
-import { Button } from "../reusableComponents/ButtonStyled";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
@@ -31,19 +30,10 @@ function NavBar() {
                     <Link onClick={closeMenuLink} to="/">Pricing</Link>
                 </li>
                 <li>
+                    <ContactUs>
                     <Link onClick={closeMenuLink} to="/">Contact us</Link>
+                    </ContactUs>
                 </li>
-                {/* <ContactUs>
-                    <Button
-                       border= "2px solid #F4F6FC33"
-                       bgc= "#1C1E53"
-                       color= "#fff" 
-                       bgh= "#1C1E53"
-                       bh= "2px solid #F4F6FC"
-                       padding= "1rem 2.9rem"
-                       onClick={closeMenuLink}
-                    >Contact us</Button>
-                </ContactUs> */}
             </ul>
 
         <MenuIcon onClick={handleClick}>

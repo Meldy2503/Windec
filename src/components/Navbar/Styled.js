@@ -18,7 +18,6 @@ export const Links = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: .5rem;
   z-index: 2000;
 
   .openMenu {
@@ -63,30 +62,20 @@ export const Links = styled.nav`
 
   li a {
     text-decoration: none;
-    color: ${({theme}) => theme.colors.primary5};
+    color: ${({theme}) => theme.colors.tertiary2};
 
   
     &:hover {
-      border-bottom: 2px solid ${({theme}) => theme.colors.primary5};
-      padding-bottom: .2rem;
-    }
-
+     color: #fff;
+   }
+    
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         text-align: left;
         border-bottom: 1px solid ${({theme}) => theme.colors.tetiary1};
         display: block;
         margin-bottom: .5rem;
 
-        /* li a:last-child {
-          padding-bottom: 4rem;
-        } */
-
-        /* .button {
-          border: none;
-          background-color: red;
-          
-        } */
-
+    
         &:hover {
            color: ${({theme}) => theme.colors.secondary1};
        }
@@ -94,7 +83,24 @@ export const Links = styled.nav`
   }
 `;
 export const ContactUs = styled.div`
-  margin-left: 1rem;
+  background-color: ${({theme}) => theme.colors.primary2};
+  border: 2px solid #F4F6FC33;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+
+     &:hover {
+      border: 2px solid #FFF;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+  background-color: transparent;
+  border: none;
+  padding: 0rem;
+  
+     &:hover {
+      color: ${({theme}) => theme.colors.secondary1};
+      border: none;
+  }}
 `;
 
 export const NavTitle = styled.h3`
