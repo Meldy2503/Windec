@@ -10,7 +10,8 @@ import Features from "./components/homePage/features/index";
 import Reviews from "./components/homePage/reviews/index";
 import FAQ from "./components/homePage/FAQ/index";
 import SendInquiry from "./components/homePage/sendInquiry/index";
-import OurBlog from "./components/homePage/ourBlog";
+import OurBlog from "./components/homePage/ourBlog/index";
+import Footer from "./components/footer/index";
 
 
 const theme = {
@@ -51,6 +52,7 @@ function App() {
            <FAQ />
            <SendInquiry />
            <OurBlog />
+           <Footer />
         </Fragment>
     </ThemeProvider>
     </Router>
