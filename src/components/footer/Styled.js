@@ -24,19 +24,12 @@ export const LeftContent = styled.div`
         font-size: 2rem;
         margin-bottom: .5rem;
         margin-top: -2.5rem;
-  }
-     
-  }
-
-     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-      font-size: 3rem;   
-  }} */
+  }}
 
   p {
       font-size: 1.6rem;
-      opacity: 0.8;
-      
-  }
+      opacity: 0.8;  
+    }
 
   span {
     display: flex;
@@ -51,26 +44,23 @@ export const LeftContent = styled.div`
     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
         flex-direction: column;
         padding: 1rem 2rem 0 2rem;
-    
+        width: 37%;
   }
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        padding-top: 1rem;
-       
+        padding-top: 1rem;  
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
         flex-direction: column;
         padding: 1rem 0 0 1.5rem;
-    
   }
 
-
     div { 
-        width: 40%;
+        width: 35%;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
         width: 100%;
@@ -79,21 +69,16 @@ export const LeftContent = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         width: 100%;
-
-  }
-
+     }
 
         h6 {
             font-size: 1.8rem;
-            font-weight: 500;
-            
+            font-weight: 500;  
         }
 
         p { 
             font-size: 1.5rem;
-          
-        }
-    }
+    }}
   }
 `;
 
@@ -106,24 +91,18 @@ export const RightContent = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
      width: 100%;
-     margin: 0 auto; 
-     
+     margin: 0 auto;   
   }
 
   h1 {
      font-size: 3rem;
      margin-bottom: 1.5rem;
+     font-weight: 600;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         font-size: 2.5rem;
         margin: 1.5rem 0 .1rem 0;
-  }
-     
-  }
-
-     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-      font-size: 3rem;   
-  }} */
+  }}
 
   p {
       font-size: 1.6rem;
@@ -131,34 +110,22 @@ export const RightContent = styled.div`
       margin-bottom: 2.5rem;
  
        @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-        margin-bottom: 7rem; 
+          margin-bottom: 7rem; 
   }
 
-  @media screen and (max-width: 400px) {
-    margin-bottom: 12rem; 
-    
-  }
-      
-  }
+            @media screen and (max-width: 500px) {
+              margin-bottom: 12rem; 
+       }}
 
   span {
     margin-bottom: 2rem;
 
-    
     .icons {
        padding-right: 1.5rem;
        color: #fff;
        font-size: 3rem;
        cursor: pointer;
-
-       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-        margin-top: -9rem; 
-        
-  }
-
-    }
-
-  }
+    }}
 `;
 
 export const CopyRight = styled.p`
@@ -169,7 +136,6 @@ export const CopyRight = styled.p`
 
     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       display: none;
-  }
-    
+  }   
 `;
 

@@ -17,10 +17,8 @@ export const LeftContent = styled.div`
      color: #fff;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-      font-size: 3rem;
-     
-  }
-  }
+      font-size: 3rem; 
+  }}
 
   p {
      width: 85%;
@@ -47,11 +45,11 @@ export const LeftContent = styled.div`
         align-items: center;
         list-style: none;
         padding-left: 2.5rem;
+        color: #fff;
        
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.smobile}) {
         margin-top: 2.3rem;
-        align-items: center;
-       
+        align-items: center; 
      }}
 
      li a {

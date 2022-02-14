@@ -7,10 +7,15 @@ import data from "./Data"
 
 function FAQ() {
     
-    const [ onItemClick, setOnItemClick ] = React.useState(false)
-    const handleClick = () => {
-        setOnItemClick(!onItemClick)
+    const [ onClick, setOnClick ] = React.useState({})
+    const handleClick = (index) => () => {
+        setOnClick(state => ({
+            ...state,
+            [index]: !state[index]
+        }))
+       
     };
+
 
     return (
         <MainContainer bgco= "#FFF">
@@ -20,17 +25,17 @@ function FAQ() {
                     <a href="#">Contact us for more info</a>
                 </LeftContent>
                 <RightContent>
-                    {data.map((item, id) => {
+                    {data.map((item, index) => {
                         return (
                       <Texts key={item.id}>    
                          <span>
                             <h5>{item.no}</h5>
                             <div>
                                 <h6>{item.question}</h6>
-                                { onItemClick && <p>{item.answer}</p>}
+                                {onClick[index] && <p>{item.answer}</p>}
                             </div>
                          </span>
-                         <h4 onClick={handleClick}>{onItemClick ? "x" : "+"}</h4>
+                         <h4 onClick={handleClick(index)}>{onClick[index] ? "x" : "+"}</h4>
                       </Texts>
                        )})}
                 </RightContent>
