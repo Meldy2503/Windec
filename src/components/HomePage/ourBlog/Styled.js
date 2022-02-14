@@ -5,14 +5,13 @@ export const Title = styled.div`
    max-width: 120rem;
    width: 90%;
    margin: 0 auto; 
-   padding: 10rem 0 3rem 0; 
+
   
    
    h2 {
-      font-size: 3.6rem;
+      font-size: 3.3rem;
       font-weight: 600;
-      line-height: 1.3;
-      padding: 1.3rem 0;
+      margin-bottom: 1rem;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
          font-size: 3.3rem;
@@ -40,9 +39,9 @@ export const Container = styled.div`
 `;
 
 export const Contents = styled.div`
-     width: 32%;
+     width: 31.5%;
      background-color: #fff;
-     box-shadow: .1rem .2rem .3rem #eee;
+    
    
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
          width: 48.5%;
@@ -54,28 +53,58 @@ export const Contents = styled.div`
       } 
    
      div { 
-        width: 83%;
+        width: 100%;
         margin: 0 auto;
-        padding: 6rem 0 5rem 0;
+        padding-top: 3rem;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
          width: 75%; 
       } 
+
+      img { 
+          max-width: 100%;
+      }
    
-     h6 {
-      font-size: 2.2rem;
-      margin: 1rem 0;
-      font-weight: 600;  
+       h6 {
+        margin: 1.7rem 0;
+        font-weight: 400; 
+        font-size: 1.6rem; 
       
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
          font-size: 2rem; 
-      } 
+      }  */
    }
+
+      h5 {
+       font-size: 2rem;
+       font-weight: 500; 
+      }
    
-   p {
-      line-height: 1.8;
-      font-size: 1.45rem; 
+      p {
+        margin: 1.7rem 0 2.5rem 0;
+        line-height: 1.7;
+        font-size: 1.6rem; 
+     }
+
+     li {
+         display: flex;
+         align-items: center;
+
+         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+             margin-bottom: 4rem;
+        } 
+     } 
+
+     li a {
+         text-decoration: none;
+         margin-right: 1.5rem;
+         align-items: center;
+
+         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+          margin-right: .5rem;
+      } 
      }
    }
+
 `;
 

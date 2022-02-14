@@ -1,11 +1,12 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { Title, Container, Contents } from "./Styled";
-import data from "./Data"
+import data from "./Data";
+import { CgArrowLongRight } from "react-icons/cg";
 
 function OurBlog() {
   return (
-        <MainContainer>
+        <MainContainer bgco="#fff">
               <Title>
                   <h2>Our blog</h2>
               </Title> 
@@ -15,9 +16,14 @@ function OurBlog() {
                          return (
                     <Contents>
                         <div key={items.id}>
-                            <img src={items.icon} alt="icon" />
-                            <h6>{items.title}</h6>
-                            <p>{items.text}</p> 
+                            <img src={items.img} alt="image" />
+                            <h6>{items.date}</h6>
+                            <h5>{items.title}</h5>
+                            <p>{items.text}</p>
+                            <li>
+                                 <a href="#">Read More</a>
+                                 <CgArrowLongRight />
+                            </li> 
                         </div>
                     </Contents>
                          )
