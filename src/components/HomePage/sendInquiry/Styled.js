@@ -8,7 +8,6 @@ export const LeftContent = styled.div`
   width: 49%;
   position: relative;
   background-image: linear-gradient(45deg, rgba(28, 30, 83, 0.5), rgba(28, 30, 83, 0.6)), url(${img6});
-  /* height: 70rem; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

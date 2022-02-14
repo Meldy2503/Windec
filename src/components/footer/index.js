@@ -1,8 +1,8 @@
 import React from 'react';
-import { LeftContent, RightContent } from "./Styled";
+import { LeftContent, RightContent, CopyRight } from "./Styled";
 import { MainContainer, ContentContainer } from "../reusableComponents/ContainerStyled";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
+
 
 
 
@@ -11,7 +11,8 @@ function Footer() {
   return (
   <MainContainer bgco= "#1C1E53">
       <ContentContainer pb="0"
-      pt="8rem">
+      pt="7rem"
+      position= "relative">
           <LeftContent>
               <div>
                    <h1>
@@ -47,7 +48,7 @@ function Footer() {
                   <FaInstagram className='icons'/>
                   <FaLinkedin className='icons'/>
               </span> 
-              <p>Copyright 2022, Windec.com </p>
+              <CopyRight>Copyright 2022, Windec.com </CopyRight>
           </RightContent>
       </ContentContainer>
   </MainContainer>

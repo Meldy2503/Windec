@@ -1,18 +1,5 @@
 import styled from "styled-components";
 
-export const Contents = styled.div`
-     max-width: 120rem;
-     width: 90%;
-     margin: 0 auto;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     padding: 10rem 0;
-
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      flex-direction: column;
-      }  
-`;
 
 export const LeftContent = styled.div`
        width: 30%;

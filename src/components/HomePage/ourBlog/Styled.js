@@ -32,10 +32,6 @@ export const Container = styled.div`
      flex-direction: row;
      justify-content: space-between;
      padding-bottom: 10rem;
-
-     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      row-gap: 2rem;
-      }   */
 `;
 
 export const Contents = styled.div`
@@ -69,10 +65,6 @@ export const Contents = styled.div`
         margin: 1.5rem 0;
         font-weight: 400; 
         font-size: 1.6rem; 
-      
-      /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem; 
-      }  */
    }
 
       h5 {
@@ -89,20 +81,12 @@ export const Contents = styled.div`
      li {
          display: flex;
          align-items: center;
-
-         /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-             margin-bottom: 2rem;
-        }  */
      } 
 
      li a {
          text-decoration: none;
          margin-right: 1.5rem;
          align-items: center;
-
-         /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-          margin-right: .5rem;
-      }  */
      }
    }
 

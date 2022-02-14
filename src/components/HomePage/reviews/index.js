@@ -1,13 +1,13 @@
 import React from 'react';
-import { MainContainer } from "../../reusableComponents/ContainerStyled";
-import { Contents, LeftContent, RightContent, Customers } from '../reviews/Styled';
+import { ContentContainer, MainContainer } from "../../reusableComponents/ContainerStyled";
+import { LeftContent, RightContent, Customers } from '../reviews/Styled';
 import img5 from "../../images/img5.svg";
 
 
 function Reviews() {
     return (
         <MainContainer bgco= "#FFF">
-            <Contents>
+            <ContentContainer>
                 <LeftContent>
                     <h3>What our clients say about us</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
@@ -23,7 +23,7 @@ function Reviews() {
                         </div>
                     </Customers>
                 </RightContent>
-            </Contents>
+            </ContentContainer>
         </MainContainer>
         )
      
