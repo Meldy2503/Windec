@@ -2,6 +2,7 @@ import React from 'react';
 import { LeftContent, RightContent } from "./Styled";
 import { MainContainer, ContentContainer } from "../reusableComponents/ContainerStyled";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
 
 
 
@@ -9,7 +10,8 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 function Footer() {
   return (
   <MainContainer bgco= "#1C1E53">
-      <ContentContainer>
+      <ContentContainer pb="0"
+      pt="8rem">
           <LeftContent>
               <div>
                    <h1>
@@ -31,6 +33,7 @@ function Footer() {
                   </div>
               </span>
           </LeftContent>
+
           <RightContent>
               <h1>
                  Lets Talk!
@@ -39,10 +42,10 @@ function Footer() {
               We are always open to discuss your projects, improve your online presence and help with your web design challenges.
               </p>
               <span>
-                  <FaFacebook color={"#fff"}/>
-                  <FaTwitter color={"#fff"}/>
-                  <FaInstagram color={"#fff"}/>
-                  <FaLinkedin color={"#fff"}/>
+                  <FaFacebook className='icons'/>
+                  <FaTwitter className='icons'/>
+                  <FaInstagram className='icons'/>
+                  <FaLinkedin className='icons'/>
               </span> 
               <p>Copyright 2022, Windec.com </p>
           </RightContent>

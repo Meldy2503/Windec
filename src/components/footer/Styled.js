@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 
+
 export const LeftContent = styled.div`
   display: flex;
   flex-direction: column; 
@@ -36,16 +37,17 @@ export const LeftContent = styled.div`
     display: flex;
     background-color: ${({theme}) => theme.colors.secondary1};
     color: ${({theme}) => theme.colors.primary1};
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    width: 120%;
     padding: 2rem;
+    /* margin-top: 1rem; */
 
     div { 
         width: 45%;
 
         h6 {
             font-size: 1.8rem;
-            font-weight:
+            font-weight: 500;
         }
     }
   }
@@ -56,6 +58,7 @@ export const RightContent = styled.div`
   flex-direction: column; 
   width: 35%;
   color: #fff;
+  margin-right: 10rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
      width: 90%; 
@@ -74,5 +77,20 @@ export const RightContent = styled.div`
   p {
       font-size: 1.6rem;
       opacity: 0.8;
+      margin-bottom: 2.5rem;
+  }
+
+  span {
+    margin-bottom: 5rem;
+
+    .icons {
+       padding-right: 1.5rem;
+       color: #fff;
+       font-size: 3rem;
+       cursor: pointer;
+
+    }
+
   }
 `;
+
