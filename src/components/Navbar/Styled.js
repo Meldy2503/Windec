@@ -29,7 +29,7 @@ export const Links = styled.nav`
       background-color: #000033;
       opacity: 0.9;
       position: absolute;
-      top: 6.5rem;
+      top: 7.1rem;
       right: -10%;
       width: 60%;
       height: 100vh;

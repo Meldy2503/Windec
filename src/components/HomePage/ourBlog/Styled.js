@@ -33,9 +33,9 @@ export const Container = styled.div`
      justify-content: space-between;
      padding-bottom: 10rem;
 
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       row-gap: 2rem;
-      }  
+      }   */
 `;
 
 export const Contents = styled.div`
@@ -57,8 +57,8 @@ export const Contents = styled.div`
         margin: 0 auto;
         padding-top: 3rem;
 
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         width: 75%; 
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+        padding-top: 5rem; 
       } 
 
       img { 
@@ -66,7 +66,7 @@ export const Contents = styled.div`
       }
    
        h6 {
-        margin: 1.7rem 0;
+        margin: 1.5rem 0;
         font-weight: 400; 
         font-size: 1.6rem; 
       
@@ -81,7 +81,7 @@ export const Contents = styled.div`
       }
    
       p {
-        margin: 1.7rem 0 2.5rem 0;
+        margin: 1.5rem 0 2rem 0;
         line-height: 1.7;
         font-size: 1.6rem; 
      }
@@ -90,9 +90,9 @@ export const Contents = styled.div`
          display: flex;
          align-items: center;
 
-         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-             margin-bottom: 4rem;
-        } 
+         /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+             margin-bottom: 2rem;
+        }  */
      } 
 
      li a {
@@ -100,9 +100,9 @@ export const Contents = styled.div`
          margin-right: 1.5rem;
          align-items: center;
 
-         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
           margin-right: .5rem;
-      } 
+      }  */
      }
    }
 
