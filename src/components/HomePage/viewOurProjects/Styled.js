@@ -12,8 +12,16 @@ export const Title = styled.span`
      h2 {
         margin-bottom: 2rem;
         font-size: 3.3rem;
-       
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+           font-size: 2.8rem;
+         } 
+   
+         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+           font-size: 2rem;
+         } 
      }
+
+
      li {
          display: flex;
          align-items: center;
@@ -46,7 +54,7 @@ export const LeftContent = styled.div`
      position: relative;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
       } 
 
@@ -109,6 +117,7 @@ export const RightContent = styled.div`
         flex-direction: row;
         flex-wrap: nowrap;
         margin: 0 auto;
+        width: 100%;
       } 
 
     span {
@@ -116,13 +125,21 @@ export const RightContent = styled.div`
           right: 0;
           top: 0; 
           width: 100%;
-          height: 100%;
+          height: 48%;
           background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.5) 103.96%);
+
+          @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {    
+             width: 48%;
+             height: 100%;
+             position: absolute;
+             left: 0;
+             top: 0; 
+      } 
 
         div {
            padding-top: 8rem;
            margin: 0 auto;
-           width: 70%;
+           /* width: 50%; */
          
           h3 {
               margin-bottom: 1rem;
@@ -143,9 +160,17 @@ export const RightContent = styled.div`
               color: ${({theme}) => theme.colors.secondary2}; 
             }
         }}
+
+        img {
+
+        }
     
-    img {
+    
+    .img4 {
         max-width: 100%;
+        height: 3rem;
+      
+        
     }
 `; 
     

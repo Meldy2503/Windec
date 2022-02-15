@@ -16,7 +16,12 @@ export const LeftContent = styled.div`
            font-weight: 600;
            line-height: 1.3;
            margin-bottom: 1.5rem;
+
+           @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+            font-size: 2.2rem;
+          }  
        }
+
 
        a {
            color: ${({theme}) => theme.colors.primary3};
@@ -66,6 +71,10 @@ export const Texts = styled.div`
             font-size: 2rem;
             font-weight: 500;
             margin-bottom: .7rem;
+
+            @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+            font-size: 1.8rem;
+          }  
         }
         
 

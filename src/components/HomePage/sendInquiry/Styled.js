@@ -78,6 +78,11 @@ export const RightContent = styled.div`
       color: #fff;
       font-size: 2.8rem;
       font-weight: 500;
+
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+        font-size: 2.2rem;
+    } 
+
     }
 
     p {

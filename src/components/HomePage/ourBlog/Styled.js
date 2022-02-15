@@ -14,11 +14,13 @@ export const Title = styled.div`
       margin-bottom: 1rem;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 3.3rem;
+         font-size: 2.8rem;
+         margin-bottom: .5rem;
       } 
 
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 2.8rem;
+      @media screen and (max-width: ${({theme}) => theme.mediaQuerymobile}) {
+         font-size: 2rem;
+      
       } 
    }
 `;
@@ -32,6 +34,10 @@ export const Container = styled.div`
      flex-direction: row;
      justify-content: space-between;
      padding-bottom: 10rem;
+
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+        padding-bottom: 5rem;
+    } 
 `;
 
 export const Contents = styled.div`
@@ -58,7 +64,7 @@ export const Contents = styled.div`
       } 
 
       img { 
-          max-width: 100%;
+          max-width: 100%;    
       }
    
        h6 {
@@ -70,12 +76,23 @@ export const Contents = styled.div`
       h5 {
        font-size: 2rem;
        font-weight: 500; 
+
+       
+       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+          font-size: 1.8rem; 
+      } 
       }
    
       p {
         margin: 1.5rem 0 2rem 0;
         line-height: 1.7;
         font-size: 1.6rem; 
+
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+         margin: 1rem 0 1.5rem 0;
+        line-height: 1.5;
+
+      } 
      }
 
      li {

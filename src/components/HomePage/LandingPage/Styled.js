@@ -12,13 +12,20 @@ export const LeftContent = styled.div`
   }
 
   h1 {
-     font-size: 4rem;
+     font-size: 3.5rem;
      line-height: 1.5; 
      color: #fff;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
       font-size: 3rem; 
+  }
+
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      font-size: 2.5rem; 
+      margin-top: 5rem;
   }}
+
+
 
   p {
      width: 85%;

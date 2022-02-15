@@ -20,5 +20,7 @@ export const ContentContainer = styled.div`
    
    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       flex-direction: column;
+      padding-top: ${({mpt}) => mpt || "5rem"};
+      padding-bottom: ${({mpb}) => mpb || "5rem"};
       }  
  `;

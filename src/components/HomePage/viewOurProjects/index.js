@@ -38,8 +38,9 @@ function ViewOurProjects() {
           </LeftContent>
 
           <RightContent>
-          <img src={img3} alt="img3" />
-          <span> <div>
+          <img classname="img3" src={img3} alt="img3" />
+          <span> 
+             <div>
                   <h3>
                      Unisaas Website Design
                   </h3>
@@ -48,8 +49,8 @@ function ViewOurProjects() {
                      <CgArrowLongRight />
                   </li>
               </div>
-              </span>
-          <img src={img4} alt="img4" />
+            </span>
+          <img classname="img4" src={img4} alt="img4" />
           </RightContent>
           </Container>
     </MainContainer>

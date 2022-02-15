@@ -6,25 +6,29 @@ export const Title = styled.div`
    max-width: 120rem;
    width: 90%;
    margin: 0 auto; 
-   padding: 10rem 0 3rem 0; 
+   padding: 10rem 0 3rem 0;
+   
+   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      padding: 5rem 0 2rem 0;
+      } 
   
    
    h2 {
-      font-size: 3.6rem;
+      font-size: 3.3rem;
       font-weight: 600;
-      width: 45%;
+      width: 50%;
       margin: 0 auto; 
       line-height: 1.3;
       padding: 1.3rem 0;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         width: 70%;
-         font-size: 3.3rem;
+         width: 60%;
+         font-size: 3rem;
       } 
 
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 2.8rem;
-         width: 75%;
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+         font-size: 2rem;
+         width: 80%;
       } 
    }
 `;
@@ -74,7 +78,7 @@ export const Contents = styled.div`
       font-weight: 600;  
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem; 
+         font-size: 1.7rem; 
       } 
    }
    

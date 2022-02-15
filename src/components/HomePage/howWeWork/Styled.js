@@ -12,6 +12,11 @@ padding: 10rem 0;
   display: block; 
   padding: 6rem 0 10rem 0;  
 } 
+
+@media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+  display: block; 
+  padding: 5rem 0;  
+} 
 `;
 
 export const LeftContent = styled.div`
@@ -26,6 +31,14 @@ export const LeftContent = styled.div`
      h2 {
         margin-bottom: 2rem;
         font-size: 3.3rem;
+ 
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         font-size: 2.8rem;
+        } 
+
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+         font-size: 2rem;
+      } 
      }
 
      p {
@@ -122,10 +135,15 @@ export const RightContent = styled.div`
         font-size: 2.5rem;
         font-weight: 500;
 
-        @media screen and (max-width: 500px) {
-         font-size: 2.3rem;
-  
-      }
+        @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         font-size: 2rem;
+         font-weight: 600;
+      } 
+
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+         font-size: 1.8rem;
+      } }
+
 
       p {
         line-height: 1.8;
