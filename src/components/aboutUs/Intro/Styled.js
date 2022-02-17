@@ -5,27 +5,37 @@ export const LeftContent = styled.div`
   display: flex;
   flex-direction: column; 
   width: 45%;
+  margin-top: 3rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-     width: 90%; 
+     width: 100%; 
   }
 
 
   div {
      display: flex;
      flex-direction: column;
-     margin-top: 3.5rem;
      width: 90%;
      font-weight: 500;
+
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     width: 100%; 
+  }
+
 
   h6 {
     font-size: 1.8rem; 
     font-weight: 500;
     margin-bottom: 1.5rem;
+
+    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      margin-bottom: -3rem;
+      margin-top: 5rem;
+  }
   }    
 
   h1 {
-     font-size: 4.5rem;
+     font-size: 4rem;
      line-height: 1.4; 
      font-weight: 600;
 
@@ -34,7 +44,7 @@ export const LeftContent = styled.div`
   }
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      font-size: 2.5rem; 
+      font-size: 3rem; 
       margin-top: 5rem;
   }}
 
@@ -42,13 +52,17 @@ export const LeftContent = styled.div`
      width: 85%;
      font-weight: 400;
      line-height: 1.7;
-     margin-top: 2.5rem;
-  }  
-     }
+     margin-top: 2rem;
+
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     width: 100%; 
+  }
+  }}
 `;
 
 export const RightContent = styled.div`
   width: 50%;
+  margin-top: 3rem;
 
   img {
   max-width: 100%;
