@@ -12,19 +12,17 @@ function LandingPage() {
   <MainContainer bgco= "#1C1E53">
       <ContentContainer pt= "14rem">
           <LeftContent>
+              <div>
+              <h6>
+                  About us
+              </h6>
               <h1>
-                 Building stellar websites for early startups 
+                   Our designs solve problems
               </h1>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia blanditiis adipisicing elit.
-              </p>
-              <span>
-                  <Button>View our work</Button>
-                  <li>
-                      <a href="#">View Pricing</a>
-                      <CgArrowLongRight />
-                  </li>
-              </span>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+               </p>
+              </div>
           </LeftContent>
           <RightContent>
                 <img src={img1} alt="img1" />
