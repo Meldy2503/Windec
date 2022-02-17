@@ -43,11 +43,7 @@ export const Links = styled.nav`
       justify-content: space-between;
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 6.2rem;
-      left: -100%;
+      display: none;
     }
   }
 
