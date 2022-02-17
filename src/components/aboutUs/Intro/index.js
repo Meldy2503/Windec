@@ -1,15 +1,13 @@
 import React from 'react';
 import { LeftContent, RightContent } from "./Styled";
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
-import { Button } from "../../reusableComponents/ButtonStyled";
-import { CgArrowLongRight } from "react-icons/cg";
-import img1 from "../../images/img1.svg";
+import img10 from "../../images/img10.svg";
 
 
 
-function LandingPage() {
+function Intro() {
   return (
-  <MainContainer bgco= "#1C1E53">
+  <MainContainer bgco= "#fff">
       <ContentContainer pt= "14rem">
           <LeftContent>
               <div>
@@ -25,12 +23,12 @@ function LandingPage() {
               </div>
           </LeftContent>
           <RightContent>
-                <img src={img1} alt="img1" />
+                <img src={img10} alt="img1" />
           </RightContent>
       </ContentContainer>
   </MainContainer>
   )
 }
 
-export default LandingPage;
+export default Intro;
 

@@ -13,27 +13,24 @@ export const LeftContent = styled.div`
 
   div {
      display: flex;
-     align-items: center;
-     flex-direction: row;
+     flex-direction: column;
      margin-top: 3.5rem;
+     width: 90%;
      font-weight: 500;
 
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.smobile}) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
   h6 {
-    font-size: 2rem; 
+    font-size: 1.8rem; 
+    font-weight: 500;
+    margin-bottom: 1.5rem;
   }    
 
   h1 {
-     font-size: 3.5rem;
-     line-height: 1.5; 
-     color: #fff;
+     font-size: 4.5rem;
+     line-height: 1.4; 
+     font-weight: 600;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-      font-size: 3rem; 
+      font-size: 3.5rem; 
   }
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
@@ -41,14 +38,11 @@ export const LeftContent = styled.div`
       margin-top: 5rem;
   }}
 
-
-
   p {
      width: 85%;
      font-weight: 400;
      line-height: 1.7;
      margin-top: 2.5rem;
-     color: ${({theme}) => theme.colors.tertiary2};
   }  
      }
 `;
