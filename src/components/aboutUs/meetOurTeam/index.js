@@ -7,7 +7,7 @@ function MeetOurTeam() {
   return (
         <MainContainer>
               <Title>
-                  <h2>The process we follow</h2>
+                  <h2>Meet our team</h2>
               </Title> 
 
              <Container>
@@ -15,7 +15,8 @@ function MeetOurTeam() {
                          return (
                     <Contents>
                         <div key={items.id}>
-                            <h6>{items.title}</h6>
+                            <img src={items.img} alt="img" />
+                            <h6>{items.name}</h6>
                             <p>{items.text}</p> 
                         </div>
                     </Contents>

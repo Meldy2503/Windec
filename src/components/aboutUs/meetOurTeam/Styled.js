@@ -5,14 +5,16 @@ export const Title = styled.div`
    text-align: center;
    max-width: 120rem;
    width: 90%;
-   margin: 0 auto; 
+   margin: 0 auto;  
+   padding-top: 10rem;
    
    h2 {
       font-size: 3.3rem;
       font-weight: 600;
-      width: 80%;
+      width: 80%; 
       margin: 0 auto; 
       line-height: 1.3;
+      margin-bottom: 4rem;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
          font-size: 2.5rem;
@@ -34,6 +36,7 @@ export const Container = styled.div`
      row-gap: 2.5rem;
      justify-content: space-between;
      padding-bottom: 10rem;
+     text-align: center;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       row-gap: 2rem;
@@ -58,39 +61,33 @@ export const Contents = styled.div`
      div { 
         width: 75%;
         margin: 0 auto;
-        padding-top: 3rem;
+        padding: 3rem 0;
         
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
             width: 85%; 
-            padding-top: 0;
         } 
 
         
         img {
-            position: absolute;
-
-            @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-                display: none;      
-      }}
+             max-width: 100%;     
+      }
         
         
         h6 {
-            font-size: 2.2rem;
-            padding: 3.5rem 0 1rem 0;
-            margin-top: 1.3rem;
-            font-weight: 600;
+            font-size: 2rem;
+            margin-top: 1.2rem;
+            font-weight: 500;
             
             
             @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-                font-size: 1.7rem; 
-                border-top: none;
+                font-size: 1.8rem; 
                 padding: 0;
                 margin-top: 0;        
       }}
    
    p {
       line-height: 1.8;
-      font-size: 1.45rem; 
+      font-size: 1.5rem; 
      }}
 `;
 
