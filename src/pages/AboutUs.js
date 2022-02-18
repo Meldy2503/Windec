@@ -4,6 +4,7 @@ import WhoWeAre from "../components/aboutUs/whoWeAre/index";
 import OurProcess from "../components/aboutUs/ourProcess/index";
 import MissionVission from "../components/aboutUs/missionVision/index";
 import Benefits from "../components/aboutUs/benefits/index";
+import MeetOurTeam from "../components/aboutUs/meetOurTeam/index";
 
 
 const AboutUs = () => {
@@ -14,6 +15,7 @@ const AboutUs = () => {
            <OurProcess />
            <MissionVission />
            <Benefits />
+           <MeetOurTeam />
        </div>
    )
 }
