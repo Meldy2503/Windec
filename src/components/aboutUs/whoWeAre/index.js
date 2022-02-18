@@ -1,5 +1,5 @@
 import React from 'react';
-import { LeftContent, RightContent } from "./Styled";
+import { LeftContent, RightContent, Texts, ImgContainer } from "./Styled";
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
 import img11 from "../../images/img11.svg";
 
@@ -8,32 +8,29 @@ import img11 from "../../images/img11.svg";
 function WhoWeAre() {
   return (
   <MainContainer>
-      <ContentContainer>
+      <ContentContainer pb="5rem">
           <LeftContent>
-              <div>
+              <Texts>
               <h6>
-                  About us
+                 Who we are
               </h6>
               <h1>
-                   Our designs solve problems
+                  Goal focussed 
               </h1>
                <p>
-                  Lorem ipsum dolor sit amet, consect etur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                </p>
-              </div>
+              </Texts>
           </LeftContent>
           <RightContent>
-          <div>
-              <h6>
-                  About us
-              </h6>
+          <Texts>
               <h1>
-                   Our designs solve problems
+                   Continuous improvement
               </h1>
                <p>
-                  Lorem ipsum dolor sit amet, consect etur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                </p>
-              </div>
+              </Texts>
           </RightContent>
       </ContentContainer>
       <ImgContainer>

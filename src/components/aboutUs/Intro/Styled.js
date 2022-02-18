@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const LeftContent = styled.div`
   display: flex;
   flex-direction: column; 
-  width: 45%;
+  width: 48%;
   margin-top: 3rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {

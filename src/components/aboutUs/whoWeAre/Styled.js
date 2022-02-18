@@ -4,18 +4,19 @@ import styled from "styled-components";
 export const LeftContent = styled.div`
   display: flex;
   flex-direction: column; 
-  width: 45%;
+  width: 47%;
   margin-top: 3rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
      width: 100%; 
   }
+  `;
 
 
-  div {
+export const Texts = styled.div`
      display: flex;
      flex-direction: column;
-     width: 90%;
+     width: 100%;
      font-weight: 500;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
@@ -26,49 +27,64 @@ export const LeftContent = styled.div`
   h6 {
     font-size: 1.8rem; 
     font-weight: 500;
-    margin-bottom: 1.5rem;
-
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+    
     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      margin-bottom: -3rem;
-      margin-top: 5rem;
-  }
-  }    
+        margin-bottom: .5rem;
+     }}
+     
 
   h1 {
-     font-size: 4rem;
-     line-height: 1.4; 
-     font-weight: 600;
-
+      font-size: 3.3rem;
+      line-height: 1.4; 
+      font-weight: 600;
+      
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-      font-size: 3.5rem; 
+      font-size: 2.8rem; 
   }
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      font-size: 3rem; 
-      margin-top: 5rem;
+      font-size: 2.2rem; 
+      margin-top: 2rem;
   }}
 
   p {
-     width: 85%;
+     width: 90%;
      font-weight: 400;
      line-height: 1.7;
-     margin-top: 2rem;
+     margin-top: 1rem;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
      width: 100%; 
-  }
   }}
 `;
 
+
 export const RightContent = styled.div`
-  width: 50%;
-  margin-top: 3rem;
+  display: flex;
+  flex-direction: column; 
+  width: 47%;
+  margin-top: 2.5rem;
+
+  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     width: 100%; 
+  }
+  `;
+
+
+export const ImgContainer = styled.div`
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+
+  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+   padding-bottom: 5rem;
+  } 
 
   img {
   max-width: 100%;
   }
 
-  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      display: none;  
-  }
 `;
