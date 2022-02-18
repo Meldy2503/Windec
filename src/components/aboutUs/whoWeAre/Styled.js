@@ -39,6 +39,7 @@ export const Texts = styled.div`
       font-size: 3.3rem;
       line-height: 1.4; 
       font-weight: 600;
+      margin-top: -1rem;
       
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
       font-size: 2.8rem; 
@@ -46,7 +47,7 @@ export const Texts = styled.div`
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       font-size: 2.2rem; 
-      margin-top: 2rem;
+      margin-top: 1rem;
   }}
 
   p {
