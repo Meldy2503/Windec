@@ -1,14 +1,14 @@
 import React from 'react';
 import { LeftContent, RightContent } from "./Styled";
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
-import img10 from "../../images/img10.svg";
+import img11 from "../../images/img11.svg";
 
 
 
-function Intro() {
+function WhoWeAre() {
   return (
-  <MainContainer bgco= "#fff">
-      <ContentContainer pt= "14rem">
+  <MainContainer>
+      <ContentContainer>
           <LeftContent>
               <div>
               <h6>
@@ -23,12 +23,24 @@ function Intro() {
               </div>
           </LeftContent>
           <RightContent>
-                <img src={img10} alt="img1" />
+          <div>
+              <h6>
+                  About us
+              </h6>
+              <h1>
+                   Our designs solve problems
+              </h1>
+               <p>
+                  Lorem ipsum dolor sit amet, consect etur adipi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+               </p>
+              </div>
           </RightContent>
       </ContentContainer>
+      <ImgContainer>
+          <img src={ img11 } alt="img11" />
+      </ImgContainer>
   </MainContainer>
   )
 }
 
-export default Intro;
-
+export default WhoWeAre;
