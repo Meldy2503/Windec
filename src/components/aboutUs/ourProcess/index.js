@@ -15,7 +15,6 @@ function Features() {
                          return (
                     <Contents>
                         <div key={items.id}>
-                            <img src={items.icon} alt="icon" />
                             <h6>{items.title}</h6>
                             <p>{items.text}</p> 
                         </div>

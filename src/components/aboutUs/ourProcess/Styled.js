@@ -50,7 +50,7 @@ export const Container = styled.div`
 `;
 
 export const Contents = styled.div`
-     width: 32%;
+     width: 23%;
      background-color: #fff;
      box-shadow: .1rem .2rem .3rem #eee;
    
@@ -58,13 +58,13 @@ export const Contents = styled.div`
          width: 48.5%;
       } 
       
-      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
          width: 90%;
          margin: 0 auto; 
-      } 
+      }  */
    
      div { 
-        width: 83%;
+        width: 80%;
         margin: 0 auto;
         padding: 6rem 0 5rem 0;
 
