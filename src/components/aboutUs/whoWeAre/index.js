@@ -7,8 +7,11 @@ import img11 from "../../images/img11.svg";
 
 function WhoWeAre() {
   return (
-  <MainContainer>
-      <ContentContainer pb="5rem">
+  <MainContainer bgco="#FFF">
+      <ContentContainer 
+         pb="5rem"
+         bgcon="#F4F5F5"
+         >
           <LeftContent>
               <Texts>
               <h6>

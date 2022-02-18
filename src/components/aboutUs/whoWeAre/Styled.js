@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const LeftContent = styled.div`
   display: flex;
   flex-direction: column; 
-  width: 47%;
+  width: 45%;
   margin-top: 3rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
@@ -16,13 +16,10 @@ export const LeftContent = styled.div`
 export const Texts = styled.div`
      display: flex;
      flex-direction: column;
-     width: 100%;
+     width: 90%;
      font-weight: 500;
-
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-     width: 100%; 
-  }
-
+     margin: 0 auto;
+     
 
   h6 {
     font-size: 1.8rem; 
@@ -36,13 +33,13 @@ export const Texts = styled.div`
      
 
   h1 {
-      font-size: 3.3rem;
-      line-height: 1.4; 
+      font-size: 3rem;
+      line-height: 1.3; 
       font-weight: 600;
       margin-top: -1rem;
       
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-      font-size: 2.8rem; 
+      font-size: 2.5rem; 
   }
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
@@ -51,7 +48,7 @@ export const Texts = styled.div`
   }}
 
   p {
-     width: 90%;
+     width: 100%;
      font-weight: 400;
      line-height: 1.7;
      margin-top: 1rem;
@@ -65,7 +62,7 @@ export const Texts = styled.div`
 export const RightContent = styled.div`
   display: flex;
   flex-direction: column; 
-  width: 47%;
+  width: 50%;
   margin-top: 2.5rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {

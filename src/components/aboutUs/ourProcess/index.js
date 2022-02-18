@@ -2,12 +2,13 @@ import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { Title, Container, Contents } from "./Styled";
 import data from "./Data"
+import circle from "../../images/Circle.svg"
 
-function Features() {
+function OurProcess() {
   return (
-        <MainContainer>
+        <MainContainer bgco="#fff">
               <Title>
-                  <h2>Design that solves problems, one product at a time</h2>
+                  <h2>The process we follow</h2>
               </Title> 
 
              <Container>
@@ -15,6 +16,7 @@ function Features() {
                          return (
                     <Contents>
                         <div key={items.id}>
+                            <img src={circle} alt="circle" />
                             <h6>{items.title}</h6>
                             <p>{items.text}</p> 
                         </div>
@@ -26,7 +28,7 @@ function Features() {
   );
 }
 
-export default Features;
+export default OurProcess;
 
 
 

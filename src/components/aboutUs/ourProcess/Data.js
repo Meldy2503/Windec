@@ -3,28 +3,28 @@ import React from "react";
 const data = [
     {   
         id: 1,
-        title: "Uses Client First",
-        text: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
+        title: "Planning",
+        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
     },
   
     { 
       id: 2,
-      title: "Two Free Revision Round",
-      text: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
+      title: "Conception",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
   
   },
   
   {   
       id: 3,
-      title: "Template Customization",
-      text: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
+      title: "Design",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
   
   },
   
   {  
       id: 4,
-      title: "24/7 Support",
-      text: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi."
+      title: "Development",
+      text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
   
   }
   
