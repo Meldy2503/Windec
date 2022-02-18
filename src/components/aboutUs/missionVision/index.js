@@ -7,19 +7,25 @@ import data from "./Data";
 
 function MissionVission() {
   return (
-  <MainContainer bgco= "#fff">
-      <ContentContainer pt= "14rem">
+  <MainContainer bgco= "#EEF4FA">
+      <ContentContainer 
+      flexd= "column"
+      pt= "0"
+      mpb= "0"
+      >
             { data.map((item) => {
                  return (
-                        <Contents key={item.id}>
+                        <Contents 
+                        key={item.id} 
+                        layout={item.id % 2 === 0 && "row-reverse"}>
+                            <span>
+                               <img src={item.img} alt="img" /> 
+                            </span>
                             <div>
                                <h6>{item.header}</h6>
                                <h1>{item.title}</h1>
                                <p>{item.text}</p>
                             </div>
-                            <span>
-                               <img src={item.img} alt="image" /> 
-                            </span>
                         </Contents>
                           )
                            })}
