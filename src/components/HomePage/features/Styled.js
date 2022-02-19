@@ -14,7 +14,7 @@ export const Title = styled.div`
   
    
    h2 {
-      font-size: 3.3rem;
+      font-size: 3rem;
       font-weight: 600;
       width: 50%;
       margin: 0 auto; 
@@ -23,11 +23,11 @@ export const Title = styled.div`
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
          width: 60%;
-         font-size: 3rem;
+         font-size: 2.7rem;
       } 
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem;
+         font-size: 2.4rem;
          width: 80%;
       } 
    }

@@ -12,13 +12,17 @@ export const LeftContent = styled.div`
       }  
 
        h3 {
-           font-size: 2.8rem;
+           font-size: 3.3rem;
            font-weight: 600;
            line-height: 1.3;
            margin-bottom: 1.5rem;
 
+           @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+            font-size: 3rem;
+          }  
+
            @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-            font-size: 2.2rem;
+            font-size: 2.7rem;
           }  
        }
 

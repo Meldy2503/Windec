@@ -25,7 +25,7 @@ export const LeftContent = styled.div`
      width: 30%;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         width: 70%;
+         width: 100%;
       } 
 
      h2 {
@@ -33,11 +33,11 @@ export const LeftContent = styled.div`
         font-size: 3.3rem;
  
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 2.8rem;
+         font-size: 3rem;
         } 
 
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem;
+         font-size: 2.7rem;
       } 
      }
 
@@ -89,7 +89,7 @@ export const RightContent = styled.div`
       height: 45%; 
 
        @media screen and (max-width: 500px) {
-         width: 90%;
+         width: 100%;
       } 
      
         .square1 {

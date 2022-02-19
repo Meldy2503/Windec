@@ -12,12 +12,13 @@ export const Title = styled.span`
      h2 {
         margin-bottom: 2rem;
         font-size: 3.3rem;
+
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-           font-size: 2.8rem;
+           font-size: 3rem;
          } 
    
          @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-           font-size: 2rem;
+           font-size: 2.7rem;
          } 
      }
 
