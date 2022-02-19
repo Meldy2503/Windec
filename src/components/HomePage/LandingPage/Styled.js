@@ -21,7 +21,7 @@ export const LeftContent = styled.div`
   }
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      font-size: 2.5rem; 
+      font-size: 2.7rem; 
       margin-top: 5rem;
   }}
 

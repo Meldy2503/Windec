@@ -14,12 +14,12 @@ export const Title = styled.div`
       margin-bottom: 1rem;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 2.8rem;
+         font-size: 3rem;
          margin-bottom: .5rem;
       } 
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuerymobile}) {
-         font-size: 2rem;
+         font-size: 2.7rem;
       
       } 
    }
