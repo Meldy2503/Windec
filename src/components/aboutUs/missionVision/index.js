@@ -17,7 +17,7 @@ function MissionVission() {
                  return (
                         <Contents 
                         key={item.id} 
-                        layout={item.id % 2 === 0 && "row-reverse"}>
+                        layout={item.id % 2 !== 0 && "row-reverse"}>
                             <span>
                                <img src={item.img} alt="img" /> 
                             </span>

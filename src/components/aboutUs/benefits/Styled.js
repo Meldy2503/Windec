@@ -1,15 +1,23 @@
 import styled from "styled-components";
 
 
-export const Title = styled.div`
-   text-align: center;
+export const Contents = styled.div`
    max-width: 120rem;
    width: 90%;
    margin: 0 auto; 
-   padding: 10rem 0 3rem 0;
+   padding: 10rem 0;
+
+   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      padding: 5rem 0;
+      } 
+   `;
+
+export const Title = styled.div`
+   text-align: center;
+   padding-bottom: 3rem;
    
    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      padding: 5rem 0 2rem 0;
+      padding-bottom: 2rem;
       } 
   
    
@@ -33,23 +41,20 @@ export const Title = styled.div`
    }
 `;
 
-export const Container = styled.div`
-     max-width: 120rem;
-     width: 90%;
-     margin: 0 auto;
+export const CardContainer = styled.div`
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
      row-gap: 2.5rem;
      justify-content: space-between;
-     padding-bottom: 10rem;
+     padding-bottom: 6rem;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       row-gap: 2rem;
       }  
 `;
 
-export const Contents = styled.div`
+export const Cards = styled.div`
      width: 32%;
      background-color: ${({theme}) => theme.colors.primary5};
      box-shadow: .1rem .2rem .2rem #eee;
@@ -89,3 +94,17 @@ export const Contents = styled.div`
    }
 `;
 
+export const IconsContainer = styled.div`
+     width: 10%;
+     display: flex;
+     justify-content: space-between;
+   
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+         width: 31%;
+      } 
+      
+      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+         width: 48.5%;
+         margin: 0 auto; 
+      } 
+`;
