@@ -17,11 +17,11 @@ export const Title = styled.div`
       margin-bottom: 4rem;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 2.5rem;
+         font-size: 3rem;
       } 
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem;
+         font-size: 2.7rem;
          padding-bottom: 3rem;
    }}
 `;
@@ -53,18 +53,18 @@ export const Contents = styled.div`
       } 
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         width: 90%;
+         width: 100%;
          margin: 0 auto; 
       } 
 
    
      div { 
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         padding: 3rem 0;
         
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-            width: 85%; 
+            width: 100%; 
         } 
 
         

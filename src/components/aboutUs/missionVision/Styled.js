@@ -64,6 +64,10 @@ export const Contents = styled.div`
   span {
      width: 45%;
 
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     width: 100%; 
+  }
+
       img {
         max-width: 100%;
       }}

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img11 from "../../images/img11.svg";
 
 
 export const LeftContent = styled.div`
@@ -75,14 +76,18 @@ export const ImgContainer = styled.div`
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
-  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+  background-image: url(${(img11)});
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 34rem;
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-   padding-bottom: 5rem;
+   margin-bottom: 5rem;
   } 
 
-  img {
+  /* img {
   max-width: 100%;
-  }
+  } */
 
 `;

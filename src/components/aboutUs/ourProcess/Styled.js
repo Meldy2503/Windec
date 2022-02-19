@@ -15,11 +15,11 @@ export const Title = styled.div`
       line-height: 1.3;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         font-size: 2.5rem;
+         font-size: 3rem;
       } 
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem;
+         font-size: 2.7rem;
          padding-bottom: 3rem;
    }}
 `;
@@ -74,7 +74,7 @@ export const Contents = styled.div`
         
         
         h6 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             padding: 3.5rem 0 1rem 0;
             margin-top: 1.3rem;
             font-weight: 600;
@@ -82,7 +82,7 @@ export const Contents = styled.div`
             
             
             @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-                font-size: 1.7rem; 
+                font-size: 2rem; 
                 border-top: none;
                 padding: 0;
                 margin-top: 0;        

@@ -1,7 +1,7 @@
 import React from 'react';
 import { LeftContent, RightContent, Texts, ImgContainer } from "./Styled";
 import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
-import img11 from "../../images/img11.svg";
+// import img11 from "../../images/img11.svg";
 
 
 
@@ -36,9 +36,9 @@ function WhoWeAre() {
               </Texts>
           </RightContent>
       </ContentContainer>
-      <ImgContainer>
-          <img src={ img11 } alt="img11" />
-      </ImgContainer>
+      <ImgContainer />
+          {/* <img src={ img11 } alt="img11" /> */}
+      {/* </ImgContainer> */}
   </MainContainer>
   )
 }

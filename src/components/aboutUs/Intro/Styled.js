@@ -44,7 +44,7 @@ export const LeftContent = styled.div`
   }
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      font-size: 2.8rem; 
+      font-size: 3rem; 
       margin-top: 5rem;
   }}
 
@@ -64,11 +64,12 @@ export const RightContent = styled.div`
   width: 45%;
   margin-top: 3rem;
 
-  img {
-  max-width: 100%;
+  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+   width: 100%; 
   }
 
-  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      display: none;  
+  img {
+    max-width: 100%;
   }
+
 `;

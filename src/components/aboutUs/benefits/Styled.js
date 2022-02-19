@@ -27,7 +27,7 @@ export const Title = styled.div`
       } 
 
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         font-size: 2rem;
+         font-size: 2.7rem;
          width: 80%;
       } 
    }
