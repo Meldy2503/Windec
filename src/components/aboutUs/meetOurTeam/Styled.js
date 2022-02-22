@@ -67,11 +67,43 @@ export const Contents = styled.div`
             width: 100%; 
         } 
 
-        
-        img {
-             max-width: 100%;     
+
+      figure {
+         display: block;
+         height: 17rem;
+         width: 17rem;
+         margin: 0 auto;
+         position: relative;
       }
-        
+
+      
+         .icons {
+            color: #fff; 
+            position: relative;
+            top: 12rem;
+            left: .4rem;
+            font-size: 1.8rem;
+         }
+
+         a:link {
+            margin-right: 1.3rem;
+         }
+
+      figcaption {
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-image: linear-gradient(348.37deg, #5239FA 17.97%, rgba(255, 255, 255, 0) 79.2%); 
+         opacity: 0;
+         height: 17rem;
+         width: 17rem;
+         border-radius: 50%;
+         
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
         
         h6 {
             font-size: 2rem;
@@ -88,6 +120,6 @@ export const Contents = styled.div`
    p {
       line-height: 1.8;
       font-size: 1.5rem; 
-     }}
+     }
 `;
 

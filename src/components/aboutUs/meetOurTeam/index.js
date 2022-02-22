@@ -1,9 +1,11 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { Title, Container, Contents } from "./Styled";
-import data from "./Data"
+import data from "./Data";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function MeetOurTeam() {
+  
   return (
         <MainContainer>
               <Title>
@@ -15,9 +17,22 @@ function MeetOurTeam() {
                          return (
                     <Contents>
                         <div key={items.id}>
-                            <img src={items.img} alt="img" />
-                            <h6>{items.name}</h6>
-                            <p>{items.text}</p> 
+                           <figure>
+                               <img src={items.img} alt="img" />  
+                               <figcaption>
+                                    <a href="#">
+                                       <FaFacebook className='icons' />
+                                    </a>
+                                    <a href="#">
+                                        <FaTwitter className='icons' />
+                                    </a>
+                                    <a href="#">
+                                        <FaInstagram className='icons' />
+                                    </a>
+                                </figcaption>                  
+                           </figure>             
+                           <h6>{items.name}</h6>
+                           <p>{items.text}</p> 
                         </div>
                     </Contents>
                          )

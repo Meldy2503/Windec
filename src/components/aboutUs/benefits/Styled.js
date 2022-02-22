@@ -95,16 +95,21 @@ export const Cards = styled.div`
 `;
 
 export const IconsContainer = styled.div`
-     width: 10%;
+     width: 100%;
      display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
    
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-         width: 31%;
+     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+        display: flex;
+        width: 30%;
+      
       } 
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         width: 48.5%;
+         
          margin: 0 auto; 
-      } 
+      }  */
+
+     
 `;
