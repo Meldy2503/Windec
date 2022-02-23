@@ -15,10 +15,11 @@ function OurProcess() {
                      {data.map((items) => {
                          return (
                     <Contents>
-                        <div key={items.id}>
-                            <img src={circle} alt="circle" />
-                            <h6>{items.title}</h6>
-                            <p>{items.text}</p> 
+                        <div classname='mapped-content' key={items.id}>
+                            <span>{items.id}</ span>
+                              <img src={circle} alt="circle" />
+                             <h6>{items.title}</h6>
+                              <p>{items.text}</p> 
                         </div>
                     </Contents>
                          )

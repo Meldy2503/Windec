@@ -49,30 +49,52 @@ export const Contents = styled.div`
       } 
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         width: 90%;
+         width: 100%;
          margin: 0 auto; 
       } 
 
    
      div { 
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         padding-top: 3rem;
         
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-            width: 85%; 
+            width: 100%; 
             padding-top: 0;
+            margin-left: 7rem;  
         } 
 
         
         img {
             position: absolute;
 
-            @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-                display: none;      
-      }}
+
+            @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+            display: none;     
+     }}
         
-        
+        span {
+           display: none;
+           
+           @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+              display: inline-block;
+              text-align: center;
+              height: 2.5rem;
+              width: 2.5rem;
+              border-radius: 50%;
+              color: #fff;
+              background-color: ${({theme}) => theme.colors.primary3};
+              margin-bottom: .6rem;
+         } 
+         
+         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+            position: absolute;
+            left: 4rem;
+            margin-top: .7rem;  
+         }}
+            
+   
         h6 {
             font-size: 2.5rem;
             padding: 3.5rem 0 1rem 0;
@@ -81,10 +103,10 @@ export const Contents = styled.div`
             border-top: 2px dashed #b3b3ff;
             
             
-            @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+            @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
                 font-size: 2rem; 
                 border-top: none;
-                padding: 0;
+                padding-top: 0;
                 margin-top: 0;        
       }}
    
