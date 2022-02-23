@@ -41,18 +41,20 @@ export const Title = styled.div`
    }
 `;
 
+
 export const CardContainer = styled.div`
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
      row-gap: 2.5rem;
      justify-content: space-between;
-     padding-bottom: 6rem;
+     padding-bottom: 5rem;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       row-gap: 2rem;
       }  
 `;
+
 
 export const Cards = styled.div`
      width: 32%;
@@ -67,11 +69,12 @@ export const Cards = styled.div`
          width: 100%;
          margin: 0 auto; 
       } 
+      
    
      div { 
         width: 83%;
         margin: 0 auto;
-        padding: 6rem 0 5rem 0;
+        padding: 5rem 0;
 
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
          width: 75%; 
@@ -94,22 +97,41 @@ export const Cards = styled.div`
    }
 `;
 
+
 export const IconsContainer = styled.div`
      width: 100%;
      display: flex;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-   
-     /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
-        display: flex;
-        width: 30%;
-      
+     flex-wrap: wrap; 
+     justify-content: space-between;
+
+     
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+        width: 90%; 
       } 
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+         width: 90%; 
          
-         margin: 0 auto; 
-      }  */
-
+      } 
      
+      
+      img {
+            justify-content: space-between;
+            display: flex;
+            width: 13%;
+            align-items: center;
+            
+            
+            @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+               width: 33%;
+               padding-left: 9rem;
+               padding-bottom: 1.8rem;       
+         } 
+     
+             @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+                 width: 16rem;
+                 padding-bottom: 2rem; 
+                 padding-left: 9%;
+                 margin: 0 auto;         
+         }}  
 `;
