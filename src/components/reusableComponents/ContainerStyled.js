@@ -16,7 +16,10 @@ export const ContentContainer = styled.div`
    margin: 0 auto;  
    padding-top: ${({pt}) => pt || "10rem"};
    padding-bottom: ${({pb}) => pb || "10rem"};
-   position: ${({position}) => position || "none"}; 
+   position: ${({position}) => position || "none"};
+   background-color: ${({bgcon}) => bgcon || "transparent"};
+   
+
    
    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       flex-direction: column;

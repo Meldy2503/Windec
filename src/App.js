@@ -1,17 +1,11 @@
 import { Fragment } from "react";
 import { GlobalStyle } from "./components/reusableComponents/GlobalStyles";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter  as Router } from "react-router-dom";
+import { BrowserRouter  as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navBar/index";
-import LandingPage from "./components/homePage/landingPage/index";
-import HowWeWork from "./components/homePage/howWeWork/index";
-import ViewOurProjects from "./components/homePage/viewOurProjects/index";
-import Features from "./components/homePage/features/index";
-import Reviews from "./components/homePage/reviews/index";
-import FAQ from "./components/homePage/FAQ/index";
-import SendInquiry from "./components/homePage/sendInquiry/index";
-import OurBlog from "./components/homePage/ourBlog/index";
 import Footer from "./components/footer/index";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs"
 
 
 const theme = {
@@ -44,14 +38,10 @@ function App() {
         <Fragment>
            <GlobalStyle/>
            < NavBar />
-           <LandingPage />
-           <HowWeWork />
-           <ViewOurProjects />
-           <Features />
-           <Reviews />
-           <FAQ />
-           <SendInquiry />
-           <OurBlog />
+           <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about-us" element={<AboutUs />} />
+           </Routes>
            <Footer />
         </Fragment>
     </ThemeProvider>

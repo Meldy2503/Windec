@@ -21,7 +21,7 @@ function NavBar() {
                     <Link onClick={closeMenuLink} to="/">Home</Link> 
                 </li>
                 <li>
-                    <Link onClick={closeMenuLink} to="/">About us</Link>
+                    <Link onClick={closeMenuLink} to="/about-us">About us</Link>
                 </li>
                 <li>
                     <Link onClick={closeMenuLink} to="/">Features</Link>

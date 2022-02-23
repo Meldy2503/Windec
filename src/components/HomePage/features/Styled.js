@@ -59,7 +59,7 @@ export const Contents = styled.div`
       } 
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-         width: 90%;
+         width: 100%;
          margin: 0 auto; 
       } 
    
