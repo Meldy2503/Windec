@@ -11,7 +11,7 @@ export const Contents = styled.div`
       } 
    */
    p {
-      
+
    }   
    
    h2 {
@@ -28,5 +28,15 @@ export const Contents = styled.div`
          font-size: 2.7rem;
       } 
    }
+
+   span {
+    margin-bottom: 2rem;
+
+    .icons {
+       padding-right: 1.5rem;
+       color: #fff;
+       font-size: 3rem;
+       cursor: pointer;
+    }}
 `;
 
