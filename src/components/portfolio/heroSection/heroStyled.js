@@ -6,10 +6,10 @@ export const Contents = styled.div`
    margin: 0 auto; 
    width: 60%;
    
-   /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-      padding: 5rem 0 2rem 0;
+   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+      width: 90%;
       } 
-   */
+  
    p {
 
    }   
@@ -29,13 +29,12 @@ export const Contents = styled.div`
       } 
    }
 
-   span {
       
       .icons {
        margin-top: 1.5rem;
        padding-right: 1.9rem;
        font-size: 3.7rem;
        cursor: pointer;
-    }}
+    }
 `;
 
