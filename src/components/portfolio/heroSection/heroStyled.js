@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Contents = styled.div`
    text-align: center;
    margin: 0 auto; 
-   width: 70%;
+   width: 60%;
    
    /* @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       padding: 5rem 0 2rem 0;
@@ -18,7 +18,7 @@ export const Contents = styled.div`
       font-size: 3.3rem;
       font-weight: 600; 
       line-height: 1.3;
-      padding: 1.3rem 0;
+      padding: 2rem 0;
       
       @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
          font-size: 3rem;
@@ -30,12 +30,11 @@ export const Contents = styled.div`
    }
 
    span {
-    margin-bottom: 2rem;
-
-    .icons {
-       padding-right: 1.5rem;
-       color: #fff;
-       font-size: 3rem;
+      
+      .icons {
+       margin-top: 1.5rem;
+       padding-right: 1.9rem;
+       font-size: 3.7rem;
        cursor: pointer;
     }}
 `;
