@@ -5,11 +5,21 @@ export const MenuOptions = styled.ul`
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        text-align: center;
+      } 
  
     
     li {
         list-style: none;
         margin-right: 2.5rem;
+
+        @media screen and (max-width: 500px) {
+            margin-right: 0;
+            margin-top: 1rem;
+      } 
     }
     
     
@@ -46,7 +56,7 @@ export const Cards = styled.div`
         padding-top: 3rem;
 
         @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-          padding-top: 2rem; 
+          padding-top: 1.5rem; 
       } 
 
 
