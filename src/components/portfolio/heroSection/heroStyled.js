@@ -9,10 +9,7 @@ export const Contents = styled.div`
    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
       width: 90%;
       } 
-  
-   p {
-
-   }   
+      
    
    h2 {
       font-size: 3.3rem;

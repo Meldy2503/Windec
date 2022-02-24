@@ -38,7 +38,7 @@ export const CardContainer = styled.div`
      flex-wrap: wrap;
      flex-direction: row;
      justify-content: space-between;
-     padding: 2rem 0 3rem 0;
+     padding-top: 2rem;
 `;
 
 export const Cards = styled.div`
