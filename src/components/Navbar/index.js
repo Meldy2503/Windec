@@ -27,7 +27,7 @@ function NavBar() {
                     <Link onClick={closeMenuLink} to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <Link onClick={closeMenuLink} to="/">Pricing</Link>
+                    <Link onClick={closeMenuLink} to="/pricing">Pricing</Link>
                 </li>
                 <li>
                     <ContactUs>
