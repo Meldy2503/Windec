@@ -10,7 +10,8 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 function Footer() {
   return (
   <MainContainer bgco= "#1C1E53">
-      <ContentContainer pb="0"
+      <ContentContainer 
+      pb="0"
       pt="7rem"
       position= "relative">
           <LeftContent>

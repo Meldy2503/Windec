@@ -10,9 +10,9 @@ export const LeftContent = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
      width: 100%; 
-     margin: 0 auto;
-     
+     margin: 0 auto; 
   }
+
 
   h1 {
      letter-spacing: .7rem;
@@ -26,10 +26,12 @@ export const LeftContent = styled.div`
         margin-top: -2.5rem;
   }}
 
+
   p {
       font-size: 1.6rem;
       opacity: 0.8;  
     }
+
 
   span {
     display: flex;
@@ -47,7 +49,7 @@ export const LeftContent = styled.div`
         width: 37%;
   }
 
-  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
@@ -57,7 +59,11 @@ export const LeftContent = styled.div`
   @media screen and (max-width: 500px) {
         flex-direction: column;
         padding: 1rem 0 0 1.5rem;
+        margin-top: 6rem;
+        justify-content: flex-start;
   }
+
+
 
     div { 
         width: 35%;
@@ -65,11 +71,12 @@ export const LeftContent = styled.div`
      @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
         width: 100%;
         margin-bottom: 1rem; 
-  }
+     }
 
-  @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+     @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
         width: 100%;
      }
+
 
         h6 {
             font-size: 1.8rem;
@@ -81,6 +88,8 @@ export const LeftContent = styled.div`
     }}
   }
 `;
+
+
 
 export const RightContent = styled.div`
    display: flex;
@@ -94,6 +103,7 @@ export const RightContent = styled.div`
      margin: 0 auto;   
   }
 
+
   h1 {
      font-size: 3rem;
      margin-bottom: 1.5rem;
@@ -104,21 +114,29 @@ export const RightContent = styled.div`
         margin: 1.5rem 0 .1rem 0;
   }}
 
+
   p {
       font-size: 1.6rem;
       opacity: 0.8;
       margin-bottom: 2.5rem;
  
        @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-          margin-bottom: 7rem; 
-  }
+          margin-bottom: 4rem; 
+      }}
 
-            @media screen and (max-width: 500px) {
-              margin-bottom: 12rem; 
-       }}
 
   span {
     margin-bottom: 2rem;
+    display: block;
+
+    @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
+          margin-bottom: 3rem; 
+     }
+
+    @media screen and (max-width: 500px) {
+         margin-bottom: 9rem;
+       }
+
 
     .icons {
        padding-right: 1.5rem;
@@ -127,6 +145,8 @@ export const RightContent = styled.div`
        cursor: pointer;
     }}
 `;
+
+
 
 export const CopyRight = styled.p`
      font-size: 1.6rem;
