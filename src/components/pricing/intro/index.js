@@ -1,20 +1,17 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
-import { Contents, Title, CardContainer, Cards, IconsContainer } from "./Styled";
+import { Contents, Title, CardContainer, Cards } from "./priceIntroStyled";
+import { Button } from "../../reusableComponents/ButtonStyled";
 import data from "./Data"
-import Icon7 from "../../images/icon7.svg";
-import Icon8 from "../../images/icon8.svg";
-import Icon9 from "../../images/icon9.svg";
-import Icon10 from "../../images/icon10.svg";
-import Icon11 from "../../images/icon11.svg";
-import IconNumber from "../../images/iconNumber.svg";
+
 
 function Intro() {
   return (
         <MainContainer bgco= "#fff">
             <Contents>
               <Title>
-                  <h2>The benefits of working with us</h2>
+                  <h2>Our Pricing Plans</h2>
+                  <p>When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them.</p>
               </Title> 
 
              <CardContainer>
@@ -22,23 +19,36 @@ function Intro() {
                          return (
                     <Cards>
                         <div key={items.id}>
-                            <img src={items.icon} alt="icon" />
-                            <h6>{items.title}</h6>
-                            <p>{items.text}</p> 
+                            <div>
+                            <h3>{items.price}</h3>
+                            <p>{items.priceTag}</p> 
+                            </div>
+
+                            <div>
+                            <h5>{items.title}</h5>
+                            <p>{items.text}</p>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li>{items.list0}</li>
+                                    <li>{items.list1}</li>
+                                    <li>{items.list2}</li>
+                                    <li>{items.list3}</li>
+                                    <li>{items.list4}</li>
+                                    <li>{items.list5}</li>
+                                </ul>
+                            </div> 
+
+                            <div>
+                                <Button>{items.button}</Button>
+                            </div>
                         </div>
                     </Cards>
                          )
                      })} 
              </CardContainer>
 
-             <IconsContainer>
-                 <img src={IconNumber} alt="iconNo" />
-                 <img src={Icon7} alt="icon" />
-                 <img src={Icon8} alt="icon" />
-                 <img src={Icon9} alt="icon" />
-                 <img src={Icon10} alt="icon" />
-                 <img src={Icon11} alt="icon" />
-             </IconsContainer>
              </Contents>
         </MainContainer>
   );
