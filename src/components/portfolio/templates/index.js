@@ -4,7 +4,7 @@ import { MenuOptions, CardContainer, Cards } from "./templateStyled";
 import data from "./Data";
 import { CgArrowLongRight } from "react-icons/cg";
 
-function OurBlog() {
+function Templates() {
   return (
         <MainContainer bgco="#fff">
             <ContentContainer flexd="column">
@@ -37,7 +37,7 @@ function OurBlog() {
   );
 }
 
-export default OurBlog;
+export default Templates;
 
 
 

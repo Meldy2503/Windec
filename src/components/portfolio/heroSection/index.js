@@ -3,7 +3,7 @@ import { MainContainer, ContentContainer } from "../../reusableComponents/Contai
 import { Contents } from "./heroStyled";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-function Features() {
+function HeroSection() {
   return (
         <MainContainer>
             <ContentContainer>
@@ -24,7 +24,7 @@ function Features() {
   );
 }
 
-export default Features;
+export default HeroSection;
 
 
 
