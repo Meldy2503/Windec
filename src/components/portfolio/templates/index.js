@@ -1,13 +1,13 @@
 import React from 'react';
-import { MainContainer } from "../../reusableComponents/ContainerStyled";
-import { MenuOptions, Container, Contents } from "./templateStyled";
+import { MainContainer, ContentContainer } from "../../reusableComponents/ContainerStyled";
+import { MenuOptions, CardContainer, Cards } from "./templateStyled";
 import data from "./Data";
 import { CgArrowLongRight } from "react-icons/cg";
 
 function OurBlog() {
   return (
         <MainContainer bgco="#fff">
-            <ContentContainer>
+            <ContentContainer flexd="column">
               <MenuOptions>
                   <li><a href="#">All</a></li>
                   <li><a href="#">UI Design</a></li>
@@ -21,7 +21,7 @@ function OurBlog() {
                     <Cards>
                         <div key={items.id}>
                             <img src={items.img} alt="image" />
-                            <h4>{items.title}</h4>
+                            <h3>{items.title}</h3>
                             <p>{items.text}</p>
                             <li>
                                  <a href="#">{items.link}</a>

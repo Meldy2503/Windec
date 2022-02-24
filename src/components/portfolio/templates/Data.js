@@ -1,10 +1,10 @@
 import React from "react";
-import img18 from "../../images/img18.svg";
-import img19 from "../../images/img19.svg";
-import img20 from "../../images/img20.svg";
-import img21 from "../../images/img21.svg";
-import img22 from "../../images/img22.svg";
-import img23 from "../../images/img23.svg";
+import img18 from "../../images/img18.png";
+import img19 from "../../images/img19.png";
+import img20 from "../../images/img20.png";
+import img21 from "../../images/img21.png";
+import img22 from "../../images/img22.png";
+import img23 from "../../images/img23.png";
 
 
 
