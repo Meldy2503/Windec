@@ -7,13 +7,13 @@ const data = [
         title: "Landing Page", 
         text: "When you’re ready to go beyond prototyping in Figma",
 
-        option: {
-        one: "All limited links",
-        two: "Own analytics platform",
-        three: "Chat support",
-        four: "Optimize hashtags",
-        five: "Unlimited users",
-      },
+        options: [
+           "All limited links",
+           "Own analytics platform",
+           "Chat support",
+           "Optimize hashtags",
+           "Unlimited users",
+        ],
 
         button: "Get started"
     },
@@ -26,13 +26,13 @@ const data = [
         title: "Website Page", 
         text: "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
 
-        option: {
-          one: "All limited links",
-          two: "Own analytics platform",
-          three: "Chat support",
-          four: "Optimize hashtags",
-          five: "Unlimited users",
-        },
+        options: [
+           "All limited links",
+           "Own analytics platform",
+           "Chat support",
+           "Optimize hashtags",
+           "Unlimited users",
+        ],
 
         button: "Get started"
   },
@@ -45,14 +45,14 @@ const data = [
     title: "Complex Project", 
     text: "When you’re ready to go beyond prototyping in Figma.",
 
-    option: {
-      one: "All limited links",
-      two: "Own analytics platform",
-      three: "Chat support",
-      four: "Optimize hashtags",
-      five: "Unlimited users",
-      six: "Assist and Help",
-    },
+    options: [
+       "All limited links",
+       "Own analytics platform",
+       "Chat support",
+       "Optimize hashtags",
+       "Unlimited users",
+       "Assist and Help",
+    ],
 
      button: "Contact us"
   

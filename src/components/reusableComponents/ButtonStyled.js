@@ -17,20 +17,9 @@ margin: ${({margin}) => margin || "none"};
       
     }
 
-     @media screen and (max-width: ${({theme}) => theme.mediaQuery.tablet}) {
+          @media screen and (max-width: 300px) {
+          padding: ${({mpad}) => mpad || "1.2rem 3.3rem"}; 
           
-          padding: ${({padding}) => padding || "1.3rem 2.9rem"};
-           
-          } 
-
-          @media screen and (max-width: ${({theme}) => theme.mediaQuery.mobile}) {
-          padding: ${({padding}) => padding || "1rem 2.6rem"};
-        
-           
-          } 
-
-     
-
-           
-           
+          }      
+          
 `;

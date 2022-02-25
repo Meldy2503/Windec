@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
-import { Contents, Title, CardContainer, Cards, CardContents, ContentA, ContentB, ContentC } from "./priceIntroStyled";
+import { Contents, Title, CardContainer, Cards, CardContents, ContentA, ContentB, ContentC, DesignTag, Btn } from "./priceIntroStyled";
 import { Button } from "../../reusableComponents/ButtonStyled";
 import data from "./Data"
 
@@ -24,7 +24,9 @@ function Intro() {
                         <CardContents key={items.id}>
                             <ContentA>
                                <h3>${items.price}</h3>
-                               <p>{items.priceTag}</p> 
+                               <DesignTag
+                                color={items.id % 2 === 0 && "#FCD980"} 
+                               >{items.priceTag}</DesignTag> 
                             </ContentA>
 
                             <ContentB>
@@ -33,21 +35,24 @@ function Intro() {
                             </ContentB>
 
                             <ContentC>
-                                <li>{items.option.one}</li>
-                                <li>{items.option.two}</li>
-                                <li>{items.option.three}</li>
-                                <li>{items.option.four}</li>
-                                <li>{items.option.five}</li>
-                                <li>{items.option.six}</li>
+                                <li>{items.options[0]}</li>
+                                <li>{items.options[1]}</li>
+                                <li>{items.options[2]}</li>
+                                <li>{items.options[3]}</li>
+                                <li>{items.options[4]}</li>
+                                <li style={{ display: items.options.length < 6 && "none" }}>
+                                  {items.options[5]}
+                                 </li>
                             </ContentC> 
 
-                            <div>
+                            <Btn>
                                 <Button
                                 bgc={items.id % 2 !== 0 && "#1B1C2B"}
                                 color={items.id % 2 !== 0 && "#fff"}
                                 bgh={items.id % 2 !== 0 && "#282938"}
+                                padding="1.4rem 25%"
                                 >{items.button}</Button>
-                            </div>
+                            </Btn>
                         </CardContents>
                     </Cards>
                          )
