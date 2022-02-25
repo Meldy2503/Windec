@@ -37,6 +37,8 @@ export const LeftContent = styled.div`
       }}
 `;
 
+
+
 export const RightContent = styled.div`
       width: 60%;
       margin-top: -2rem;
