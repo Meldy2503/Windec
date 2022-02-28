@@ -10,7 +10,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 function SendInquiry() {
   return (
     <MainContainer bgco="#fff">
-      <ContentContainer pt="0">
+      <ContentContainer pt="0" data-aos="fade-up" data-aos-duration="500">
         <LeftContent>
           <div>
             <h1>Building stellar websites for early startups</h1>

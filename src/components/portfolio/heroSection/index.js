@@ -10,7 +10,7 @@ function HeroSection() {
   return (
     <MainContainer>
       <ContentContainer>
-        <Contents>
+        <Contents data-aos="fade-up" data-aos-duration="500">
           <p>What we created</p>
           <h2>Our Work Portfolio</h2>
           <p>

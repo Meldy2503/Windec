@@ -10,7 +10,7 @@ function CTA() {
   return (
     <MainContainer bgco="#fff">
       <ContentContainer pt="0" mpt="0">
-        <Contents>
+        <Contents data-aos="fade-up" data-aos-duration="500">
           <h2>Let's build something great together</h2>
           <p>
             Nullam vitae purus at tortor mattis dapibus. Morbi purus est,

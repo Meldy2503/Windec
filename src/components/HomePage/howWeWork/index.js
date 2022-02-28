@@ -8,7 +8,7 @@ function HowWeWork() {
   return (
     <MainContainer>
       <Contents>
-        <LeftContent>
+        <LeftContent data-aos="fade-right" data-aos-duration="600">
           <h2>How we work</h2>
           <p>
             Lorem ipsum dolor sit et consect etur adipisicing elit. Minus
@@ -19,7 +19,7 @@ function HowWeWork() {
             <CgArrowLongRight />
           </li>
         </LeftContent>
-        <RightContent>
+        <RightContent data-aos="fade-left" data-aos-duration="1000">
           {data.map((list) => {
             return (
               <span key={list.id}>

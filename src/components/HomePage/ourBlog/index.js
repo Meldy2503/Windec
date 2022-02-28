@@ -8,10 +8,12 @@ function OurBlog() {
   return (
     <MainContainer bgco="#fff">
       <Title>
-        <h2>Our blog</h2>
+        <h2 data-aos="fade-up" data-aos-duration="500">
+          Our blog
+        </h2>
       </Title>
 
-      <Container>
+      <Container data-aos="fade-up" data-aos-duration="700">
         {data.map((items) => {
           return (
             <Contents>

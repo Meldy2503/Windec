@@ -19,7 +19,7 @@ function Intro() {
   return (
     <MainContainer bgco="#fff">
       <Contents>
-        <Title>
+        <Title data-aos="fade-up" data-aos-duration="500">
           <h2>Our Pricing Plans</h2>
           <p>
             When you’re ready to go beyond prototyping in Figma, Webflow is
@@ -33,6 +33,8 @@ function Intro() {
               <Cards
                 bg={items.id % 2 === 0 && "#1C1E53"}
                 co={items.id % 2 === 0 && "#fff"}
+                data-aos="fade-left"
+                data-aos-duration="800"
               >
                 <CardContents key={items.id}>
                   <ContentA>

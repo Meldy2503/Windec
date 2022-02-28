@@ -18,10 +18,12 @@ function MissionVission() {
                         <Contents 
                         key={item.id} 
                         layout={item.id % 2 !== 0 && "row-reverse"}>
-                            <span>
+                            <span 
+                            data-aos="fade-up" data-aos-duration="500" >
                                <img src={item.img} alt="img" /> 
                             </span>
-                            <div>
+                            <div
+                             data-aos="fade-up" data-aos-duration="800" >
                                <h6>{item.header}</h6>
                                <h1>{item.title}</h1>
                                <p>{item.text}</p>
