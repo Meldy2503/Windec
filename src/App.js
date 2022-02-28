@@ -5,7 +5,10 @@ import { BrowserRouter  as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navBar/index";
 import Footer from "./components/footer/index";
 import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs"
+import AboutUs from "./pages/AboutUs";
+import Portfolio from "./pages/Portfolio";
+import Pricing from "./pages/Pricing";
+
 
 
 const theme = {
@@ -41,6 +44,8 @@ function App() {
            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/pricing" element={<Pricing />} />
            </Routes>
            <Footer />
         </Fragment>
