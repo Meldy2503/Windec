@@ -11,7 +11,7 @@ function MeetOurTeam() {
         <h2>Meet our team</h2>
       </Title>
 
-      <Container data-aos="fade-up" data-aos-duration="800">
+      <Container data-aos="flip-left" data-aos-duration="800">
         {data.map((items) => {
           return (
             <Contents>
@@ -30,8 +30,12 @@ function MeetOurTeam() {
                     </a>
                   </figcaption>
                 </figure>
-                <h6>{items.name}</h6>
-                <p>{items.text}</p>
+                <h6 data-aos="fade-up" data-aos-duration="1000">
+                  {items.name}
+                </h6>
+                <p data-aos="fade-up" data-aos-duration="1000">
+                  {items.text}
+                </p>
               </div>
             </Contents>
           );
