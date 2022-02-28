@@ -20,13 +20,13 @@ function MeetOurTeam() {
                            <figure>
                                <img src={items.img} alt="img" />  
                                <figcaption>
-                                    <a href="#">
+                                    <a href="www.facebook.com" target='_blank'>
                                        <FaFacebook className='icons' />
                                     </a>
-                                    <a href="#">
+                                    <a href="www.twitter.com" target='_blank'>
                                         <FaTwitter className='icons' />
                                     </a>
-                                    <a href="#">
+                                    <a href="www.instagram.com" target='_blank'>
                                         <FaInstagram className='icons' />
                                     </a>
                                 </figcaption>                  
