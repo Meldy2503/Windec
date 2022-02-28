@@ -27,7 +27,7 @@ export const Links = styled.nav`
       display: flex;
       flex-direction: column;
       background-color: #000033;
-      opacity: 0.9;
+      opacity: 0.7;
       position: absolute;
       top: 7.1rem;
       right: -10%;
@@ -61,7 +61,8 @@ export const Links = styled.nav`
     color: ${({theme}) => theme.colors.tertiary2};
 
   
-    &:hover {
+    &:hover,
+    &:focus {
      color: #fff;
    }
     
@@ -84,7 +85,8 @@ export const ContactUs = styled.div`
   padding: 1rem 3rem;
   border-radius: 3rem;
 
-     &:hover {
+     &:hover,
+     &:focus {
       border: 2px solid #FFF;
   }
 
@@ -93,7 +95,8 @@ export const ContactUs = styled.div`
   border: none;
   padding: 0rem;
   
-     &:hover {
+     &:hover,
+     &:focus {
       color: ${({theme}) => theme.colors.secondary1};
       border: none;
   }}
@@ -124,7 +127,8 @@ export const MenuIcon = styled.div`
       right: 0;
       transform: translate(-1%, 45%);
 
-      &:hover {
+      &:hover,
+      &:focus {
       color: ${({theme}) => theme.colors.secondary1};
        }
     } 
