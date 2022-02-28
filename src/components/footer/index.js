@@ -9,9 +9,15 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <MainContainer bgco="#1C1E53">
-      <ContentContainer pb="0" pt="7rem" position="relative">
+      <ContentContainer
+        pb="0"
+        pt="7rem"
+        position="relative"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <LeftContent>
-          <div data-aos="fade-up" data-aos-duration="800">
+          <div>
             <h1>Windec</h1>
             <p>
               We are always open to discuss your project and improve your online
@@ -19,7 +25,7 @@ function Footer() {
             </p>
           </div>
 
-          <span data-aos="fade-up" data-aos-duration="800">
+          <span>
             <div>
               <h6>Email me at</h6>
               <p>contact@website.com</p>
@@ -31,7 +37,7 @@ function Footer() {
           </span>
         </LeftContent>
 
-        <RightContent data-aos="fade-up" data-aos-duration="800">
+        <RightContent>
           <h1>Lets Talk!</h1>
           <p>
             We are always open to discuss your projects, improve your online

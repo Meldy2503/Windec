@@ -10,16 +10,16 @@ export const LeftContent = styled.div`
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.5;
     color: #fff;
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      font-size: 2.7rem;
+      font-size: 3rem;
       margin-top: 5rem;
     }
   }

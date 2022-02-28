@@ -17,7 +17,7 @@ function ViewOurProjects() {
         </li>
       </Title>
       <Container>
-        <LeftContent>
+        <LeftContent data-aos="fade-right" data-aos-duration="2000">
           <img src={img2} alt="img2" />
           <span>
             <div>
@@ -31,7 +31,7 @@ function ViewOurProjects() {
           </span>
         </LeftContent>
 
-        <RightContent>
+        <RightContent data-aos="fade-left" data-aos-duration="2000">
           <img classname="img3" src={img3} alt="img3" />
           <span>
             <div>

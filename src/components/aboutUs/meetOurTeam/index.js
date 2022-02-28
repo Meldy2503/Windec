@@ -11,10 +11,10 @@ function MeetOurTeam() {
         <h2>Meet our team</h2>
       </Title>
 
-      <Container data-aos="flip-left" data-aos-duration="800">
+      <Container>
         {data.map((items) => {
           return (
-            <Contents>
+            <Contents data-aos="flip-left" data-aos-duration="2000">
               <div key={items.id}>
                 <figure>
                   <img src={items.img} alt="img" />
@@ -30,10 +30,10 @@ function MeetOurTeam() {
                     </a>
                   </figcaption>
                 </figure>
-                <h6 data-aos="fade-up" data-aos-duration="1000">
+                <h6 data-aos="fade-up" data-aos-duration="2000">
                   {items.name}
                 </h6>
-                <p data-aos="fade-up" data-aos-duration="1000">
+                <p data-aos="fade-up" data-aos-duration="2000">
                   {items.text}
                 </p>
               </div>

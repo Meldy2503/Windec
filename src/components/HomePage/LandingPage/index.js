@@ -11,8 +11,8 @@ import img1 from "../../images/img1.svg";
 function LandingPage() {
   return (
     <MainContainer bgco="#1C1E53">
-      <ContentContainer pt="14rem">
-        <LeftContent data-aos="fade-up" data-aos-duration="500">
+      <ContentContainer pt="23rem" pb="23rem">
+        <LeftContent data-aos="fade-right" data-aos-duration="2000">
           <h1>Building stellar websites for early startups</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia
@@ -26,7 +26,7 @@ function LandingPage() {
             </li>
           </span>
         </LeftContent>
-        <RightContent data-aos="fade-up" data-aos-duration="800">
+        <RightContent data-aos="fade-left" data-aos-duration="2000">
           <img src={img1} alt="img1" />
         </RightContent>
       </ContentContainer>

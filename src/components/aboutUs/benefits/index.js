@@ -19,11 +19,11 @@ function Benefits() {
   return (
     <MainContainer bgco="#fff">
       <Contents>
-        <Title data-aos="fade-up" data-aos-duration="500">
+        <Title data-aos="fade-up" data-aos-duration="2000">
           <h2>The benefits of working with us</h2>
         </Title>
 
-        <CardContainer data-aos="fade-up" data-aos-duration="600">
+        <CardContainer data-aos="fade-up" data-aos-duration="2000">
           {data.map((items) => {
             return (
               <Cards>
@@ -37,7 +37,7 @@ function Benefits() {
           })}
         </CardContainer>
 
-        <IconsContainer data-aos="fade-up" data-aos-duration="900">
+        <IconsContainer data-aos="fade-up" data-aos-duration="2000">
           <img src={IconNumber} alt="iconNo" />
           <img src={Icon7} alt="icon" />
           <img src={Icon8} alt="icon" />
