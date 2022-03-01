@@ -1,9 +1,8 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import logo from "./img/logo.png";
 
-export default function Form() {
+function Form() {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -117,3 +116,5 @@ export default function Form() {
     </div>
   );
 }
+
+export default Form;
