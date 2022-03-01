@@ -1,6 +1,9 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { MainContainer } from "../../components/reusableComponents/ContainerStyled";
+import { Contents, Title, FormContents } from "./contactUsStyle";
+import { Button } from "../../components/reusableComponents/ButtonStyled";
 
 function Form() {
   const formik = useFormik({
@@ -116,7 +119,9 @@ function Form() {
             <p className="errors">{formik.errors.message}</p>
           ) : null}
           <br />
-          <button type="submit">Send Message</button>
+          <Button type="submit" bgc="#1B1C2B" bgh="#282938" color="#fff">
+            Send Message
+          </Button>
         </FormContents>
       </Contents>
     </MainContainer>
