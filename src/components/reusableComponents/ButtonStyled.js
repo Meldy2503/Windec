@@ -15,7 +15,12 @@ export const Button = styled.a`
     background-color: ${({ bgh }) => bgh || "#FDE4A6"};
   }
 
-  @media screen and (max-width: 300px) {
-    padding: ${({ mpad }) => mpad || "1.2rem 3.3rem"};
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    padding: ${({ mopad }) => mopad || "1.3rem 3.3rem"};
+  }
+
+  @media screen and (max-width: 330px) {
+    padding: ${({ mpad }) => mpad || "1.1rem 1rem"};
+    font-size: 1.3rem;
   }
 `;

@@ -11,7 +11,7 @@ function Templates() {
   return (
     <MainContainer bgco="#fff">
       <ContentContainer flexd="column">
-        <MenuOptions data-aos="fade-up" data-aos-duration="500">
+        <MenuOptions data-aos="fade-up">
           <li>
             <a href="/portfolio">All</a>
           </li>
@@ -26,15 +26,15 @@ function Templates() {
           </li>
         </MenuOptions>
 
-        <CardContainer data-aos="fade-up" data-aos-duration="800">
+        <CardContainer>
           {data.map((items) => {
             return (
-              <Cards>
-                <div key={items.id}>
+              <Cards key={items.id} data-aos="fade-up">
+                <div>
                   <img src={items.img} alt="templates" />
-                  <h3>{items.title}</h3>
-                  <p>{items.text}</p>
-                  <li>
+                  <h3 data-aos="fade-up">{items.title}</h3>
+                  <p data-aos="fade-up">{items.text}</p>
+                  <li data-aos="fade-up">
                     <a href="/about-us">{items.link}</a>
                     <CgArrowLongRight />
                   </li>
