@@ -9,7 +9,7 @@ function WhoWeAre() {
   return (
     <MainContainer bgco="#FFF">
       <ContentContainer pb="5rem" bgcon="#F4F5F5">
-        <LeftContent data-aos="fade-up" data-aos-duration="2000">
+        <LeftContent data-aos="fade-up">
           <Texts>
             <h6>Who we are</h6>
             <h1>Goal focussed</h1>
@@ -21,7 +21,7 @@ function WhoWeAre() {
             </p>
           </Texts>
         </LeftContent>
-        <RightContent data-aos="fade-up" data-aos-duration="2000">
+        <RightContent data-aos="fade-up">
           <Texts>
             <h1>Continuous improvement</h1>
             <p>

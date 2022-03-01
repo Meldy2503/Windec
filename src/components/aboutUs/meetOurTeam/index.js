@@ -7,14 +7,14 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 function MeetOurTeam() {
   return (
     <MainContainer>
-      <Title data-aos="fade-up" data-aos-duration="500">
+      <Title data-aos="fade-up">
         <h2>Meet our team</h2>
       </Title>
 
       <Container>
         {data.map((items) => {
           return (
-            <Contents data-aos="flip-left" data-aos-duration="2000">
+            <Contents data-aos="flip-left">
               <div key={items.id}>
                 <figure>
                   <img src={items.img} alt="img" />
@@ -30,12 +30,8 @@ function MeetOurTeam() {
                     </a>
                   </figcaption>
                 </figure>
-                <h6 data-aos="fade-up" data-aos-duration="2000">
-                  {items.name}
-                </h6>
-                <p data-aos="fade-up" data-aos-duration="2000">
-                  {items.text}
-                </p>
+                <h6 data-aos="fade-up">{items.name}</h6>
+                <p data-aos="fade-up">{items.text}</p>
               </div>
             </Contents>
           );

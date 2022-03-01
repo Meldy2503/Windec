@@ -22,7 +22,7 @@ function PricingFAQ() {
   return (
     <MainContainer bgco="#FFF">
       <ContentContainer pt="0">
-        <LeftContent data-aos="fade-right" data-aos-duration="2000">
+        <LeftContent data-aos="fade-right">
           <h3>Frequently asked questions</h3>
           <a href="/contact-us">Contact us for more info</a>
         </LeftContent>
@@ -32,7 +32,7 @@ function PricingFAQ() {
               <Texts key={item.id}>
                 <span>
                   <h5>{item.no}</h5>
-                  <div data-aos="fade-up" data-aos-duration="2000">
+                  <div data-aos="fade-up">
                     <h6>{item.question}</h6>
                     {onClick[index] && <p>{item.answer}</p>}
                   </div>

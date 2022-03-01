@@ -13,10 +13,10 @@ function MissionVission() {
         {data.map((item) => {
           return (
             <Contents key={item.id} layout={item.id % 2 !== 0 && "row-reverse"}>
-              <span data-aos="fade-up" data-aos-duration="2000">
+              <span data-aos="fade-up">
                 <img src={item.img} alt="img" />
               </span>
-              <div data-aos="fade-up" data-aos-duration="2000">
+              <div data-aos="fade-up">
                 <h6>{item.header}</h6>
                 <h1>{item.title}</h1>
                 <p>{item.text}</p>

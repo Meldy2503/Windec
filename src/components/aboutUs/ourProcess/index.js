@@ -7,11 +7,11 @@ import circle from "../../images/Circle.svg";
 function OurProcess() {
   return (
     <MainContainer bgco="#fff">
-      <Title data-aos="fade-up" data-aos-duration="2000">
+      <Title data-aos="fade-up">
         <h2>The process we follow</h2>
       </Title>
 
-      <Container data-aos="fade-up" data-aos-duration="2000">
+      <Container data-aos="fade-up">
         {data.map((items) => {
           return (
             <Contents>

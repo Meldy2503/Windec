@@ -12,7 +12,7 @@ function LandingPage() {
   return (
     <MainContainer bgco="#1C1E53">
       <ContentContainer pt="23rem" pb="23rem">
-        <LeftContent data-aos="fade-right" data-aos-duration="2000">
+        <LeftContent data-aos="fade-right">
           <h1>Building stellar websites for early startups</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia
@@ -26,7 +26,7 @@ function LandingPage() {
             </li>
           </span>
         </LeftContent>
-        <RightContent data-aos="fade-left" data-aos-duration="2000">
+        <RightContent data-aos="fade-left">
           <img src={img1} alt="img1" />
         </RightContent>
       </ContentContainer>

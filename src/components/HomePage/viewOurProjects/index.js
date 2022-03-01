@@ -9,7 +9,7 @@ import img4 from "../../images/img4.svg";
 function ViewOurProjects() {
   return (
     <MainContainer bgco="#FFF">
-      <Title>
+      <Title data-aos="fade-up">
         <h2>View our projects</h2>
         <li>
           <a href="/portfolio">View more</a>
@@ -17,7 +17,7 @@ function ViewOurProjects() {
         </li>
       </Title>
       <Container>
-        <LeftContent data-aos="fade-right" data-aos-duration="2000">
+        <LeftContent data-aos="fade-right">
           <img src={img2} alt="img2" />
           <span>
             <div>
@@ -31,7 +31,7 @@ function ViewOurProjects() {
           </span>
         </LeftContent>
 
-        <RightContent data-aos="fade-left" data-aos-duration="2000">
+        <RightContent data-aos="fade-left">
           <img classname="img3" src={img3} alt="img3" />
           <span>
             <div>

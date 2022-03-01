@@ -8,15 +8,13 @@ function OurBlog() {
   return (
     <MainContainer bgco="#fff">
       <Title>
-        <h2 data-aos="fade-right" data-aos-duration="2000">
-          Our blog
-        </h2>
+        <h2 data-aos="fade-right">Our blog</h2>
       </Title>
 
-      <Container data-aos="fade-up" data-aos-duration="2000">
+      <Container data-aos="fade-up">
         {data.map((items) => {
           return (
-            <Contents>
+            <Contents data-aos="fade-up">
               <div key={items.id}>
                 <img src={items.img} alt="blogImg" />
                 <h6>{items.date}</h6>

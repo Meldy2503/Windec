@@ -9,13 +9,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <MainContainer bgco="#1C1E53">
-      <ContentContainer
-        pb="0"
-        pt="7rem"
-        position="relative"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <ContentContainer pb="0" pt="7rem" position="relative" data-aos="fade-up">
         <LeftContent>
           <div>
             <h1>Windec</h1>

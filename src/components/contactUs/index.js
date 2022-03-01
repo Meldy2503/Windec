@@ -2,7 +2,13 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { MainContainer } from "../../components/reusableComponents/ContainerStyled";
-import { Contents, Title, FormContents } from "./contactUsStyle";
+import {
+  Contents,
+  Title,
+  FormContainer,
+  FormContents,
+  InputContainer,
+} from "./contactUsStyle";
 import { Button } from "../../components/reusableComponents/ButtonStyled";
 
 function Form() {
@@ -49,68 +55,80 @@ function Form() {
           </p>
         </Title>
 
-        <FormContents onSubmit={formik.handleSubmit}>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            id="name"
-            name="name"
-            value={formik.values.name}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          {formik.touched.name && formik.errors.name ? (
-            <p className="errors">{formik.errors.name}</p>
-          ) : null}
+        <FormContainer onSubmit={formik.handleSubmit}>
+          <FormContents>
+            <InputContainer>
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="name"
+                name="name"
+                value={formik.values.name}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.name && formik.errors.name ? (
+                <p className="errors">{formik.errors.name}</p>
+              ) : null}
+            </InputContainer>
 
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            placeholder="Enter your Email"
-            id="email"
-            name="email"
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          {formik.touched.email && formik.errors.email ? (
-            <p className="errors">{formik.errors.email}</p>
-          ) : null}
+            <InputContainer>
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                id="email"
+                name="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.email && formik.errors.email ? (
+                <p className="errors">{formik.errors.email}</p>
+              ) : null}
+            </InputContainer>
 
-          <label htmlFor="phoneNumber">Phone Number</label>
-          <input
-            type="tel"
-            placeholder="Enter your phone number"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formik.values.phoneNumber}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-            <p className="errors">{formik.errors.phoneNumber}</p>
-          ) : null}
+            <InputContainer>
+              <label htmlFor="phoneNumber">Phone Number</label>
+              <input
+                type="tel"
+                placeholder="Enter your phone number"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={formik.values.phoneNumber}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+                <p className="errors">{formik.errors.phoneNumber}</p>
+              ) : null}
+            </InputContainer>
 
-          <label htmlFor="subject">Subject</label>
-          <input
-            type="text"
-            placeholder="Provide context"
-            id="subject"
-            name="subject"
-            value={formik.values.subject}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          {formik.touched.subject && formik.errors.subject ? (
-            <p className="errors">{formik.errors.subject}</p>
-          ) : null}
+            <InputContainer>
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                placeholder="Provide context"
+                id="subject"
+                name="subject"
+                value={formik.values.subject}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+              {formik.touched.subject && formik.errors.subject ? (
+                <p className="errors">{formik.errors.subject}</p>
+              ) : null}
+            </InputContainer>
+          </FormContents>
 
           <label htmlFor="message">Message</label>
           <textarea
             placeholder="Write your question here"
             id="message"
             name="message"
+            cols="30"
+            rows="10"
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -119,10 +137,19 @@ function Form() {
             <p className="errors">{formik.errors.message}</p>
           ) : null}
           <br />
-          <Button type="submit" bgc="#1B1C2B" bgh="#282938" color="#fff">
-            Send Message
-          </Button>
-        </FormContents>
+
+          <span>
+            <Button
+              type="submit"
+              bgc="#1B1C2B"
+              bgh="#282938"
+              color="#fff"
+              padding="1.4rem 8rem"
+            >
+              Send Message
+            </Button>
+          </span>
+        </FormContainer>
       </Contents>
     </MainContainer>
   );

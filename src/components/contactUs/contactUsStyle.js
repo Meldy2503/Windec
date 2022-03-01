@@ -9,15 +9,11 @@ export const Contents = styled.div`
 
 export const Title = styled.div`
   text-align: center;
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    width: 70%;
-  }
-
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    width: 80%;
+    width: 90%;
   }
 
   h2 {
@@ -37,49 +33,97 @@ export const Title = styled.div`
 
   p {
     margin-bottom: 5rem;
+    line-height: 1.6;
   }
 `;
 
-export const FormContents = styled.form`
-  margin-right: 0.8em;
-  padding: 0.5em;
-  margin-top: 0.4em;
+export const FormContainer = styled.form`
+  background-color: ${({ theme }) => theme.colors.primary5};
+  padding: 6rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
   label {
     font-size: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
   }
 
-  input {
-    padding: 0.7em;
-    margin: 1em 0 1em 0.3em;
+  textarea {
     width: 100%;
-    max-width: 400px;
-    border-radius: 3px;
-    box-shadow: 0.5px 1px 2px #000;
-    border-style: none;
-    font-size: 1rem;
-  }
-  @media only screen and (max-width: 500px) {
-    input {
-      padding: 0.6em;
-      font-size: 0.9rem;
-    }
-  }
-
-  input:focus {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+    resize: none;
     outline: none;
-    border-bottom: 3px solid #ecae10;
+    font-size: 1.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #d0d0d0;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors.primary1};
+      opacity: 0.8;
+      font-size: 1.6rem;
+      padding: 2rem;
+      font-family: "Poppins", sans-serif;
+    }
   }
 
   .errors {
     color: red;
-    font-size: 0.9rem;
-    margin-top: -0.9em;
-    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -4rem;
+    padding-left: 2rem;
   }
-  @media only screen and (max-width: 900px) {
-    .errors {
-      font-size: 0.7rem;
+
+  span {
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      margin: 0 auto;
+    }
+  }
+`;
+
+export const FormContents = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
+export const InputContainer = styled.div`
+  width: 47%;
+  display: flex;
+  height: 13rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 100%;
+  }
+
+  input {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    outline: none;
+    height: 6rem;
+    font-size: 1.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #d0d0d0;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors.primary1};
+      opacity: 0.8;
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
+    }
+
+    &:focus {
+      border-bottom: 2px solid ${({ theme }) => theme.colors.primary1};
     }
   }
 `;

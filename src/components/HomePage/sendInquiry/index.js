@@ -11,7 +11,7 @@ function SendInquiry() {
   return (
     <MainContainer bgco="#fff">
       <ContentContainer pt="0">
-        <LeftContent data-aos="fade-left" data-aos-duration="2000">
+        <LeftContent data-aos="fade-right">
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
@@ -21,7 +21,7 @@ function SendInquiry() {
             </p>
           </div>
         </LeftContent>
-        <RightContent data-aos="fade-right" data-aos-duration="2000">
+        <RightContent data-aos="fade-left">
           <div>
             <h5>Send inquiry</h5>
             <p>

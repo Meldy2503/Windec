@@ -10,7 +10,7 @@ function Intro() {
   return (
     <MainContainer bgco="#fff">
       <ContentContainer pt="14rem">
-        <LeftContent data-aos="fade-up" data-aos-duration="2000">
+        <LeftContent data-aos="fade-up">
           <div>
             <h6>About us</h6>
             <h1>Our designs solve problems</h1>
@@ -21,7 +21,7 @@ function Intro() {
             </p>
           </div>
         </LeftContent>
-        <RightContent data-aos="fade-up" data-aos-duration="2000">
+        <RightContent data-aos="fade-up">
           <img src={img10} alt="img1" />
         </RightContent>
       </ContentContainer>

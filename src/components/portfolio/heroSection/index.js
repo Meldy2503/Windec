@@ -10,7 +10,7 @@ function HeroSection() {
   return (
     <MainContainer>
       <ContentContainer>
-        <Contents data-aos="fade-up" data-aos-duration="2000">
+        <Contents data-aos="fade-up">
           <p>What we created</p>
           <h2>Our Work Portfolio</h2>
           <p>
@@ -18,7 +18,7 @@ function HeroSection() {
             tools and technology to make the design-to-code process universally
             accessible.
           </p>
-          <span data-aos="fade-up" data-aos-duration="2000">
+          <span data-aos="fade-up">
             <a href="www.facebook.com" target="_blank">
               <FaFacebook className="icons" />
             </a>

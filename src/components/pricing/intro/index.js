@@ -31,14 +31,11 @@ function Intro() {
           {data.map((items) => {
             return (
               <Cards
+                data-aos="flip-left"
                 bg={items.id % 2 === 0 && "#1C1E53"}
                 co={items.id % 2 === 0 && "#fff"}
               >
-                <CardContents
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  key={items.id}
-                >
+                <CardContents data-aos="zoom-in" key={items.id}>
                   <ContentA>
                     <h3>${items.price}</h3>
                     <DesignTag color={items.id % 2 === 0 && "#FCD980"}>

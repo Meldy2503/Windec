@@ -4,6 +4,7 @@ export const MainContainer = styled.section`
   background-color: ${({ bgco }) => bgco || "#F4F6FC"};
   color: ${({ co }) => co || "#282938"};
   width: 100%;
+  overflow: hidden;
 `;
 
 export const ContentContainer = styled.div`
