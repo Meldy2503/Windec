@@ -107,6 +107,7 @@ export const NavTitle = styled.a`
   text-shadow: 0.1rem 0.2rem 0.3rem #000;
   font-size: 2.5rem;
   text-decoration: none;
+  color: #fff;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     position: absolute;

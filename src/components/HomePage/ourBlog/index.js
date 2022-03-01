@@ -8,7 +8,7 @@ function OurBlog() {
   return (
     <MainContainer bgco="#fff">
       <Title>
-        <h2 data-aos="fade-right">Our blog</h2>
+        <h2 data-aos="fade-up">Our blog</h2>
       </Title>
 
       <Container data-aos="fade-up">
@@ -17,10 +17,10 @@ function OurBlog() {
             <Contents data-aos="fade-up">
               <div key={items.id}>
                 <img src={items.img} alt="blogImg" />
-                <h6>{items.date}</h6>
-                <h5>{items.title}</h5>
-                <p>{items.text}</p>
-                <li>
+                <h6 data-aos="fade-up">{items.date}</h6>
+                <h5 data-aos="fade-up">{items.title}</h5>
+                <p data-aos="fade-up">{items.text}</p>
+                <li data-aos="fade-up">
                   <a href="/about-us">Read More</a>
                   <CgArrowLongRight />
                 </li>

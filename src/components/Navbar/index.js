@@ -1,6 +1,5 @@
 import React from "react";
 import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./Styled";
-import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -15,30 +14,30 @@ function NavBar() {
         <NavTitle href="/">Windec</NavTitle>
         <ul className={onIconClick ? "openMenu" : "closeMenu"}>
           <li>
-            <Link onClick={closeMenuLink} to="/">
+            <a onClick={closeMenuLink} href="/">
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenuLink} to="/about-us">
+            <a onClick={closeMenuLink} href="/about-us">
               About us
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenuLink} to="/portfolio">
+            <a onClick={closeMenuLink} href="/portfolio">
               Portfolio
-            </Link>
+            </a>
           </li>
           <li>
-            <Link onClick={closeMenuLink} to="/pricing">
+            <a onClick={closeMenuLink} href="/pricing">
               Pricing
-            </Link>
+            </a>
           </li>
           <li>
             <ContactUs>
-              <Link onClick={closeMenuLink} to="/contact-us">
+              <a onClick={closeMenuLink} href="/contact-us">
                 Contact us
-              </Link>
+              </a>
             </ContactUs>
           </li>
         </ul>

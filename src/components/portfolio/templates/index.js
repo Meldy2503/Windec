@@ -29,12 +29,12 @@ function Templates() {
         <CardContainer>
           {data.map((items) => {
             return (
-              <Cards data-aos="fade-up">
-                <div key={items.id}>
+              <Cards key={items.id} data-aos="fade-up">
+                <div>
                   <img src={items.img} alt="templates" />
-                  <h3>{items.title}</h3>
-                  <p>{items.text}</p>
-                  <li>
+                  <h3 data-aos="fade-up">{items.title}</h3>
+                  <p data-aos="fade-up">{items.text}</p>
+                  <li data-aos="fade-up">
                     <a href="/about-us">{items.link}</a>
                     <CgArrowLongRight />
                   </li>

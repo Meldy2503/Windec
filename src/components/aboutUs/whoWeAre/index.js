@@ -1,5 +1,5 @@
 import React from "react";
-import { LeftContent, RightContent, Texts } from "./Styled";
+import { LeftContent, RightContent, Texts, ImgContainer } from "./Styled";
 import {
   MainContainer,
   ContentContainer,
@@ -33,6 +33,7 @@ function WhoWeAre() {
           </Texts>
         </RightContent>
       </ContentContainer>
+      <ImgContainer data-aos="fade-up" />
     </MainContainer>
   );
 }

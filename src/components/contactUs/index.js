@@ -22,7 +22,7 @@ function Form() {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .max(15, "Must be 15 characters or less")
+        .min(10, "Must be 10 characters or more")
         .required("Required"),
       email: Yup.string()
         .email("Enter a valid email address")
@@ -47,7 +47,7 @@ function Form() {
   return (
     <MainContainer bgco="#fff">
       <Contents>
-        <Title data-aos="fade-up" data-aos-duration="2000">
+        <Title data-aos="zoom-in">
           <h2>Contact Us</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -55,7 +55,7 @@ function Form() {
           </p>
         </Title>
 
-        <FormContainer onSubmit={formik.handleSubmit}>
+        <FormContainer onSubmit={formik.handleSubmit} data-aos="fade-up">
           <FormContents>
             <InputContainer>
               <label htmlFor="name">Name</label>
@@ -137,14 +137,16 @@ function Form() {
             <p className="errors">{formik.errors.message}</p>
           ) : null}
           <br />
-
           <span>
             <Button
+              data-aos="fade-up"
+              href="#"
               type="submit"
               bgc="#1B1C2B"
               bgh="#282938"
               color="#fff"
               padding="1.4rem 8rem"
+              onClick={formik.handleSubmit}
             >
               Send Message
             </Button>

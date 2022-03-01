@@ -45,7 +45,7 @@ export const FormContainer = styled.form`
   flex-direction: column;
 
   label {
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: inline-block;
     margin-bottom: 1rem;
   }
@@ -59,26 +59,31 @@ export const FormContainer = styled.form`
     resize: none;
     outline: none;
     font-size: 1.6rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem #d0d0d0;
+    box-shadow: 0.1rem 0.1rem 0.2rem #d0d0d0;
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
 
     &::placeholder {
       color: ${({ theme }) => theme.colors.primary1};
       opacity: 0.8;
       font-size: 1.6rem;
-      padding: 2rem;
-      font-family: "Poppins", sans-serif;
+    }
+
+    &:focus {
+      border-bottom: 2px solid ${({ theme }) => theme.colors.primary1};
+      background-color: transparent;
     }
   }
 
   .errors {
     color: red;
     font-size: 1.5rem;
-    margin-top: -4rem;
-    padding-left: 2rem;
+    margin-top: -3.5rem;
+    padding-left: 1rem;
   }
 
   span {
-    margin-bottom: 5rem;
+    margin: 2rem 0 5rem 0;
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       margin: 0 auto;
