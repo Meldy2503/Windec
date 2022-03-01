@@ -5,28 +5,28 @@ import * as Yup from "yup";
 function Form() {
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
-      password: "",
-      confirmPassword: "",
+      phoneNumber: "",
+      subject: "",
+      message: "",
     },
     validationSchema: Yup.object({
-      firstName: Yup.string()
+      name: Yup.string()
         .max(15, "Must be 15 characters or less")
         .required("Required"),
-      lastName: Yup.string()
-        .max(20, "Must be 20 characters or less")
-        .required("Required"),
       email: Yup.string()
-        .email("enter a valid email address")
+        .email("Enter a valid email address")
         .required("Required"),
-      password: Yup.string()
-        .min(5, "password must be atleast 5 characters")
-        .required("Enter password"),
-      confirmPassword: Yup.string()
-        .oneOf([Yup.ref("password"), null], "Password does not match")
-        .required("Confirm password"),
+      phoneNumber: Yup.string()
+        .max(11, "Enter a valid phone number")
+        .required("Required"),
+      subject: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Enter subject"),
+      message: Yup.string()
+        .min(15, "Must be 15 characters or more")
+        .required("Enter message"),
     }),
 
     onSubmit: (values, { resetForm }) => {
@@ -36,49 +36,36 @@ function Form() {
   });
 
   return (
-    <div className="container">
-      <div>
-        <img
-          className="image1"
-          src="https://cdn.pixabay.com/photo/2020/09/17/18/05/people-5579977__340.png"
-          alt="welcome-img"
-        />
-      </div>
+    <MainContainer bgco="#fff">
+      <Contents>
+        <Title data-aos="fade-up" data-aos-duration="2000">
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            suscipit tempora adipisci, accusamus ipsa.
+          </p>
+        </Title>
 
-      <div className="container-sub2">
-        <span className="header-container">
-          <img className="logo" src={logo} alt="logo" />
-          <h2 className="header1">Melexy Digital Services</h2>
-          <p className="header2"> Register to view our products and services</p>
-        </span>
-
-        <form onSubmit={formik.handleSubmit}>
+        <FormContents onSubmit={formik.handleSubmit}>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
-            placeholder="first name"
-            name="firstName"
-            value={formik.values.firstName}
+            placeholder="Enter your name"
+            id="name"
+            name="name"
+            value={formik.values.name}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.firstName && formik.errors.firstName ? (
-            <p className="errors">{formik.errors.firstName}</p>
+          {formik.touched.name && formik.errors.name ? (
+            <p className="errors">{formik.errors.name}</p>
           ) : null}
 
-          <input
-            type="text"
-            placeholder="last name"
-            name="lastName"
-            value={formik.values.lastName}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-          {formik.touched.lastName && formik.errors.lastName ? (
-            <p className="errors">{formik.errors.lastName}</p>
-          ) : null}
+          <label htmlFor="email">Email</label>
           <input
             type="email"
-            placeholder="email"
+            placeholder="Enter your Email"
+            id="email"
             name="email"
             value={formik.values.email}
             onChange={formik.handleChange}
@@ -87,33 +74,52 @@ function Form() {
           {formik.touched.email && formik.errors.email ? (
             <p className="errors">{formik.errors.email}</p>
           ) : null}
+
+          <label htmlFor="phoneNumber">Phone Number</label>
           <input
-            type="password"
-            placeholder="password"
-            name="password"
-            value={formik.values.password}
+            type="tel"
+            placeholder="Enter your phone number"
+            id="phoneNumber"
+            name="phoneNumber"
+            value={formik.values.phoneNumber}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.password && formik.errors.password ? (
-            <p className="errors">{formik.errors.password}</p>
+          {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+            <p className="errors">{formik.errors.phoneNumber}</p>
           ) : null}
+
+          <label htmlFor="subject">Subject</label>
           <input
-            type="password"
-            placeholder="confirm password"
-            name="confirmPassword"
-            value={formik.values.confirmPassword}
+            type="text"
+            placeholder="Provide context"
+            id="subject"
+            name="subject"
+            value={formik.values.subject}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.confirmPassword && formik.errors.confirmPassword ? (
-            <p className="errors">{formik.errors.confirmPassword}</p>
+          {formik.touched.subject && formik.errors.subject ? (
+            <p className="errors">{formik.errors.subject}</p>
+          ) : null}
+
+          <label htmlFor="message">Message</label>
+          <textarea
+            placeholder="Write your question here"
+            id="message"
+            name="message"
+            value={formik.values.message}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+          {formik.touched.message && formik.errors.message ? (
+            <p className="errors">{formik.errors.message}</p>
           ) : null}
           <br />
-          <button type="submit">Register</button>
-        </form>
-      </div>
-    </div>
+          <button type="submit">Send Message</button>
+        </FormContents>
+      </Contents>
+    </MainContainer>
   );
 }
 
