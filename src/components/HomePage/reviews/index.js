@@ -10,11 +10,11 @@ function Reviews() {
   return (
     <MainContainer bgco="#FFF">
       <ContentContainer>
-        <LeftContent data-aos="fade-right" data-aos-duration="500">
+        <LeftContent data-aos="fade-right">
           <h3>What our clients say about us</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
         </LeftContent>
-        <RightContent data-aos="fade-left" data-aos-duration="800">
+        <RightContent data-aos="fade-left">
           <h5>
             "The best agency we’ve worked with so far. They understand our
             product and are able to add new features with a great focus."

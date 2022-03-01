@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Portfolio from "./pages/Portfolio";
 import Pricing from "./pages/Pricing";
+import ContactUs from "./pages/ContactUs";
 
 const theme = {
   colors: {
@@ -34,7 +35,9 @@ const theme = {
 
 function App() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      duration: 1500,
+    });
   }, []);
 
   return (
@@ -48,6 +51,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
           <Footer />
         </Fragment>

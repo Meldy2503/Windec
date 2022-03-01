@@ -10,8 +10,8 @@ import { CgArrowLongRight } from "react-icons/cg";
 function SendInquiry() {
   return (
     <MainContainer bgco="#fff">
-      <ContentContainer pt="0" data-aos="fade-up" data-aos-duration="500">
-        <LeftContent>
+      <ContentContainer pt="0">
+        <LeftContent data-aos="fade-right">
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
@@ -21,7 +21,7 @@ function SendInquiry() {
             </p>
           </div>
         </LeftContent>
-        <RightContent>
+        <RightContent data-aos="fade-left">
           <div>
             <h5>Send inquiry</h5>
             <p>

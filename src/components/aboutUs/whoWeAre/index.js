@@ -1,5 +1,5 @@
 import React from "react";
-import { LeftContent, RightContent, Texts } from "./Styled";
+import { LeftContent, RightContent, Texts, ImgContainer } from "./Styled";
 import {
   MainContainer,
   ContentContainer,
@@ -9,7 +9,7 @@ function WhoWeAre() {
   return (
     <MainContainer bgco="#FFF">
       <ContentContainer pb="5rem" bgcon="#F4F5F5">
-        <LeftContent data-aos="fade-up" data-aos-duration="500">
+        <LeftContent data-aos="fade-up">
           <Texts>
             <h6>Who we are</h6>
             <h1>Goal focussed</h1>
@@ -21,7 +21,7 @@ function WhoWeAre() {
             </p>
           </Texts>
         </LeftContent>
-        <RightContent data-aos="fade-up" data-aos-duration="800">
+        <RightContent data-aos="fade-up">
           <Texts>
             <h1>Continuous improvement</h1>
             <p>
@@ -33,6 +33,7 @@ function WhoWeAre() {
           </Texts>
         </RightContent>
       </ContentContainer>
+      <ImgContainer data-aos="fade-up" />
     </MainContainer>
   );
 }
