@@ -1,26 +1,26 @@
 import React from "react";
-import LandingPage from "../components/homePage/landingPage/index";
-import HowWeWork from "../components/homePage/howWeWork/index";
-import ViewOurProjects from "../components/homePage/viewOurProjects/index";
-import Features from "../components/homePage/features/index";
-import Reviews from "../components/homePage/reviews/index";
-import FAQ from "../components/homePage/FAQ/index";
-import SendInquiry from "../components/homePage/sendInquiry/index";
-import OurBlog from "../components/homePage/ourBlog/index";
+import LandingPage from "../components/HomePage/LandingPage/index";
+import HowWeWork from "../components/HomePage/howWeWork/index";
+import ViewOurProjects from "../components/HomePage/viewOurProjects/index";
+import Features from "../components/HomePage/features/index";
+import Reviews from "../components/HomePage/reviews/index";
+import FAQ from "../components/HomePage/FAQ/index";
+import SendInquiry from "../components/HomePage/sendInquiry/index";
+import OurBlog from "../components/HomePage/ourBlog/index";
 
 const Home = () => {
-   return (
-       <div>
-           <LandingPage />
-           <HowWeWork />
-           <ViewOurProjects />
-           <Features />
-           <Reviews />
-           <FAQ />
-           <SendInquiry />
-           <OurBlog />   
-       </div>
-   )
-}
+  return (
+    <div>
+      <LandingPage />
+      <HowWeWork />
+      <ViewOurProjects />
+      <Features />
+      <Reviews />
+      <FAQ />
+      <SendInquiry />
+      <OurBlog />
+    </div>
+  );
+};
 
 export default Home;

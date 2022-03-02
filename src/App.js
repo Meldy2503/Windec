@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/navBar/index";
+import NavBar from "./components/Navbar/index";
 import Footer from "./components/footer/index";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";

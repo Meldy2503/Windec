@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import img2 from "../../images/img2.svg";
+import img3 from "../../images/img3.svg";
+import img4 from "../../images/img4.svg";
 
 export const Title = styled.span`
   display: flex;
@@ -59,52 +62,152 @@ export const Container = styled.div`
 export const LeftContent = styled.div`
   width: 65.5%;
   position: relative;
+  background: linear-gradient(
+      90deg,
+      #1c1e53 0%,
+      rgba(28, 30, 83, 0.5) 53%,
+      transparent 53%
+    ),
+    url(${img2});
+  height: 55rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     width: 100%;
     margin: 0 auto;
   }
 
-  span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 47%;
-    height: 99%;
+  @media screen and (max-width: 600px) {
     background: linear-gradient(
-      329.39deg,
+        105deg,
+        #1c1e53 -10.96%,
+        rgba(28, 30, 83, 0.5) 103.96%
+      ),
+      url(${img2});
+    height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  div {
+    position: absolute;
+    top: 20rem;
+    left: 3rem;
+    color: #fff;
+    width: 45%;
+
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      top: 5rem;
+      width: 90%;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      line-height: 1.6;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      line-height: 1.5;
+      opacity: 0.8;
+      font-size: 1.4rem;
+      width: 90%;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      color: ${({ theme }) => theme.colors.secondary2};
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  li a {
+    text-decoration: none;
+    margin-right: 1.3rem;
+    color: ${({ theme }) => theme.colors.secondary2};
+
+    &:hover {
+      color: #fff;
+    }
+  }
+`;
+
+export const RightContent = styled.div`
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 2.8rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
+
+export const Img1 = styled.div`
+  position: relative;
+  background: linear-gradient(
+      105deg,
       #1c1e53 -10.96%,
       rgba(28, 30, 83, 0.5) 103.96%
-    );
+    ),
+    url(${img3});
+  height: 26.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 
-    div {
-      padding-top: 20rem;
-      margin: 0 auto;
-      width: 80%;
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+    width: 48%;
+  }
 
-      h3 {
-        margin-bottom: 1rem;
-        font-size: 2rem;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  div {
+    position: absolute;
+    top: 10rem;
+    left: 3.5rem;
+    width: 80%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      top: 5rem;
+      width: 90%;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      color: ${({ theme }) => theme.colors.secondary2};
+
+      &:hover {
         color: #fff;
-        line-height: 1.3;
-      }
-
-      p {
-        margin-bottom: 2rem;
-        line-height: 1.4;
-        color: #fff;
-        opacity: 0.8;
-        font-size: 1.4rem;
-      }
-
-      li {
-        display: flex;
-        align-items: center;
-        color: ${({ theme }) => theme.colors.secondary2};
-
-        &:hover {
-          color: #fff;
-        }
       }
     }
 
@@ -118,86 +221,20 @@ export const LeftContent = styled.div`
       }
     }
   }
-
-  img {
-    max-width: 100%;
-  }
 `;
 
-export const RightContent = styled.div`
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  row-gap: 3rem;
-  position: relative;
+export const Img2 = styled.div`
+  background: url(${img4});
+  height: 26.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0 auto;
+    width: 48%;
+  }
+
+  @media screen and (max-width: 600px) {
     width: 100%;
-  }
-
-  span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 48%;
-    background: linear-gradient(
-      329.39deg,
-      #1c1e53 -10.96%,
-      rgba(28, 30, 83, 0.5) 103.96%
-    );
-
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-      width: 48%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    div {
-      padding-top: 8rem;
-      margin: 0 auto;
-      /* width: 50%; */
-
-      h3 {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-        color: #fff;
-        line-height: 1.3;
-      }
-
-      li {
-        display: flex;
-        align-items: center;
-        color: ${({ theme }) => theme.colors.secondary2};
-
-        &:hover {
-          color: #fff;
-        }
-      }
-
-      li a {
-        text-decoration: none;
-        margin-right: 1.3rem;
-        color: ${({ theme }) => theme.colors.secondary2};
-
-        &:hover {
-          color: #fff;
-        }
-      }
-    }
-  }
-
-  img {
-  }
-
-  .img4 {
-    max-width: 100%;
-    height: 3rem;
   }
 `;
