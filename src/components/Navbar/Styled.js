@@ -27,11 +27,11 @@ export const Links = styled.nav`
       display: flex;
       flex-direction: column;
       background-color: #000033;
-      opacity: 0.7;
+      opacity: 0.98;
       position: absolute;
       top: 7.1rem;
       right: -10%;
-      width: 60%;
+      width: 70%;
       height: 100vh;
       z-index: 1000;
     }

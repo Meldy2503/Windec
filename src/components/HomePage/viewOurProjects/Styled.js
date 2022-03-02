@@ -23,6 +23,10 @@ export const Title = styled.span`
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       font-size: 2.7rem;
     }
+
+    @media screen and (max-width: 450px) {
+      width: 50%;
+    }
   }
 
   li {
@@ -101,7 +105,7 @@ export const LeftContent = styled.div`
 
     @media screen and (max-width: 600px) {
       position: absolute;
-      top: 5rem;
+      top: 7rem;
       width: 90%;
     }
 
@@ -114,7 +118,6 @@ export const LeftContent = styled.div`
     p {
       margin-bottom: 2rem;
       line-height: 1.5;
-      opacity: 0.8;
       font-size: 1.4rem;
       width: 90%;
     }
@@ -190,7 +193,7 @@ export const Img1 = styled.div`
 
     @media screen and (max-width: 600px) {
       position: absolute;
-      top: 5rem;
+      top: 7rem;
       width: 90%;
     }
 
