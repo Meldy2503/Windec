@@ -14,8 +14,8 @@ function OurBlog() {
       <Container data-aos="fade-up">
         {data.map((items) => {
           return (
-            <Contents data-aos="fade-up">
-              <div key={items.id}>
+            <Contents key={items.id} data-aos="fade-up">
+              <div>
                 <img src={items.img} alt="blogImg" />
                 <h6 data-aos="fade-up">{items.date}</h6>
                 <h5 data-aos="fade-up">{items.title}</h5>

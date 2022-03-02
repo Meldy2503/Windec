@@ -14,8 +14,8 @@ function Features() {
       <Container>
         {data.map((items) => {
           return (
-            <Contents data-aos="fade-up">
-              <div key={items.id}>
+            <Contents key={items.id} data-aos="fade-up">
+              <div>
                 <img src={items.icon} alt="icon" />
                 <h6>{items.title}</h6>
                 <p>{items.text}</p>
