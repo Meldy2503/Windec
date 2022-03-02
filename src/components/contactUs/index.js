@@ -55,8 +55,8 @@ function Form() {
           </p>
         </Title>
 
-        <FormContainer onSubmit={formik.handleSubmit} data-aos="fade-up">
-          <FormContents>
+        <FormContainer data-aos="fade-up" onSubmit={formik.handleSubmit}>
+          <FormContents data-aos="fade-up">
             <InputContainer>
               <label htmlFor="name">Name</label>
               <input
