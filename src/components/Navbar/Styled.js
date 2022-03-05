@@ -113,7 +113,7 @@ export const NavTitle = styled.a`
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(1%, 75%);
+    transform: translate(1%, 50%);
   }
 `;
 
@@ -122,7 +122,7 @@ export const MenuIcon = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     display: block;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -131,7 +131,7 @@ export const MenuIcon = styled.div`
     cursor: pointer;
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
   }
 `;
