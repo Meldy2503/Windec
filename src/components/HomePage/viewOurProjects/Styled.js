@@ -156,10 +156,12 @@ export const RightContent = styled.div`
     margin: 0 auto;
     width: 100%;
     margin-top: 2.8rem;
+    height: fit-content;
   }
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    height: 55rem;
   }
 `;
 

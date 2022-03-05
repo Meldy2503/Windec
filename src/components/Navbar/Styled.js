@@ -55,10 +55,10 @@ export const Links = styled.nav`
       text-align: left;
       border-bottom: 1px solid ${({ theme }) => theme.colors.tetiary1};
       display: block;
-      margin-bottom: 0.5rem;
+      margin: 2.7rem 1rem;
 
       &:hover {
-        color: ${({ theme }) => theme.colors.secondary1};
+        color: #fff;
       }
     }
   }
@@ -74,14 +74,9 @@ export const Links = styled.nav`
   }
 
   .active {
+    text-decoration: none;
     color: #fff;
     opacity: 1;
-
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-      padding: 0;
-      border: none;
-      color: ${({ theme }) => theme.colors.secondary1};
-    }
   }
 `;
 
@@ -100,10 +95,8 @@ export const ContactUs = styled.div`
     border: none;
     padding: 0rem;
 
-    &:hover,
-    &:focus {
-      color: ${({ theme }) => theme.colors.secondary1};
-      border: none;
+    &:hover {
+      color: #fff;
     }
   }
 `;
@@ -120,7 +113,7 @@ export const NavTitle = styled.a`
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(1%, 50%);
+    transform: translate(1%, 75%);
   }
 `;
 
@@ -129,14 +122,15 @@ export const MenuIcon = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     display: block;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-1%, 45%);
+    transform: translate(-1%, 25%);
+    color: #fff;
 
-    &:hover {
-      color: ${({ theme }) => theme.colors.secondary1};
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      font-size: 3rem;
     }
   }
 `;

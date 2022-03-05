@@ -1,13 +1,9 @@
 import React from "react";
 import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./Styled";
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
-// import { Spin as Hamburger } from "hamburger-react";
+import { Spin as Hamburger } from "hamburger-react";
 
 function NavBar() {
-  // const [isOpen, setOpen] = React.useState(false);
-
   const [onIconClick, setOnIconClick] = React.useState(false);
   const handleClick = () => setOnIconClick(!onIconClick);
   const closeMenuLink = () => setOnIconClick(false);
@@ -19,9 +15,8 @@ function NavBar() {
         <ul className={onIconClick ? "openMenu" : "closeMenu"}>
           <li>
             <NavLink
-              exact
-              className="navLink"
-              activeClassName="active"
+              end
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
               onClick={closeMenuLink}
               to="/"
             >
@@ -30,8 +25,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              className="navLink"
-              activeClassName="active"
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
               onClick={closeMenuLink}
               to="/about-us"
             >
@@ -40,8 +34,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              className="navLink"
-              activeClassName="active"
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
               onClick={closeMenuLink}
               to="/portfolio"
             >
@@ -50,8 +43,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              className="navLink"
-              activeClassName="active"
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
               onClick={closeMenuLink}
               to="/pricing"
             >
@@ -61,8 +53,9 @@ function NavBar() {
           <li>
             <ContactUs>
               <NavLink
-                className="navLink"
-                activeClassName="active"
+                className={(navLink) =>
+                  navLink.isActive ? "active" : "navLink"
+                }
                 onClick={closeMenuLink}
                 to="/contact-us"
               >
@@ -73,8 +66,11 @@ function NavBar() {
         </ul>
 
         <MenuIcon onClick={handleClick}>
-          {/* <Hamburger onClick={handleClick} toggled={isOpen} toggle={setOpen} /> */}
-          {onIconClick ? <AiOutlineClose /> : <FaBars />}
+          <Hamburger
+            onClick={handleClick}
+            toggled={onIconClick}
+            toggle={setOnIconClick}
+          />
         </MenuIcon>
       </Links>
     </NavContainer>
