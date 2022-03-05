@@ -34,6 +34,7 @@ export const Links = styled.nav`
       width: 70%;
       height: 100vh;
       z-index: 1000;
+      overflow: scroll;
     }
   }
 
