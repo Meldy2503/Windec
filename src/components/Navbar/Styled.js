@@ -56,7 +56,7 @@ export const Links = styled.nav`
       text-align: left;
       border-bottom: 1px solid ${({ theme }) => theme.colors.tetiary1};
       display: block;
-      margin: 2.7rem 1rem;
+      margin: 1.6rem 1rem;
 
       &:hover {
         color: #fff;
