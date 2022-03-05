@@ -3,6 +3,7 @@ import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Contents, LeftContent, RightContent } from "./Styled";
 import data from "./Data";
+import { Link } from "react-router-dom";
 
 function HowWeWork() {
   return (
@@ -15,7 +16,7 @@ function HowWeWork() {
             blanditiis elit.
           </p>
           <li>
-            <a href="/contact-us">Get in touch with us</a>
+            <Link to="/contact-us">Get in touch with us</Link>
             <CgArrowLongRight />
           </li>
         </LeftContent>

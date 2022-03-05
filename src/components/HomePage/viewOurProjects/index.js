@@ -9,6 +9,7 @@ import {
   Img1,
   Img2,
 } from "./Styled";
+import { Link } from "react-router-dom";
 
 function ViewOurProjects() {
   return (
@@ -16,7 +17,7 @@ function ViewOurProjects() {
       <Title data-aos="fade-up">
         <h2>View our projects</h2>
         <li>
-          <a href="/portfolio">View more</a>
+          <Link to="/portfolio">View more</Link>
           <CgArrowLongRight />
         </li>
       </Title>
@@ -26,7 +27,7 @@ function ViewOurProjects() {
             <h3>Workhub Office Webflow Webflow Design</h3>
             <p>Lorem ipsum dolor sit amet conselit. Minus blanditiis elit.</p>
             <li>
-              <a href="/portfolio">View project</a>
+              <Link to="/portfolio">View project</Link>
               <CgArrowLongRight />
             </li>
           </div>
@@ -37,7 +38,7 @@ function ViewOurProjects() {
             <div>
               <h3>Unisaas Website Design</h3>
               <li>
-                <a href="/portfolio">View portifolio</a>
+                <Link to="/portfolio">View portifolio</Link>
                 <CgArrowLongRight />
               </li>
             </div>

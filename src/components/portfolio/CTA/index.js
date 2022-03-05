@@ -17,7 +17,9 @@ function CTA() {
             ultricies nec dolor sit amet, scelerisque cursus purus.
           </p>
           <span data-aos="fade-up">
-            <Button href="/contact-us">Contact Us</Button>
+            <Button margin="1rem 0 2rem 0" to="/contact-us">
+              Contact Us
+            </Button>
           </span>
         </Contents>
       </ContentContainer>

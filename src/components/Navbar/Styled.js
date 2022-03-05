@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavContainer = styled.div`
   width: 100%;
@@ -105,7 +106,7 @@ export const ContactUs = styled.div`
   }
 `;
 
-export const NavTitle = styled.a`
+export const NavTitle = styled(Link)`
   display: block;
   letter-spacing: 0.7rem;
   text-shadow: 0.1rem 0.2rem 0.3rem #000;

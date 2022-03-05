@@ -7,6 +7,7 @@ import {
 import { Button } from "../../reusableComponents/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
 import img1 from "../../images/img1.svg";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -19,9 +20,9 @@ function LandingPage() {
             blanditiis adipisicing elit.
           </p>
           <span>
-            <Button href="/portfolio">View our work</Button>
+            <Button to="/portfolio">View our work</Button>
             <li>
-              <a href="/pricing">View Pricing</a>
+              <Link to="/pricing">View Pricing</Link>
               <CgArrowLongRight />
             </li>
           </span>

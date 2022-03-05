@@ -62,7 +62,7 @@ function Intro() {
 
                   <Btn>
                     <Button
-                      href="/contact-us"
+                      to="/contact-us"
                       bgc={items.id % 2 !== 0 ? "#1B1C2B" : null}
                       color={items.id % 2 !== 0 ? "#fff" : null}
                       bgh={items.id % 2 !== 0 ? "#282938" : null}

@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <NavContainer>
       <Links>
-        <NavTitle href="/">Windec</NavTitle>
+        <NavTitle to="/">Windec</NavTitle>
         <ul className={onIconClick ? "openMenu" : "closeMenu"}>
           <li>
             <NavLink

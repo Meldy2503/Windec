@@ -6,6 +6,7 @@ import {
 } from "../../reusableComponents/ContainerStyled";
 import { Button } from "../../reusableComponents/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function SendInquiry() {
   return (
@@ -32,12 +33,12 @@ function SendInquiry() {
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Email" />
               <input type="text" placeholder="Paste your Web design URL" />
-              <Button href="contact-us" margin="2.5rem 0">
+              <Button to="/contact-us" margin="2.5rem 0">
                 Send an Inquiry
               </Button>
             </form>
             <li>
-              <a href="contact-us">Get in touch with us</a>
+              <Link to="/contact-us">Get in touch with us</Link>
               <CgArrowLongRight />
             </li>
           </div>

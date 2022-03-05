@@ -12,6 +12,10 @@ export const Title = styled.span`
   margin: 0 auto;
   padding-top: 10rem;
 
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    padding-top: 5rem;
+  }
+
   h2 {
     margin-bottom: 2rem;
     font-size: 3.3rem;
@@ -22,6 +26,7 @@ export const Title = styled.span`
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       font-size: 2.7rem;
+      margin-bottom: 1rem;
     }
 
     @media screen and (max-width: 450px) {
@@ -60,6 +65,10 @@ export const Container = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     flex-direction: column;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    padding: 2rem 0 5rem 0;
   }
 `;
 
