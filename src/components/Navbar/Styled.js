@@ -23,7 +23,7 @@ export const Links = styled.nav`
   .openMenu {
     display: none;
 
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: flex;
       flex-direction: column;
       background-color: #000033;
@@ -42,30 +42,16 @@ export const Links = styled.nav`
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: none;
     }
   }
 
   li {
     list-style: none;
-    margin: 1.4rem 1.3rem;
+    margin: 1.4rem 1.6rem;
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-      margin: 1.4rem 1rem;
-    }
-  }
-
-  li a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.tertiary2};
-
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       text-align: left;
       border-bottom: 1px solid ${({ theme }) => theme.colors.tetiary1};
       display: block;
@@ -76,19 +62,40 @@ export const Links = styled.nav`
       }
     }
   }
+
+  .navLink {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .active {
+    color: #fff;
+    opacity: 1;
+
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
+      padding: 0;
+      border: none;
+      color: ${({ theme }) => theme.colors.secondary1};
+    }
+  }
 `;
+
 export const ContactUs = styled.div`
   background-color: ${({ theme }) => theme.colors.primary2};
   border: 2px solid #f4f6fc33;
   padding: 1rem 3rem;
   border-radius: 3rem;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 2px solid #fff;
   }
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     background-color: transparent;
     border: none;
     padding: 0rem;
@@ -109,7 +116,7 @@ export const NavTitle = styled.a`
   text-decoration: none;
   color: #fff;
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     position: absolute;
     top: 0;
     left: 0;
@@ -120,7 +127,7 @@ export const NavTitle = styled.a`
 export const MenuIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     display: block;
     font-size: 2.5rem;
     position: absolute;
@@ -128,8 +135,7 @@ export const MenuIcon = styled.div`
     right: 0;
     transform: translate(-1%, 45%);
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: ${({ theme }) => theme.colors.secondary1};
     }
   }

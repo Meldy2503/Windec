@@ -8,7 +8,7 @@ import FAQ from "../components/HomePage/FAQ/index";
 import SendInquiry from "../components/HomePage/sendInquiry/index";
 import OurBlog from "../components/HomePage/ourBlog/index";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
       <LandingPage />
