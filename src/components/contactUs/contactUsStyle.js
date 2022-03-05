@@ -45,7 +45,7 @@ export const FormContainer = styled.form`
   flex-direction: column;
 
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-    padding: 3rem;
+    padding: 2rem;
   }
 
   label {
@@ -133,6 +133,10 @@ export const InputContainer = styled.div`
 
     &:focus {
       border-bottom: 2px solid ${({ theme }) => theme.colors.primary1};
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      padding: 1.5rem;
     }
   }
 `;

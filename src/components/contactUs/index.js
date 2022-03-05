@@ -128,7 +128,7 @@ function Form() {
             id="message"
             name="message"
             cols="30"
-            rows="10"
+            rows="6"
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -140,7 +140,7 @@ function Form() {
           <span>
             <Button
               data-aos="fade-up"
-              href="#"
+              to="/contact-us"
               type="submit"
               bgc="#1B1C2B"
               bgh="#282938"

@@ -5,6 +5,7 @@ import {
 } from "../../reusableComponents/ContainerStyled";
 import { LeftContent, RightContent, Texts } from "../FAQ/Styled";
 import data from "./Data";
+import { Link } from "react-router-dom";
 
 function FAQ() {
   const [onClick, setOnClick] = React.useState({});
@@ -20,7 +21,7 @@ function FAQ() {
       <ContentContainer>
         <LeftContent data-aos="fade-right">
           <h3>Frequently asked questions</h3>
-          <a href="/contact-us">Contact us for more info</a>
+          <Link to="/contact-us">Contact us for more info</Link>
         </LeftContent>
         <RightContent>
           {data.map((item, index) => {

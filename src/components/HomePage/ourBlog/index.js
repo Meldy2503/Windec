@@ -3,6 +3,7 @@ import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { Title, Container, Contents } from "./Styled";
 import data from "./Data";
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function OurBlog() {
   return (
@@ -21,7 +22,7 @@ function OurBlog() {
                 <h5 data-aos="fade-up">{items.title}</h5>
                 <p data-aos="fade-up">{items.text}</p>
                 <li data-aos="fade-up">
-                  <a href="/about-us">Read More</a>
+                  <Link to="/about-us">Read More</Link>
                   <CgArrowLongRight />
                 </li>
               </div>
