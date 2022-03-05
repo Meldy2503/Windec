@@ -59,7 +59,7 @@ function Reviews() {
   };
 
   return (
-    <MainContainer bgco="#FFF">
+    <MainContainer bgco="#fff">
       <ContentContainer>
         <LeftContent data-aos="fade-right">
           <h3>What our clients say about us</h3>

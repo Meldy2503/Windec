@@ -56,7 +56,8 @@ export const Links = styled.nav`
       text-align: left;
       border-bottom: 1px solid ${({ theme }) => theme.colors.tetiary1};
       display: block;
-      margin: 1.6rem 1rem;
+      margin: 1.4rem 1rem;
+      overflow: scroll;
 
       &:hover {
         color: #fff;
@@ -95,9 +96,11 @@ export const ContactUs = styled.div`
     background-color: transparent;
     border: none;
     padding: 0rem;
+    overflow: scroll;
 
     &:hover {
       color: #fff;
+      border: none;
     }
   }
 `;
