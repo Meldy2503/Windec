@@ -14,8 +14,8 @@ function MeetOurTeam() {
       <Container>
         {data.map((items) => {
           return (
-            <Contents data-aos="flip-left">
-              <div key={items.id}>
+            <Contents  key={items.id} data-aos="flip-left">
+              <div>
                 <figure>
                   <img src={items.img} alt="img" />
                   <figcaption>

@@ -128,6 +128,7 @@ export const MenuIcon = styled.div`
     right: 0;
     transform: translate(-1%, 25%);
     color: #fff;
+    cursor: pointer;
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       font-size: 3rem;
