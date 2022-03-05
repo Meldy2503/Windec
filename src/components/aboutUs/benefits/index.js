@@ -26,8 +26,8 @@ function Benefits() {
         <CardContainer data-aos="fade-up">
           {data.map((items) => {
             return (
-              <Cards>
-                <div key={items.id}>
+              <Cards key={items.id}>
+                <div>
                   <img src={items.icon} alt="icon" />
                   <h6>{items.title}</h6>
                   <p>{items.text}</p>

@@ -7,7 +7,7 @@ import Benefits from "../components/aboutUs/benefits/index";
 import MeetOurTeam from "../components/aboutUs/meetOurTeam/index";
 
 
-const AboutUs = () => {
+const AboutUs = (props) => {
    return (
        <div>
            <Intro />

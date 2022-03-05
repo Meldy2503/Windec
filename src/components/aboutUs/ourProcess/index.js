@@ -14,8 +14,8 @@ function OurProcess() {
       <Container data-aos="fade-up">
         {data.map((items) => {
           return (
-            <Contents>
-              <div classname="mapped-content" key={items.id}>
+            <Contents key={items.id}>
+              <div className="mapped-content">
                 <span>{items.id}</span>
                 <img src={circle} alt="circle" />
                 <h6>{items.title}</h6>

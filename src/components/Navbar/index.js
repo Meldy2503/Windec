@@ -1,7 +1,7 @@
 import React from "react";
 import { NavContainer, Links, NavTitle, MenuIcon, ContactUs } from "./Styled";
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
+import { Spin as Hamburger } from "hamburger-react";
 
 function NavBar() {
   const [onIconClick, setOnIconClick] = React.useState(false);
@@ -14,36 +14,63 @@ function NavBar() {
         <NavTitle href="/">Windec</NavTitle>
         <ul className={onIconClick ? "openMenu" : "closeMenu"}>
           <li>
-            <a onClick={closeMenuLink} href="/">
+            <NavLink
+              end
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
+              onClick={closeMenuLink}
+              to="/"
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a onClick={closeMenuLink} href="/about-us">
+            <NavLink
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
+              onClick={closeMenuLink}
+              to="/about-us"
+            >
               About us
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a onClick={closeMenuLink} href="/portfolio">
+            <NavLink
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
+              onClick={closeMenuLink}
+              to="/portfolio"
+            >
               Portfolio
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a onClick={closeMenuLink} href="/pricing">
+            <NavLink
+              className={(navLink) => (navLink.isActive ? "active" : "navLink")}
+              onClick={closeMenuLink}
+              to="/pricing"
+            >
               Pricing
-            </a>
+            </NavLink>
           </li>
           <li>
             <ContactUs>
-              <a onClick={closeMenuLink} href="/contact-us">
+              <NavLink
+                className={(navLink) =>
+                  navLink.isActive ? "active" : "navLink"
+                }
+                onClick={closeMenuLink}
+                to="/contact-us"
+              >
                 Contact us
-              </a>
+              </NavLink>
             </ContactUs>
           </li>
         </ul>
 
         <MenuIcon onClick={handleClick}>
-          {onIconClick ? <AiOutlineClose /> : <FaBars />}
+          <Hamburger
+            onClick={handleClick}
+            toggled={onIconClick}
+            toggle={setOnIconClick}
+          />
         </MenuIcon>
       </Links>
     </NavContainer>
