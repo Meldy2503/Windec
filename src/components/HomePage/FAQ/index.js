@@ -16,8 +16,8 @@ function FAQ() {
   };
 
   return (
-    <MainContainer bgco="#FFF">
-      <ContentContainer pt="0">
+    <MainContainer bgco="#f4f5f5">
+      <ContentContainer>
         <LeftContent data-aos="fade-right">
           <h3>Frequently asked questions</h3>
           <a href="/contact-us">Contact us for more info</a>
