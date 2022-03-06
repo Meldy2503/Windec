@@ -3,6 +3,13 @@ import { MainContainer, Title } from "./ourPartnersStyle";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import fbLogo from "../../images/facebookLogo.jpg";
+import googleLogo from "../../images/googleLogo.jpg";
+import bingLogo from "../../images/bingLogo.jpg";
+import hubspotLogo from "../../images/hubspotLogo.jpg";
+import metaLogo from "../../images/metaLogo.jpg";
+import neonLogo from "../../images/neonLogo.jpg";
+import splashLogo from "../../images/splashLogo.jpg";
 
 function OurPartners() {
   const settings = {
@@ -10,7 +17,7 @@ function OurPartners() {
     infinite: true,
     lazyLoad: true,
     speed: 200,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: 0,
@@ -37,7 +44,7 @@ function OurPartners() {
   };
 
   return (
-    <MainContainer>
+    <MainContainer bgco="#fff">
       <Contents>
         <Title>
           <h2>Our Partners:</h2>
@@ -46,13 +53,13 @@ function OurPartners() {
         <Row>
           <Slider {...settings}>
             <Column>
-              <FbLogo />
-              <BingLogo />
-              <GoogleLogo />
-              <HubspotLogo />
-              <NeonLogo />
-              <SplashLogo />
-              <MetaLogo />
+              <img src={fbLogo} alt="fbLogo" />
+              <img src={googleLogo} alt="googleLogo" />
+              <img src={bingLogo} alt="bingLogo" />
+              <img src={hubspotLogo} alt="hubspotLogo" />
+              <img src={hubspotLogo} alt="hubspotLogo" />
+              <img src={metaLogo} alt="metaLogo" />
+              <img src={neonLogo} alt="neonLogo" />
             </Column>
           </Slider>
         </Row>
