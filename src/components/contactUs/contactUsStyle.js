@@ -136,7 +136,7 @@ export const InputContainer = styled.div`
     }
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
-      padding: 1.5rem;
+      padding: 1rem;
     }
   }
 `;

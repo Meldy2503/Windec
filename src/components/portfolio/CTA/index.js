@@ -13,8 +13,9 @@ function CTA() {
         <Contents data-aos="fade-up">
           <h2>Let's build something great together</h2>
           <p>
-            Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
-            ultricies nec dolor sit amet, scelerisque cursus purus.
+            Even if your brand is a striving business, you may have realized by
+            now that you have several competitors, Windec ensures your brand
+            always stands out.
           </p>
           <span data-aos="fade-up">
             <Button margin="1rem 0 2rem 0" to="/contact-us">
