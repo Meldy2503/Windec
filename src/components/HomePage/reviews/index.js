@@ -63,7 +63,7 @@ function Reviews() {
       <ContentContainer>
         <LeftContent data-aos="fade-right">
           <h3>What our clients say about us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+          <p>We derive pleasure through our happy and satisfied customers.</p>
         </LeftContent>
 
         <SliderContainer>

@@ -12,8 +12,7 @@ function HowWeWork() {
         <LeftContent data-aos="fade-right">
           <h2>How we work</h2>
           <p>
-            Lorem ipsum dolor sit et consect etur adipisicing elit. Minus
-            blanditiis elit.
+            We've got you covered from analysis and designs to completely optimized website solutions. 
           </p>
           <li>
             <Link to="/contact-us">Get in touch with us</Link>

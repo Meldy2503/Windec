@@ -25,7 +25,7 @@ function ViewOurProjects() {
         <LeftContent data-aos="fade-right">
           <div>
             <h3>Workhub Office Webflow Webflow Design</h3>
-            <p>Lorem ipsum dolor sit amet conselit. Minus blanditiis elit.</p>
+            <p>Trust us to give you nothing but the best.</p>
             <li>
               <Link to="/portfolio">View project</Link>
               <CgArrowLongRight />
