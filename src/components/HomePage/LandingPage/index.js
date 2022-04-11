@@ -16,8 +16,8 @@ function LandingPage() {
         <LeftContent data-aos="fade-right">
           <h1>Building stellar websites for early startups</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia
-            blanditiis adipisicing elit.
+            We've created stunning websites to help our clients pave their way
+            to strong online presence.
           </p>
           <span>
             <Button to="/portfolio">View our work</Button>

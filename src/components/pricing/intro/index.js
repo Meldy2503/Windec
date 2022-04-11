@@ -22,8 +22,9 @@ function Intro() {
         <Title data-aos="fade-up">
           <h2>Our Pricing Plans</h2>
           <p>
-            When you’re ready to go beyond prototyping in Figma, Webflow is
-            ready to help you bring your designs to life — without coding them.
+            Windec provides unmatched website design pricing packages for every
+            business - par excellent designs, comprehensive features and great
+            client servicing.
           </p>
         </Title>
 

@@ -50,8 +50,8 @@ function Form() {
         <Title data-aos="zoom-in">
           <h2>Contact Us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            suscipit tempora adipisci, accusamus ipsa.
+            For technical support, business consultations or general inquiries,
+            our customer service teams are ready to serve you 24/7, 365 days.
           </p>
         </Title>
 

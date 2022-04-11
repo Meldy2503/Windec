@@ -39,6 +39,12 @@ export const SliderContainer = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
     width: 100%;
   }
+
+  .slick-dots li button:before {
+    font-size: 1.2rem;
+    color: ${({ theme }) => theme.colors.primary3};
+    padding: 1rem 0;
+  }
 `;
 
 export const RightContent = styled.div`

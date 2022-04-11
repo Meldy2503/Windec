@@ -8,8 +8,8 @@ const data = [
     img: img9,
     date: "19 Jan 2022",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-    text: "Euismod faucibus turpis eu gravida mi. Pellen tesque et velit aliquam sed faucib turpis.",
+      "We feature business progressions by emphasizing on website functionality and usability",
+    text: "We take extra measures to ensure your website offers productive user experience.",
   },
 
   {
@@ -18,7 +18,7 @@ const data = [
     date: "18 Dec 2022",
     title:
       "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-    text: "See how pivoting to Webflow transformed sales strategy and allowed him to attract.",
+    text: "See how pivoting to Webflow transformed sales strategy and increased efficiency.",
   },
 
   {
@@ -26,8 +26,8 @@ const data = [
     img: img7,
     date: "21 Feb 2022",
     title:
-      "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
-    text: "Euismod faucibus turpis eu gravida mi gravida mi. Pellentesque et velit aliquam sefid misedgt.",
+      "Launch on a host of your preference with free professional training",
+    text: "We provide our clients with a demo launch to help them understand the dynamics of the website.",
   },
 ];
 

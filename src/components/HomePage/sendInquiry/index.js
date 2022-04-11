@@ -16,9 +16,8 @@ function SendInquiry() {
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-              enim.
+              At Windec, we apply seamsless, result-oriented web designs and
+              development processes customized according to your brand.
             </p>
           </div>
         </LeftContent>
@@ -26,13 +25,13 @@ function SendInquiry() {
           <div>
             <h5>Send inquiry</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
+              For business consultations or general inquiries,our customer
+              service teams are ready to serve you 24/7, 365 days.
             </p>
             <form action="#">
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Paste your Web design URL" />
+              <input type="text" placeholder="Add message" />
               <Button to="/contact-us" margin="2.5rem 0">
                 Send an Inquiry
               </Button>
