@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Windec/static/css/main.cc6656eb.css",
-    "main.js": "/Windec/static/js/main.563fbcd5.js",
+    "main.js": "/Windec/static/js/main.23eb37f8.js",
     "static/media/img10.svg": "/Windec/static/media/img10.1b9cdbb7ad489f3c9dd48086d92fb901.svg",
     "static/media/img7.svg": "/Windec/static/media/img7.86135ee95971d6c6b5f28a55b0d2481d.svg",
     "static/media/img9.svg": "/Windec/static/media/img9.f260336276fa61efebdb5d39356e9695.svg",
@@ -44,10 +44,10 @@
     "static/media/Icon4.svg": "/Windec/static/media/Icon4.4884841d29a605c80390289d4423dd32.svg",
     "static/media/Circle.svg": "/Windec/static/media/Circle.bb3f6feee2c2832ce9db69c3248c3b1a.svg",
     "main.cc6656eb.css.map": "/Windec/static/css/main.cc6656eb.css.map",
-    "main.563fbcd5.js.map": "/Windec/static/js/main.563fbcd5.js.map"
+    "main.23eb37f8.js.map": "/Windec/static/js/main.23eb37f8.js.map"
   },
   "entrypoints": [
     "static/css/main.cc6656eb.css",
-    "static/js/main.563fbcd5.js"
+    "static/js/main.23eb37f8.js"
   ]
 }
