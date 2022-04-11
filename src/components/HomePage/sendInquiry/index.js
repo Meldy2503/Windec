@@ -6,18 +6,18 @@ import {
 } from "../../reusableComponents/ContainerStyled";
 import { Button } from "../../reusableComponents/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function SendInquiry() {
   return (
     <MainContainer bgco="#fff">
-      <ContentContainer pt="0">
+      <ContentContainer>
         <LeftContent data-aos="fade-right">
           <div>
             <h1>Building stellar websites for early startups</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-              enim.
+              At Windec, we apply seamsless, result-oriented web designs and
+              development processes customized according to your brand.
             </p>
           </div>
         </LeftContent>
@@ -25,19 +25,19 @@ function SendInquiry() {
           <div>
             <h5>Send inquiry</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore.
+              For business consultations or general inquiries,our customer
+              service teams are ready to serve you 24/7, 365 days.
             </p>
             <form action="#">
               <input type="text" placeholder="Your Name" />
               <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Paste your Web design URL" />
-              <Button href="contact-us" margin="2.5rem 0">
+              <input type="text" placeholder="Add message" />
+              <Button to="/contact-us" margin="2.5rem 0">
                 Send an Inquiry
               </Button>
             </form>
             <li>
-              <a href="contact-us">Get in touch with us</a>
+              <Link to="/contact-us">Get in touch with us</Link>
               <CgArrowLongRight />
             </li>
           </div>

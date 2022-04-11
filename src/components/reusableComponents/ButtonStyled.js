@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   border-radius: 3rem;
   font-size: 1.6rem;
   border: ${({ border }) => border || "none"};

@@ -1,10 +1,15 @@
 import React from "react";
 import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
-import { Title, Container, LeftContent, RightContent } from "./Styled";
-import img2 from "../../images/img2.svg";
-import img3 from "../../images/img3.svg";
-import img4 from "../../images/img4.svg";
+import {
+  Title,
+  Container,
+  LeftContent,
+  RightContent,
+  Img1,
+  Img2,
+} from "./Styled";
+import { Link } from "react-router-dom";
 
 function ViewOurProjects() {
   return (
@@ -12,37 +17,33 @@ function ViewOurProjects() {
       <Title data-aos="fade-up">
         <h2>View our projects</h2>
         <li>
-          <a href="/portfolio">View more</a>
+          <Link to="/portfolio">View more</Link>
           <CgArrowLongRight />
         </li>
       </Title>
       <Container>
         <LeftContent data-aos="fade-right">
-          <img src={img2} alt="img2" />
-          <span>
-            <div>
-              <h3>Workhub Office Webflow Webflow Design</h3>
-              <p>Lorem ipsum dolor sit amet conselit. Minus blanditiis elit.</p>
-              <li>
-                <a href="/portfolio">View project</a>
-                <CgArrowLongRight />
-              </li>
-            </div>
-          </span>
+          <div>
+            <h3>Workhub Office Webflow Webflow Design</h3>
+            <p>Trust us to give you nothing but the best.</p>
+            <li>
+              <Link to="/portfolio">View project</Link>
+              <CgArrowLongRight />
+            </li>
+          </div>
         </LeftContent>
 
-        <RightContent data-aos="fade-left">
-          <img classname="img3" src={img3} alt="img3" />
-          <span>
+        <RightContent>
+          <Img1 data-aos="fade-left">
             <div>
               <h3>Unisaas Website Design</h3>
               <li>
-                <a href="/portfolio">View portifolio</a>
+                <Link to="/portfolio">View portifolio</Link>
                 <CgArrowLongRight />
               </li>
             </div>
-          </span>
-          <img classname="img4" src={img4} alt="img4" />
+          </Img1>
+          <Img2 data-aos="fade-left"></Img2>
         </RightContent>
       </Container>
     </MainContainer>

@@ -7,6 +7,7 @@ import {
 import { Button } from "../../reusableComponents/ButtonStyled";
 import { CgArrowLongRight } from "react-icons/cg";
 import img1 from "../../images/img1.svg";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -15,13 +16,13 @@ function LandingPage() {
         <LeftContent data-aos="fade-right">
           <h1>Building stellar websites for early startups</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quia
-            blanditiis adipisicing elit.
+            We've created stunning websites to help our clients pave their way
+            to strong online presence.
           </p>
           <span>
-            <Button href="/portfolio">View our work</Button>
+            <Button to="/portfolio">View our work</Button>
             <li>
-              <a href="/pricing">View Pricing</a>
+              <Link to="/pricing">View Pricing</Link>
               <CgArrowLongRight />
             </li>
           </span>

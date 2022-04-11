@@ -19,11 +19,12 @@ function Intro() {
   return (
     <MainContainer bgco="#fff">
       <Contents>
-        <Title data-aos="fade-up" data-aos-duration="2000">
+        <Title data-aos="fade-up">
           <h2>Our Pricing Plans</h2>
           <p>
-            When you’re ready to go beyond prototyping in Figma, Webflow is
-            ready to help you bring your designs to life — without coding them.
+            Windec provides unmatched website design pricing packages for every
+            business - par excellent designs, comprehensive features and great
+            client servicing.
           </p>
         </Title>
 
@@ -31,14 +32,15 @@ function Intro() {
           {data.map((items) => {
             return (
               <Cards
+                key={items.id}
                 data-aos="flip-left"
-                bg={items.id % 2 === 0 && "#1C1E53"}
-                co={items.id % 2 === 0 && "#fff"}
+                bg={items.id % 2 === 0 ? "#1C1E53" : null}
+                co={items.id % 2 === 0 ? "#fff" : null}
               >
-                <CardContents data-aos="zoom-in" key={items.id}>
+                <CardContents data-aos="zoom-in">
                   <ContentA>
                     <h3>${items.price}</h3>
-                    <DesignTag color={items.id % 2 === 0 && "#FCD980"}>
+                    <DesignTag color={items.id % 2 === 0 ? "#FCD980" : null}>
                       {items.priceTag}
                     </DesignTag>
                   </ContentA>
@@ -61,10 +63,10 @@ function Intro() {
 
                   <Btn>
                     <Button
-                      href="/contact-us"
-                      bgc={items.id % 2 !== 0 && "#1B1C2B"}
-                      color={items.id % 2 !== 0 && "#fff"}
-                      bgh={items.id % 2 !== 0 && "#282938"}
+                      to="/contact-us"
+                      bgc={items.id % 2 !== 0 ? "#1B1C2B" : null}
+                      color={items.id % 2 !== 0 ? "#fff" : null}
+                      bgh={items.id % 2 !== 0 ? "#282938" : null}
                       padding="1.4rem 25%"
                     >
                       {items.button}

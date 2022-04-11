@@ -6,6 +6,7 @@ import {
 import { MenuOptions, CardContainer, Cards } from "./templateStyled";
 import data from "./Data";
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function Templates() {
   return (
@@ -13,16 +14,16 @@ function Templates() {
       <ContentContainer flexd="column">
         <MenuOptions data-aos="fade-up">
           <li>
-            <a href="/portfolio">All</a>
+            <Link to="/portfolio">All</Link>
           </li>
           <li>
-            <a href="/portfolio">UI Design</a>
+            <Link to="/portfolio">UI Design</Link>
           </li>
           <li>
-            <a href="/portfolio">Webflow Design</a>
+            <Link to="/portfolio">Webflow Design</Link>
           </li>
           <li>
-            <a href="/portfolio">Figma Design</a>
+            <Link to="/portfolio">Figma Design</Link>
           </li>
         </MenuOptions>
 
@@ -35,7 +36,7 @@ function Templates() {
                   <h3 data-aos="fade-up">{items.title}</h3>
                   <p data-aos="fade-up">{items.text}</p>
                   <li data-aos="fade-up">
-                    <a href="/about-us">{items.link}</a>
+                    <Link to="/about-us">{items.link}</Link>
                     <CgArrowLongRight />
                   </li>
                 </div>

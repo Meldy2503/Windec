@@ -6,18 +6,17 @@ import MissionVission from "../components/aboutUs/missionVision/index";
 import Benefits from "../components/aboutUs/benefits/index";
 import MeetOurTeam from "../components/aboutUs/meetOurTeam/index";
 
-
-const AboutUs = () => {
-   return (
-       <div>
-           <Intro />
-           <WhoWeAre />
-           <OurProcess />
-           <MissionVission />
-           <Benefits />
-           <MeetOurTeam />
-       </div>
-   )
-}
+const AboutUs = (props) => {
+  return (
+    <div>
+      <Intro />
+      <WhoWeAre />
+      <OurProcess />
+      <MissionVission />
+      <Benefits />
+      <MeetOurTeam />
+    </div>
+  );
+};
 
 export default AboutUs;

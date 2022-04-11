@@ -44,6 +44,10 @@ export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
 
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    padding: 2rem;
+  }
+
   label {
     font-size: 1.8rem;
     display: inline-block;
@@ -78,7 +82,7 @@ export const FormContainer = styled.form`
   .errors {
     color: red;
     font-size: 1.5rem;
-    margin-top: -3.5rem;
+    margin-top: -2.8rem;
     padding-left: 1rem;
   }
 
@@ -112,7 +116,7 @@ export const InputContainer = styled.div`
   input {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.12);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     padding: 2rem;
     border-radius: 0.5rem;
     outline: none;
@@ -129,6 +133,10 @@ export const InputContainer = styled.div`
 
     &:focus {
       border-bottom: 2px solid ${({ theme }) => theme.colors.primary1};
+    }
+
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      padding: 1rem;
     }
   }
 `;

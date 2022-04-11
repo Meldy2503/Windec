@@ -3,6 +3,7 @@ import { MainContainer } from "../../reusableComponents/ContainerStyled";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Contents, LeftContent, RightContent } from "./Styled";
 import data from "./Data";
+import { Link } from "react-router-dom";
 
 function HowWeWork() {
   return (
@@ -11,11 +12,10 @@ function HowWeWork() {
         <LeftContent data-aos="fade-right">
           <h2>How we work</h2>
           <p>
-            Lorem ipsum dolor sit et consect etur adipisicing elit. Minus
-            blanditiis elit.
+            We've got you covered from analysis and designs to completely optimized website solutions. 
           </p>
           <li>
-            <a href="/contact-us">Get in touch with us</a>
+            <Link to="/contact-us">Get in touch with us</Link>
             <CgArrowLongRight />
           </li>
         </LeftContent>

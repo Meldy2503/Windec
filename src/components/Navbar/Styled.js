@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const NavContainer = styled.div`
   width: 100%;
@@ -23,17 +24,18 @@ export const Links = styled.nav`
   .openMenu {
     display: none;
 
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: flex;
       flex-direction: column;
       background-color: #000033;
-      opacity: 0.7;
+      opacity: 0.98;
       position: absolute;
       top: 7.1rem;
       right: -10%;
-      width: 60%;
+      width: 70%;
       height: 100vh;
       z-index: 1000;
+      overflow: scroll;
     }
   }
 
@@ -42,66 +44,69 @@ export const Links = styled.nav`
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
       display: none;
     }
   }
 
   li {
     list-style: none;
-    margin: 1.4rem 1.3rem;
+    margin: 1.4rem 1.6rem;
 
     @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
-      margin: 1.4rem 1rem;
-    }
-  }
-
-  li a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.tertiary2};
-
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-
-    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
       text-align: left;
       border-bottom: 1px solid ${({ theme }) => theme.colors.tetiary1};
       display: block;
-      margin-bottom: 0.5rem;
+      margin: 1.4rem 1rem;
+      overflow: scroll;
 
       &:hover {
-        color: ${({ theme }) => theme.colors.secondary1};
+        color: #fff;
       }
     }
   }
+
+  .navLink {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .active {
+    text-decoration: none;
+    color: #fff;
+    opacity: 1;
+  }
 `;
+
 export const ContactUs = styled.div`
   background-color: ${({ theme }) => theme.colors.primary2};
   border: 2px solid #f4f6fc33;
   padding: 1rem 3rem;
   border-radius: 3rem;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 2px solid #fff;
   }
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     background-color: transparent;
     border: none;
     padding: 0rem;
+    overflow: scroll;
 
-    &:hover,
-    &:focus {
-      color: ${({ theme }) => theme.colors.secondary1};
+    &:hover {
+      color: #fff;
       border: none;
     }
   }
 `;
 
-export const NavTitle = styled.a`
+export const NavTitle = styled(Link)`
   display: block;
   letter-spacing: 0.7rem;
   text-shadow: 0.1rem 0.2rem 0.3rem #000;
@@ -109,7 +114,7 @@ export const NavTitle = styled.a`
   text-decoration: none;
   color: #fff;
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     position: absolute;
     top: 0;
     left: 0;
@@ -120,17 +125,18 @@ export const NavTitle = styled.a`
 export const MenuIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.tablet}) {
     display: block;
-    font-size: 2.5rem;
+    font-size: 3.3rem;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-1%, 45%);
+    transform: translate(-1%, 25%);
+    color: #fff;
+    cursor: pointer;
 
-    &:hover,
-    &:focus {
-      color: ${({ theme }) => theme.colors.secondary1};
+    @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+      font-size: 2.8rem;
     }
   }
 `;

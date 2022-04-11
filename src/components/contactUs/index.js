@@ -50,13 +50,13 @@ function Form() {
         <Title data-aos="zoom-in">
           <h2>Contact Us</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            suscipit tempora adipisci, accusamus ipsa.
+            For technical support, business consultations or general inquiries,
+            our customer service teams are ready to serve you 24/7, 365 days.
           </p>
         </Title>
 
-        <FormContainer onSubmit={formik.handleSubmit} data-aos="fade-up">
-          <FormContents>
+        <FormContainer data-aos="fade-up" onSubmit={formik.handleSubmit}>
+          <FormContents data-aos="fade-up">
             <InputContainer>
               <label htmlFor="name">Name</label>
               <input
@@ -128,7 +128,7 @@ function Form() {
             id="message"
             name="message"
             cols="30"
-            rows="10"
+            rows="6"
             value={formik.values.message}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
@@ -140,7 +140,7 @@ function Form() {
           <span>
             <Button
               data-aos="fade-up"
-              href="#"
+              to="/contact-us"
               type="submit"
               bgc="#1B1C2B"
               bgh="#282938"

@@ -3,31 +3,88 @@ import {
   ContentContainer,
   MainContainer,
 } from "../../reusableComponents/ContainerStyled";
-import { LeftContent, RightContent, Customers } from "../reviews/Styled";
-import img5 from "../../images/img5.svg";
+import {
+  LeftContent,
+  SliderContainer,
+  RightContent,
+  Customers,
+  LeftArrow,
+  RightArrow,
+} from "../reviews/Styled";
+import data from "./reviewsData";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Reviews() {
+  const NextArrow = ({ onClick }) => {
+    return (
+      <RightArrow onClick={onClick}>
+        <FaAngleRight className="icons" />
+      </RightArrow>
+    );
+  };
+
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <LeftArrow onClick={onClick}>
+        <FaAngleLeft className="icons" />
+      </LeftArrow>
+    );
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    lazyLoad: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: 0,
+    initialSlide: 0,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  };
+
   return (
-    <MainContainer bgco="#FFF">
+    <MainContainer bgco="#fff">
       <ContentContainer>
         <LeftContent data-aos="fade-right">
           <h3>What our clients say about us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+          <p>We derive pleasure through our happy and satisfied customers.</p>
         </LeftContent>
-        <RightContent data-aos="fade-left">
-          <h5>
-            "The best agency we’ve worked with so far. They understand our
-            product and are able to add new features with a great focus."
-          </h5>
 
-          <Customers>
-            <img src={img5} alt="img5" />
-            <div>
-              <h6>Jenny Wilson</h6>
-              <p>Vice President</p>
-            </div>
-          </Customers>
-        </RightContent>
+        <SliderContainer>
+          <Slider {...settings}>
+            {data.map((reviews) => {
+              return (
+                <RightContent key={reviews.id} data-aos="fade-left">
+                  <h5>{reviews.comment}</h5>
+
+                  <Customers>
+                    <img src={reviews.img} alt="img5" />
+                    <div>
+                      <h6>{reviews.name}</h6>
+                      <p>{reviews.position}</p>
+                    </div>
+                  </Customers>
+                </RightContent>
+              );
+            })}
+          </Slider>
+        </SliderContainer>
       </ContentContainer>
     </MainContainer>
   );
