@@ -124,6 +124,15 @@ export const InputContainer = styled.div`
     font-size: 1.6rem;
     box-shadow: 0.1rem 0.1rem 0.1rem #d0d0d0;
 
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      box-shadow: 0 0 0 30px #f4f6fc inset !important;
+      -webkit-box-shadow: 0 0 0 30px #f4f6fc inset !important;
+      -webkit-text-fill-color: #090909 !important;
+    }
+
     &::placeholder {
       color: ${({ theme }) => theme.colors.primary1};
       opacity: 0.8;
