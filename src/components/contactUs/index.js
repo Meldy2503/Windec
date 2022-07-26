@@ -22,25 +22,28 @@ function Form() {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .min(10, "Must be 10 characters or more")
+        .min(5, "Must be 5 characters or more")
         .required("Required"),
       email: Yup.string()
         .email("Enter a valid email address")
         .required("Required"),
       phoneNumber: Yup.string()
-        .max(11, "Enter a valid phone number")
+        .max(14, "Enter a valid phone number")
         .required("Required"),
       subject: Yup.string()
-        .max(20, "Must be 20 characters or less")
+        .min(5, "Must be 5 characters or more")
         .required("Enter subject"),
       message: Yup.string()
-        .min(15, "Must be 15 characters or more")
+        .min(5, "Must be 5 characters or more")
         .required("Enter message"),
     }),
 
     onSubmit: (values, { resetForm }) => {
-      console.log(values);
       resetForm();
+      alert(
+        "Thanks for contacting Windec, we will get back to you as soon as possible"
+      );
+      console.log(values);
     },
   });
 
@@ -61,7 +64,7 @@ function Form() {
               <label htmlFor="name">Name</label>
               <input
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Enter your full name"
                 id="name"
                 name="name"
                 value={formik.values.name}
@@ -139,7 +142,6 @@ function Form() {
           <br />
           <span>
             <Button
-              data-aos="fade-up"
               to="/contact-us"
               type="submit"
               bgc="#1B1C2B"
