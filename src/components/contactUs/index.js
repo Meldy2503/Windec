@@ -10,8 +10,16 @@ import {
   InputContainer,
 } from "./contactUsStyle";
 import { Button } from "../../components/reusableComponents/ButtonStyled";
+import Alert from "../reusableComponents/Alert/Alert";
 
 function Form() {
+  const [showAlert, setShowAlert] = React.useState(null);
+  const handleShowAlert = (message) => {
+    setShowAlert({ msg: message });
+    setTimeout(() => {
+      setShowAlert(null);
+    }, 6000);
+  };
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -40,8 +48,8 @@ function Form() {
 
     onSubmit: (values, { resetForm }) => {
       resetForm();
-      alert(
-        "Thanks for contacting Windec, we will get back to you as soon as possible"
+      handleShowAlert(
+        "Thanks for contacting Windec, we will get back to you soon"
       );
       console.log(values);
     },
@@ -154,6 +162,7 @@ function Form() {
             </Button>
           </span>
         </FormContainer>
+        <Alert showAlert={showAlert} />
       </Contents>
     </MainContainer>
   );
