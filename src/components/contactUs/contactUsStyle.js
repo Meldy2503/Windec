@@ -5,6 +5,10 @@ export const Contents = styled.div`
   width: 90%;
   margin: 0 auto;
   padding: 10rem 0;
+
+  @media screen and (max-width: ${({ theme }) => theme.mediaQuery.mobile}) {
+    width: 95%;
+  }
 `;
 
 export const Title = styled.div`
@@ -104,7 +108,7 @@ export const FormContents = styled.div`
 export const InputContainer = styled.div`
   width: 47%;
   display: flex;
-  height: 13rem;
+  height: 11rem;
   margin-bottom: 2rem;
   justify-content: flex-start;
   flex-direction: column;
